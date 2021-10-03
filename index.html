@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="event.js">
@@ -108,6 +109,120 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="wrapper">
+            <div class="product-view">
+                <div class="product-img" style="max-width: 450px;">
+                    <img class="mySlides" src="images/phone.jpg" style="width: 100%"/>
+                    <img class="mySlides" src="images/phone1.jpg" style="width: 100%; display: none"/>
+                    <img class="mySlides" src="images/phone2.jpg" style="width: 100%; display: none;"/>
+                </div>
+                <div>
+                    <div class="slide">
+                        <div class="demo one-slide">
+                            <img src="images/phone.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(1)"/>
+                        </div>
+                        <div class="demo one-slide">
+                            <img src="images/phone1.jpg" style="width: 100%; cursor:pointer" onclick="currentDiv(2)"/>
+                        </div>
+                        <div class="demo one-slide">
+                            <img src="images/phone2.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(3)"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hàm chuyển slide -->
+                <script>
+                    function currentDiv(n) {
+                      showDivs(slideIndex = n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("demo");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                      }
+                    //   Xóa mờ của slide
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                      }
+                      x[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " w3-opacity-off";
+                    }
+                    </script>
+                <div class="details-product">
+                    <div class="Rom">
+                        <ul>
+                            <button class="button button-blue">128Gb</button>
+                            <button class="button button-blue">256Gb</button>
+                            <button class="button button-blue">512Gb</button>
+                        </ul>
+                    </div>
+                    <div class="Color">
+                        <ul>
+                            <button class="button button-blue">Xanh</button>
+                            <button class="button button-red">Đỏ</button>
+                            <button class="button button-yellow">Vàng</button>
+                            <button class="button button-grey">Xám</button>
+                        </ul>
+                    </div>
+                     <div>
+                        <div style="display: flex">
+                        <h4>Thông tin sản phẩm tại &#160; </h4>
+                        <button class="choose-address">Hồ Chí Minh
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <h3>33.990.000đ</h3>
+                    <img class="little-banner" src="images/little-banner.jpg"/>
+                    <h2>Cấu hình Điện thoại XXX Pro Max 256GB</h2>
+                    <table>
+                        <tr class="table table-dark">
+                            <td>Màn hình:</td>
+                            <td>OLED6.7"Super Retina XDR</td>
+                        </tr>
+                        <tr class="table">
+                            <td>Hệ điều hành:</td>
+                            <td>iOS 15</td>
+                        </tr>
+                        <tr class="table table-dark">
+                            <td>Camera sau:</td>
+                            <td>3 camera 12 MP</td>
+                        </tr>
+                        <tr class="table">
+                            <td>Camera trước:</td>
+                            <td>12 MP</td>
+                        </tr>
+                        <tr class="table table-dark">
+                            <td>Chip:</td>
+                            <td>Apple A15 Bionic</td>
+                        </tr>
+                        <tr class="table">
+                            <td>RAM:</td>
+                            <td>6 GB</td>
+                        </tr>
+                        <tr class="table table-dark">
+                            <td>Bộ nhớ trong:</td>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr class="table">
+                            <td>SIM:</td>
+                            <td>1 Nano SIM & 1 eSIMHỗ trợ 5G</td>
+                        </tr>
+                        <tr class="table table-dark">
+                            <td>Pin, Sạc:</td>
+                            <td>20 W</td>
+                        </tr>
+                    </table>    
+                    <br>
+                    <div >
+                        <button class="button button-blue" style="color: rgb(0, 140, 255);">Xem thêm cấu hình chi tiết &#160;<i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
         </div>
     </body>
 </html>
