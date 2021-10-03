@@ -6,24 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <link rel="stylesheet" href="css/home_page/home_page.css">
-        <script src="js/home_page/header.js"></script>
-        <title>Công nghệ Store</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="event.js">
+        <title>Công nghệ Store</title>
     </head>
 
-    <body>
-        <!-- header -->
-        <header  class='header_banner'>
-            <img src='css/home_page/images/banner1.png' alt="" class='banner'>
-        </header>
-
+    <body>       
         <div class="header">
-            <div class="header_top" id="header_t">
-                <div id='header_menu'>
+            <div class="header_top">
+                <div class='header_menu'>
                     <i class="fas fa-bars"></i>
                 </div>
-                <a href="">
-                    <img class="icon_logo" src="css/home_page/images/logoQStore.png" alt="">
+                <a href="/">
+                    <img class="icon_logo" src="images/logoQStore.png" alt="">
                 </a>
                 <a href="" class="header_address">
                     <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
@@ -49,7 +44,7 @@
                 </a>
             </div>
 
-            <div class="header_main" id='header_m'>
+            <div class="header_main">
                 <div>
                     <ul class="main-menu">
                         <li>
@@ -106,143 +101,29 @@
                                 <span>Trả góp 0%</span>
                             </a>
                         </li>
-
-                        <hr id='divider'></hr>
-
-                        <div class='div_header'>
-                            <ul class='ul_header'>
-                                <li>
-                                    <a href="" class='header_new' id='header_new'>
-                                        <i class="fas fa-newspaper"></i>
-                                        <span>Tin tức</span> 
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="" class='header_QA' id='header_QA'>
-                                        <i class="fas fa-question-circle"></i>
-                                        <span>Hỏi đáp</span>
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            <a href="" class='header_ad' id='header_ad'>
-                                <span class='dot_content'><span class='dot_animation'></span></span>
-                                Mua thẻ nạp ngay
-                            </a>                            
-                        </div>        
-
-                        <li class='profile'>
-                            <a href="">
-                                <i class="fas fa-phone-volume"></i>
-                                <span>Gọi ngay</span>
-                                <span id='phone'>012.345.6789</span>
-                                <span>(7:30 - 22:00)</span>
-                            </a>
-                            <br>
-                            <a href="">
-                                <i class="fab fa-facebook"></i>
-                                <span>Fanpage:</span>
-                                <span>Công Nghệ Store</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <!-- Banner Slider -->
-        <div id='app'>
-          <div class="slider s--ready">
-            <div class="slider__slide">
-              <div class="slider__slide-parts">
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
-                </div>
-              </div>
+        <div class="header_content">
+            <div>
+                <a href="" class='header_inf'>       
+                    <span>Trang chủ / Điện thoại</span>
+                </a>
             </div>
-            <div class="slider__slide">
-              <div class="slider__slide-parts">
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide s--prev">
-              <div class="slider__slide-parts">
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide s--active">
-              <div class="slider__slide-parts">
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="slider__slide-parts">
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
-                </div>
-                <div class="slider__slide-part">
-                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
-                </div>
-              </div>
-            </div>
-            <div class="slider__control"></div>
-            <div class="slider__control slider__control--right"></div>
-          </div>
         </div>
-                      
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
-      <script type="text/javascript" src="js/home_page/slider.js"></script>
-          
+        <header  class='header_banner2'>
+            <img src='images/banner2.jpg' alt="" class='banner'>
+        </header>
+        <div class="col-9 p-0">
+            <div class="card m-b-30 fpheadbox">
+                <div class="card-header">
+                    <div class="cdt-head">
+                        <h1 class="cdt-head_title">Điện Thoại<span>(327 sản phẩm)</span></h1>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </body>
 </html>
