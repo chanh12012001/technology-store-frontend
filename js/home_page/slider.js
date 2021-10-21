@@ -84,3 +84,5 @@ const slides = [
 ];
 
 ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('.slider'));
+
+

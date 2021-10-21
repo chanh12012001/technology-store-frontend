@@ -1,0 +1,206 @@
+.container-wrapper {
+  margin: 0 40px;
+  background-color: aliceblue;
+  margin-right: 40px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.category-title {
+  color: #CD1918;
+  padding-left: 10px;
+  padding-top: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  display: flex;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.icon-hightlight{
+  width: 32px;
+  height: 32px;
+  padding-bottom: 3px;
+}
+
+.slick-next::before,
+.slick-prev::before
+{
+  color: #CD1918;
+  font-size: 24px;
+}
+
+.item:hover {
+  display: block;
+  transition: all ease 0.3s;
+  transform: scale(1.1);
+}
+
+.slick-prev {
+  top: -10%;
+  left: 92%;
+}
+
+.slick-next{
+  top: -10%;
+  right: 3%;
+}
+
+.slider-category {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  height: 15vw;
+}
+
+.slick-track {
+  margin: 15.5px;
+}
+
+.slick-list {
+  height: 15.5vw;
+}
+
+.item {
+	flex: 0 0 calc(16.6667% - 40px);
+  border-radius: 50%;
+	position: relative;
+}
+
+.item img {
+	width: 80%;
+  height: 80%;
+	display: block;
+	border-radius: 50%;
+  background-color: rgb(204, 199, 197);
+}
+
+.border {
+	position: absolute;
+	height: 10.5vw;
+	width: 10.5vw;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 1.5px solid #d6d6d6;
+	transition: 0.5s ease, border 0.5s ease, height 0.5s ease, height 0.5s ease;
+}
+
+.item:hover .border {
+	width: 6.5vw;
+	height: 6.5vw;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.6);
+	border: none;
+}
+
+.category-name {
+  color: black;
+  display: block;
+  position:fixed;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  width: 9.5vw;
+}
+
+/* --------- mobile------------ */
+@media only screen and (max-width: 759px) {
+  .container-wrapper {
+    margin: 10px;
+  }
+
+  .category-title {
+    display: none;
+  }
+
+  .slider-category {
+    height: 27vw;
+  }
+
+  .slider-category .slick-prev {
+    display: none;
+    position: fixed;
+  }
+  
+  .slider-category .slick-next{
+    display: none;
+    position: fixed;
+  }
+  
+  .slick-list {
+    height: 27vw;
+  }
+
+  .category-name {
+    font-size: 12px;
+    margin-top: 5px;
+    width: 15vw;
+  }
+
+  .slick-track {
+    margin: 6px;
+  }
+
+  .border {
+    display: none;
+  }
+  
+}
+
+/* --------- mobile------------ */
+@media only screen and (max-width: 375px) {
+  .category-name {
+    font-size: 11px;
+  }
+
+  .smart-watch {
+    width: 18vw;
+    left: 55vw;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1150px){
+  .container-wrapper {
+    margin: 15px 20px;
+  }
+
+  .slick-track {
+    margin: 10px;
+  }
+
+  .category-title {
+    font-size: 13px;
+  }
+
+  .icon-hightlight{
+    width: 25px;
+    height: 25px;
+    padding-bottom: 3px;
+  }
+  
+  .slick-prev {
+    top: -10%;
+    left: 90%;
+  }
+  
+  .slick-list {
+    height: 27vw;
+  }
+
+  .slider-category {
+    height: 19vw;
+  }
+
+  .category-name {
+    font-size: 15px;
+  }
+
+  .smart-watch {
+    width: 10vw;
+  }
+}
+
