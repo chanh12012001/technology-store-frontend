@@ -426,7 +426,7 @@ svg:not(:root) {
 }
 
 /* tablet: width >= 740px and width <= 1024px */
-@media only screen and (min-width: 768px) and (max-width: 1150px){
+@media only screen and (min-width: 760px) and (max-width: 1150px){
 
     .header_banner::content {
         width: 100%;
