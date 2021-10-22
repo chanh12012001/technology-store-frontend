@@ -113,55 +113,69 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="product-view">
-                <div class="product-img" style="max-width: 450px; max-height: 450px;">
-                    <img class="mySlides" src="css/product_detail/images/phone1.jpg" style="width: 100%"/>
-                    <img class="mySlides" src="css/product_detail/images/phone2.jpg" style="width: 100%; display: none"/>
-                    <img class="mySlides" src="css/product_detail/images/phone3.jpg" style="width: 100%; display: none;"/>
-                </div>
-                <div>
-                    <div class="slide">
-                        <div class="demo one-slide">
-                            <img src="css/product_detail/images/phone1.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(1)"/>
-                        </div>
-                        <div class="demo one-slide">
-                            <img src="css/product_detail/images/phone2.jpg" style="width: 100%; cursor:pointer" onclick="currentDiv(2)"/>
-                        </div>
-                        <div class="demo one-slide">
-                            <img src="css/product_detail/images/phone3.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(3)"/>
+        <section class="detail">
+            <ul class="choose-product">
+                <li>
+                    <a href="">Điện thoại</a>
+                </li>
+                <li>
+                    <span>></span>
+                    <li>
+                        <a href="">Android xxx</a>
+                    </li>
+                </li>
+            </ul>
+            <h2>Điện thoại XXX Pro Max 256GB</h1>
+            <div class="wrapper">
+                <div class="product-view">
+                    <div class="product-img" style="max-width: 450px; max-height: 450px;">
+                        <img class="mySlides" src="css/product_detail/images/phone1.jpg" style="width: 100%"/>
+                        <img class="mySlides" src="css/product_detail/images/phone2.jpg" style="width: 100%; display: none"/>
+                        <img class="mySlides" src="css/product_detail/images/phone3.jpg" style="width: 100%; display: none;"/>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="demo one-slide">
+                                <img src="css/product_detail/images/phone1.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(1)"/>
+                            </div>
+                            <div class="demo one-slide">
+                                <img src="css/product_detail/images/phone2.jpg" style="width: 100%; cursor:pointer" onclick="currentDiv(2)"/>
+                            </div>
+                            <div class="demo one-slide">
+                                <img src="css/product_detail/images/phone3.jpg" style="width: 100% ; cursor:pointer" onclick="currentDiv(3)"/>
+                            </div>
                         </div>
                     </div>
+                    <!-- Hàm chuyển slide -->
+                    <script>
+                        function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                        }
+                        
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        //   Xóa mờ của slide
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                        }
+                        x[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " w3-opacity-off";
+                        }
+                        </script>
                 </div>
-                <!-- Hàm chuyển slide -->
-                <script>
-                    function currentDiv(n) {
-                      showDivs(slideIndex = n);
-                    }
-                    
-                    function showDivs(n) {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("demo");
-                      if (n > x.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = x.length}
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                      }
-                    //   Xóa mờ của slide
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-                      }
-                      x[slideIndex-1].style.display = "block";
-                      dots[slideIndex-1].className += " w3-opacity-off";
-                    }
-                    </script>
                 <div class="details-product">
                     <div class="Rom">
                         <ul>
-                            <button class="button button-blue">128Gb</button>
-                            <button class="button button-blue">256Gb</button>
-                            <button class="button button-blue">512Gb</button>
+                            <button class="button button-blue">128GB</button>
+                            <button class="button button-blue">256GB</button>
+                            <button class="button button-blue">512GB</button>
                         </ul>
                     </div>
                     <div class="Color">
@@ -172,7 +186,7 @@
                             <button class="button button-grey">Xám</button>
                         </ul>
                     </div>
-                     <div>
+                    <div>
                         <div style="display: flex">
                         <h4>Thông tin sản phẩm tại &#160; </h4>
                         <button class="choose-address">Hồ Chí Minh
@@ -226,6 +240,269 @@
                         <button class="button button-blue" style="color: rgb(0, 140, 255);">Xem thêm cấu hình chi tiết &#160;<i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-        </div>
+                <div class="related">
+                    <p class="related-title"> Xem thêm điện thoại khác</p>
+                    <div class="list-related-product">
+                        <div>
+                            <a href="" class="box-circle"> Android</a>
+                            <a href="" class="box-circle"> Samsung</a>
+                            <a href="" class="box-circle"> 256GB</a>
+                            <a href="" class="box-circle"> Chơi game</a>
+                            <a href="" class="box-circle"> Chụp góc rộng</a>
+                            <a href="" class="box-circle"> 6GB</a>
+                            <a href="" class="box-circle"> Mặt lưng kín</a>
+                            <a href="" class="box-circle"> Tràn viền</a>
+                        </div>
+                    </div>
+                    <div class="header_main">
+                        <div>
+                            <ul class="product-view-related">
+                                <li>
+                                    <img src="css/product_detail/images/phone1.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 45</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone2.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 98</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone3.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 200</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone2.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                        <p> 25</p>
+                                    </span>
+                                    
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone1.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                        <p> 100</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="related">
+                    <!-- Product_seen -->
+                    <p class="related-title"> Điện thoại đã xem</p>
+                    <div class="header_main">
+                        <div>
+                            <ul class="product-view-related">
+                                <li>
+                                    <img src="css/product_detail/images/phone1.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 45</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone2.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 98</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone3.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </p>
+                                        <p> 200</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone2.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                        <p> 25</p>
+                                    </span>
+                                    
+                                </li>
+                                <li>
+                                    <img src="css/product_detail/images/phone1.jpg"/>
+                                    <h3>Android xxx Max 128GB</h3>
+                                    <h4 class="unbold">Online giá rẻ</h4>
+                                    <span class="discount-related">
+                                        <h4 class="line-through">32.990.000đ</h4>
+                                        <h4 class="unbold">-6%</h4>
+                                    </span>
+                                    <h4>30.990.000đ</h4>
+                                    <h4 class="unbold">Quà 100.000đ</h4>
+                                    <span style="display: inline-flex;">
+                                        <p>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star checked"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </p>
+                                        <p> 100</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-comment" id="comment">
+                    <form method="post" autocomplete="off" class="form-cmt">
+                        <div class="edit-cmt">
+                            <textarea class="textarea"></textarea>
+                            <div class="box-cmt">
+                                <div class="btn-cmt">
+                                    <a href="" class="upload-btn a-cmt">
+                                        <i class="fa fa-camera "></i>
+                                        <span>Gửi ảnh</span>
+                                    </a>
+                                    <a target="_blank" class="qd a-cmt">
+                                        Quy định bình luận
+                                    </a>
+                                    <div class="cmt-right">
+                                        <a href="" class="btn-send">
+                                            Gửi
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
     </body>
 </html>
