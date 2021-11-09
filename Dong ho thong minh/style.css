@@ -1,0 +1,26 @@
+.block__tab {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 12px;
+}
+.block__tab li {
+    margin: 0 6px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.block__tab li.active a {
+    background-color: #ffe500;
+    font-weight: bold;
+}
+.block__tab li a {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px #000 solid;
+    color: #333;
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 10px;
+}

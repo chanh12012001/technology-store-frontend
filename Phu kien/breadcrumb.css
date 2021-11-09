@@ -1,0 +1,46 @@
+    .breadcrumb {
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+        list-style:none;
+        margin:0
+    } 
+    .breadcrumb-margin {
+        margin-top:10px;
+        margin-bottom:10px
+    } 
+    .breadcrumb-item {
+        color:#0275d8;
+        line-height:24px;
+        font-size:14px
+    } 
+    .breadcrumb-item+.breadcrumb-item:before {
+        display:inline-block;
+        padding-right:5px;
+        padding-left:5px;
+        color:#ccc;
+        font-size:16px;
+        content:'/'
+    } 
+    .breadcrumb-item a {
+        font-size:14px;
+        line-height:20px;
+        color:#0275d8
+    } 
+    .breadcrumb-item:last-child {
+        color:#212529
+    } 
+    .breadcrumb {
+        align-items:center
+    } 
+    .breadcrumb-item a:hover {
+        color:#000
+    } 
+    .breadcrumb-item:last-child {
+        color:#6c757d
+    } 
+    .breadcrumb-item a {
+        position:relative
+    }
