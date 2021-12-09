@@ -13,4 +13,14 @@ $('.main-carousel2').flickity({
     wrapAround: true,
     autoPlay:true,
 });
+$('.main-carousel3').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
+$('.main-carousel-dt').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
  

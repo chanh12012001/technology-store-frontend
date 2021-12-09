@@ -111,7 +111,7 @@
     text-align:center;
     height:60px;
     line-height:60px;
-    padding:0 5px
+    padding:32px 5px
 }
 .si-brimg img {
     max-height:60px
@@ -188,7 +188,7 @@
     background:url("/sim-so-dep/sim/Desktop/images/sim/i-call.png") no-repeat center
 }
 .si-bxr2 {
-    height:100px;
+    height:121px;
     overflow:hidden
 }
 .si-bxr2 ul li {
@@ -244,21 +244,64 @@
     font-weight:500;
     color:#cb1c22
 }
-.si-bxr3 li a {
-    display:block;
-    padding:0 15px;
-    height:35px;
-    line-height:35px;
-    text-align:center;
-    font-size:15px;
-    font-weight:bold;
+a.bttn-dark {
     color:#0275d8;
-    border:solid 1px #0275d8;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    border-radius:2px
+    text-decoration:none;
+    -webkit-transition:0.3s all ease;
+    transition:0.3s ease all;
 }
-
+a.bttn-dark:hover {
+      color:#FFF;
+}
+a.bttn-dark:focus {
+      color:#FFF;
+}
+.bttn-dark {
+    font-size:18px;
+    text-transform:uppercase;
+    display: block;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border:solid 1px #0275d8;
+    border-radius:2px;
+    position:relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    z-index:2;
+}
+.bttn-dark:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      position:absolute;
+      top:0;
+      left:50%;
+      right:50%;
+      bottom:0;
+      opacity:0;
+      content:'';
+      background-color:#0275d8;
+      z-index:-1;
+}
+.bttn-dark:hover::before {
+        -webkit-transition:0.5s all ease;
+        transition:0.5s all ease;
+        left:0;
+        right:0;
+        opacity:1;
+}
+    
+.bttn-dark:focus::before {
+        -webkit-transition:0.5s all ease;
+        transition:0.5s all ease;
+        left:0;
+        right:0;
+        opacity:1;
+}
+    
+  
 .si-sbi {
     border:1px solid #ebebeb;
     background:#fff;
@@ -462,8 +505,11 @@
     border-radius:2px
 }
 .ck-popnh-l li span img {
-    max-height:47px
+    max-height:47px;
+    vertical-align: text-top;
+    max-width: 100%;
 }
+
 .ck-popnh-l li input:checked~span {
     border:2px solid #536df3
 }
@@ -478,6 +524,7 @@
     color:#ccc
 }
 .ck-poptt-tit {
+    color: #000;
     font-size:17px;
     font-family:'Open Sans',sans-serif;
     font-weight:bold;
@@ -643,14 +690,14 @@
 .ck-poptt-rlbott {
     padding:10px
 }
-.ck-poptt-rlbtn {
+.ck-poptt-rlbuy {
     text-align:center;
     margin:15px 0 5px
 }
-.ck-poptt-rlbtn a {
+.ck-poptt-rlbuy a {
     display:inline-block;
     padding:11px 30px;
-    background:#6abb0a;
+    background:#288ad6;
     font-weight:bold;
     font-size:15px;
     color:#fff;
@@ -700,29 +747,97 @@ form .error {
         margin:30px auto
     }
 }
-.simdpo .modal-title {
-    font-size:18px;
-    font-weight:500
-}
-.simdbtn {
-    text-align:center;
-    padding:15px 0 5px
-}
-.simdbtn a {
-    width:220px;
-    height:53px;
-    line-height:53px;
-    text-align:center;
-    font-size:22px;
-    font-weight:500;
-    color:#fff;
-    border-radius:2px;
-    background-color:#cb1c22;
-    display:inline-block
-}
-.simdbtn a:hover,.simdbtn a:focus,.simdbtn a:active {
-    color:#fff
-}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 15px auto 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 230px;
+    height: 53px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+      font-size: 20px;
+      font-weight: 500;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
 .simdpo table thead tr td {
     background:#ededed;
     font-weight:bold
@@ -866,4 +981,155 @@ form .error {
     bottom:0;
     opacity:.9;
     z-index:97
+}
+/* mobile: width <740px */
+@media only screen and (max-width: 759px){
+
+    .si-row {
+        margin-top: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;
+    }
+    .si-col1 {
+        width:50%
+    }
+    .si-col2 {
+        width:50%
+    }
+    .si-col1,.si-col2 {
+        float:left;
+        padding:0 3px;
+        position:relative
+    }
+    .si-bxc {
+        float:left;
+        width:100%;
+        padding:0 10px;
+        margin-bottom:10px;
+        position:relative
+    }
+    .si-bxleft {
+        width: 40%;
+        height: 100%;
+    }
+        .si-brname {
+            width: 100%;
+            display: table;
+        }
+    .si-bxinfo {
+        height: 100%;
+        padding-top: 10px;
+        width: 50%;
+        margin-left: 44%;
+    }
+    .si-main {
+        padding:0px;
+    }
+    .si-sblbe ul li label span {
+        font-size: 60%;
+    }
+    .si-sbi {
+        border:1px solid #ebebeb;
+        background:#fff;
+        margin-bottom:20px;
+        width: 100%;
+    }
+        .si-sbitdimg{
+            width: 50%;
+        }
+        .si-sbinfo {
+            margin-left: 43%;
+        }
+    .si-bxr1 {
+        margin-bottom:0px
+    }
+    .si-bxr2 {
+        height:38%;
+    }
+    .si-bxr2 ul li{
+        font-size: 12px;
+    }
+    .si-bxr3 {
+        background-color: #fff;
+        position: sticky;
+        bottom: 0px;
+        top: auto;
+    }
+    .si-bxr3 li {
+        display: -webkit-box;
+    }
+    .si-bxr3 li p {
+        font-size: 14px;
+    }
+    .si-bxr3 li a {
+        font-size:13px;  
+        padding: 0 10px;
+    }
+
+    .si-brimg {
+        padding: 40px 5px;
+    }
+    .si-bxlbot{
+        padding-top: 5px;
+    }
+    .si-sblbe ul li {
+        padding: 0 2px;
+        margin-bottom: 5px;
+    }
+}
+
+/* tablet: width >= 740px and width <= 1024px */
+@media only screen and (min-width: 760px) and (max-width: 1150px){
+    .si-row {
+        margin: 0px;
+        width: 100%;
+    }
+    .si-col1 {
+        width:70%
+    }
+    .si-col2 {
+        width:30%
+    }
+    .si-col1,.si-col2 {
+        float:left;
+        padding:0 5px;
+        position:relative
+    }
+    .si-main {
+        padding:10px;
+    }
+    .si-sblbe ul li label span {
+        font-size: 80%;
+        
+    }
+    .si-sbi {
+        border:1px solid #ebebeb;
+        background:#fff;
+        margin-bottom:20px;
+        width: 100%;
+    }
+    .si-bxc {
+        padding: 0 5px;
+    }
+    .si-bxinfo {
+        padding-top: 10px;
+    }
+    .si-bxr1 {
+        margin-bottom:0px
+    }
+    .si-bxr2 {
+        height:110px;
+    }
+    .si-bxr3 {
+        background-color: #fff;
+        
+    }
+    .si-bxr3 li {
+        display: -webkit-box;
+    }
+    .si-bxr3 li a {
+        font-size:13px;  
+        height: 30px;
+    }
 }

@@ -11,7 +11,7 @@
         align-items:center
     } 
     .character.active {
-        order:-1
+        display: block;
     } 
     .banner-cate+.section-common .characters {
         max-height:183px
@@ -128,8 +128,7 @@
     .badge-warning {
         color:#fff;
         background:#ea9d02
-    } 
-     
+    }  
     
     .category-container,.f-wrap {
         width:1200px;
@@ -182,3 +181,26 @@
     .fs-ftul li a:hover {
         text-decoration:underline
     }
+
+    /* mobile: width <740px */
+@media only screen and (max-width: 759px){
+
+    .category-container {
+        width: 96%;
+    }
+    .character {
+        flex-basis: 33%;
+    }
+    
+}
+
+/* tablet: width >= 740px and width <= 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .category-container {
+        width: 96%;
+    }
+    .character {
+        flex-basis: 16%;
+    }
+}

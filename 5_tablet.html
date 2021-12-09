@@ -7,6 +7,8 @@
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="js/home_page/header.js"></script>
+
         <link rel="stylesheet" href="DienThoai/style.css">
         <link rel="stylesheet" href="DienThoai/breadcrumb.css">
         <link rel="stylesheet" href="DienThoai/button.css">
@@ -16,102 +18,144 @@
         <link rel="stylesheet" href="DienThoai/promotion.css">
         <link rel="stylesheet" href="DienThoai/swiper.css">
         <link rel="stylesheet" href="css/home_page/footer.css">
+        <link rel="stylesheet" href="Dong ho thong minh/icon.css">
         <link rel="stylesheet" href="event.js">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link type="text/css" rel="stylesheet" href="Laptop/main-carousel.css">
+        
         <title>Công nghệ Store</title>
     </head>
 
     <body>       
         <!--header-->
         <div class="header">
-            <div class="header_top">
-                <div class='header_menu'>
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
                     <i class="fas fa-bars"></i>
                 </div>
-                <a1 href="/">
-                    <img class="icon_logo" src="images/logoQStore.png" alt="">
-                </a1>
-                <a1 href="" class="header_address">
+                <a href="">
+                    <img class="icon_logo" src="css/home_page/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
                     <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
-                </a1>   
+                </a>   
                 <div class='header_search'>
                     <input type="text" class='input' placeholder="Tìm kiếm...">
                     <i class="fas fa-search icon-search"></i>
                 </div>
-                <a1 href="" class='header_shoppingcart'>
+                <a href="13_giohang.html" class='header_shoppingcart'>
                     <i class="fas fa-shopping-cart"></i>
                     <span id='content_shopping_cart_header'>Giỏ hàng</span> 
-                </a1>
-                <a1 href="" class='header_history'>Lịch sử <br> đơn hàng</a1>
-                <a1 href="" class='header_ad'>
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
                     <span class='dot_content'><span class='dot_animation'></span></span>
                     Mua thẻ nạp ngay
-                </a1>
-                <a1 href="" class='header_new'>
+                </a>
+                <a href="" class='header_new'>
                     Tin tức
-                </a1>
-                <a1 href="" class='header_QA'>
+                </a>
+                <a href="" class='header_QA'>
                     Hỏi đáp
-                </a1>
+                </a>
             </div>
 
-            <div class="header_main">
+            <div class="header_main" id='header_m'>
                 <div>
                     <ul class="main-menu">
                         <li>
-                            <a1 href="">
+                            <a href="3_dienthoai.html">
                                 <i class="fas fa-mobile-alt"></i>
                                 <span>Điện thoại</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="4_laptop.html">
                                 <i class="fas fa-laptop"></i>
                                 <span>Laptop</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="5_tablet.html">
                                 <i class="fas fa-tablet-alt"></i>
                                 <span>Tablet</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="6_hanggiadung.html">
                                 <i class="fas fa-blender"></i>
                                 <span>Hàng gia dụng</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="7_phukien.html">
                                 <i class="fas fa-headphones"></i>
                                 <span>Phụ kiện</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="8_donghothongminh.html">
                                 <i class="fas fa-clock"></i>
                                 <span>Đồng hồ thông minh</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="9_sim&the.html">
                                 <i class="fas fa-sim-card"></i>
                                 <span>Sim & Thẻ</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="2_suachua.html">
                                 <i class="fas fa-tools"></i>    
                                 <span>Sửa chữa</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="11_tragop_ĐT.html">
                                 <i class="fas fa-hand-holding-usd"></i>
                                 <span>Trả góp 0%</span>
-                            </a1>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +165,7 @@
         <div class="row f-event-container">
             <ol class="breadcrumb breadcrumb-margin">
                 <li class="breadcrumb-item">
-                    <a href="/" title="Trang chủ">Trang chủ</a>
+                    <a href="1_index.html" title="Trang chủ">Trang chủ</a>
                 </li>
                 <li class="breadcrumb-item active">Máy tính bảng</li>
             </ol>
@@ -141,86 +185,53 @@
             <div class="card m-b-30 fpheadbox">
                 <div class="card-header">
                     <div class="cdt-head">
-                        <h1 class="cdt-head_title">Máy tính bảng<span>(7 sản phẩm)</span></h1>
+                        <button onclick="Tablet()" class="cdt-head_title">Máy tính bảng</button>
                     </div>
                 </div>
                 <div class = "card-body cdt-brand-pd">
                     <div class="cdt-brand-img swiper-container swiper-container-horizontal">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide-active">
-                                <a href="/may-tinh-bang/apple-ipad">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_iPad-Apple@2x.jpg" alt="Apple (iPad)">
-                                </a>
-                            </div>
-                            <div class="swiper-slide swiper-slide-next">
-                                <a href="/may-tinh-bang/samsung">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/may-tinh-bang/xiaomi">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/may-tinh-bang/huawei">
-                                    <img src="https://cdn.tgdd.vn/Brand/1/Huawei522-b_4.jpg" alt="huawei">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/may-tinh-bang/masstel">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/may-tinh-bang/lenovo">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/14/637618612858518848_Lenovo@2x.jpg" alt="Lenovo">
-                                </a>
-                            </div>
+                            <div onclick="Ipad()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_iPad-Apple@2x.jpg" alt="Apple (iPad)"></a></div>
+                            <div onclick="Samsung()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></a></div>
+                            <div onclick="Xiaomi()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></a></div>
+                            <div onclick="Huawei()" class="swiper-slide"><a><img src="Tablet/Images/huawei_2.PNG" alt="huawei"></a></div>
+                            <div onclick="Masstel()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel"></a></div>
+                            <div onclick="Lenovo()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/14/637618612858518848_Lenovo@2x.jpg" alt="Lenovo"></a></div>
                         </div>
                     </div>
-                </div>               
+                </div>  
+                <div class="card-body cdt-brand-pd1">
+                    <div class="cdt-brand-img swiper-container swiper-container-horizontal">
+                        <div class="main-carousel1">
+                            <div onclick="Ipad()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_iPad-Apple@2x.jpg" alt="Apple (iPad)"></div>
+                            <div onclick="Samsung()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></div>
+                            <div onclick="Xiaomi()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></div>
+                            <div onclick="Huawei()" class="cell1"><img src="Tablet/Images/huawei_2.PNG" alt="huawei"></div>
+                            <div onclick="Masstel()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel"></div>
+                            <div onclick="Lenovo()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/14/637618612858518848_Lenovo@2x.jpg" alt="Lenovo"></div>
+                        </div>
+                    </div>
+                </div>             
             </div>
             <div class="card fplistbox">
                 <div class="card-body p-0 p-t-15 p-b-30 fplistpdbox">
                     <div class="cdt-normal p-l-15 p-r-15 m-b-25 sortfirstbox">
                         <div class="cdt-list-tab">
-                            <span>Ưu tiên xem: </span>
-                            <div class="btn-group">
-                                <ul class="listfilterv4" data-query="sort">
-                                    <li class="frowitem sort sortdefault active">
-                                        <a class="btn btn-outline-secondary" data-value="ban-chay-nhat">Bán chạy nhất</a>
-                                    </li>
-                                    <li class="frowitem sort"><a class="btn btn-outline-secondary" data-value="tra-gop-0">Trả góp 0%</a>
-                                    </li>
-                                    <li class="frowitem sort"><a class="btn btn-outline-secondary" data-value="gia-thap-den-cao">Giá thấp</a>
-                                    </li>
-                                    <li class="frowitem sort"><a class="btn btn-outline-secondary" data-value="gia-cao-den-thap">Giá cao</a>
-                                    </li>
-                                    <li class="frowitem sort"><a class="btn btn-outline-secondary" data-value="uu-dai-online">Ưu đãi online</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="frow" id="sort"></div>
                         </div>
-                        <div class="cdt-grid-list">
-                            <label class="cdt-dropdown">
-                                <div class="cdt-dropdown-button">
-                                    Bán chạy nhất
-                                </div>
-                                <ul class="cdt-dropdown-menu">
-                                    <li class="frowitem sort sortdefault active" data-value="ban-chay-nhat">Bán chạy nhất</li>
-                                    <li class="frowitem sort" data-value="tra-gop-0">Trả góp 0%</li>
-                                    <li class="frowitem sort" data-value="gia-thap-den-cao">Giá thấp</li>
-                                    <li class="frowitem sort" data-value="gia-cao-den-thap">Giá cao</li>
-                                    <li class="frowitem sort" data-value="uu-dai-online">Ưu đãi online</li>
-                                </ul>
-                            </label>
-                        </div>
+                        <select onclick="Select()" class="ddlViewBy">
+                            <option>Ưu đãi online</option>
+                            <option>Trả góp 0%</option>
+                            <option>Giá thấp</option>
+                            <option>Giá cao</option>
+                        </select>
                     </div>
+                    <!--Sản Phẩm-->
                     <div class="cdt-product-wrapper m-b-20">
-                        <div class="cdt-product  ">
+                        <!--SP 1-->
+                        <div class="cdt-product samsung " id="tablet_1">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/samsung-galaxy-tab-a7-lite">
+                                <a href="">
                                     <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/5/27/637577199955105403_ss-tab-a7-lite-bac-dd.jpg" alt="Samsung Galaxy Tab A7 Lite" title="Samsung Galaxy Tab A7 Lite" height="214">
                                 </a>
                                 <div class="cdt-product__label">
@@ -229,7 +240,7 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/samsung-galaxy-tab-a7-lite" title="Samsung Galaxy Tab A7 Lite" class="cdt-product__name">Samsung Galaxy Tab A7 Lite</a>
+                                    <a href="" title="Samsung Galaxy Tab A7 Lite" class="cdt-product__name">Samsung Galaxy Tab A7 Lite</a>
                                 </h3>
                                 <div class="cdt-product__price">
                                     <div class="tcdm text-left">
@@ -244,21 +255,22 @@
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>MediaTek MT8768T</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>8.7"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>5100 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">MediaTek MT8768T</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">8.7"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">32 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png">5100 mAh</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>MediaTek MT8768T</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>8.7"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>5100 mAh</span>
-                                    </div><div class="cdt-product__img-promo">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">MediaTek MT8768T</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">8.7"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">32 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png">5100 mAh</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
                                         <span class="active">
                                             <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 700.000đ">
                                         </span>
@@ -266,14 +278,15 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/samsung-galaxy-tab-a7-lite" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-tab-a7-lite" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <!--SP 2-->
+                        <div class="cdt-product ipad " id="tablet_2">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/ipad-mini-5-79-wi-fi-64gb">
+                                <a href="">
                                     <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2019/5/2/636923901250148365_iPadmini-5-wifi-3c.png" alt="iPad Mini 5 7.9 Wi-Fi 64GB" title="iPad Mini 5 7.9 Wi-Fi 64GB" height="214">
                                 </a>
                                 <div class="cdt-product__label">
@@ -283,7 +296,7 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/ipad-mini-5-79-wi-fi-64gb" title="iPad Mini 5 7.9 Wi-Fi 64GB" class="cdt-product__name">iPad Mini 5 7.9 Wi-Fi 64GB</a>
+                                    <a href="" title="iPad Mini 5 7.9 Wi-Fi 64GB" class="cdt-product__name">iPad Mini 5 7.9 Wi-Fi 64GB</a>
                                 </h3>
                                 <div class="cdt-product__show-promo">
                                     <div class="progress pdiscount2">10.999.000 ₫
@@ -295,20 +308,20 @@
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A12 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>7.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>5124 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A12 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">7.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>5124 mAh</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A12 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>7.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>5124 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A12 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">7.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>5124 mAh</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -324,14 +337,15 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/ipad-mini-5-79-wi-fi-64gb" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?ipad-mini-5-79-wi-fi-64gb" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <!--SP 3-->
+                        <div class="cdt-product masstel " id="tablet_3">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/masstel-tab-10-ultra">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
                                         <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/28/637394760405298535_masstel-tab-10-ultra-vang-dd.png" alt="Masstel Tab 10 Ultra" title="Masstel Tab 10 Ultra" height="214">
                                     </span>
@@ -343,30 +357,29 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/masstel-tab-10-ultra" title="Masstel Tab 10 Ultra" class="cdt-product__name">Masstel Tab 10 Ultra</a>
+                                    <a href="" title="Masstel Tab 10 Ultra" class="cdt-product__name">Masstel Tab 10 Ultra</a>
                                 </h3>
                                 <div class="cdt-product__show-promo">
                                     <div class="progress">3.490.000 ₫
                                         <div class="progress-bar" style="width: 92%;"></div>
                                     </div>
                                     <div class="strike-price"><strike>3.790.000 ₫</strike>
-                                        <div class="cd">0 ngày 02:36:05</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.1"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>6000 mAh</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.1"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">32 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>6000 mAh</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.1"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>3 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>6000 mAh</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.1"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">3 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">32 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>6000 mAh</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -376,14 +389,15 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/masstel-tab-10-ultra" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?masstel-tab-10-ultra" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <!--SP 4-->
+                        <div class="cdt-product samsung " id="tablet_4">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/samsung-galaxy-tab-s7-fe">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
                                         <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/1/637607328871408633_samsung-galaxy-tab-s7-fe-dd.jpg" alt="Samsung Galaxy Tab S7 FE" title="Samsung Galaxy Tab S7 FE" height="214">
                                     </span>
@@ -394,7 +408,7 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/samsung-galaxy-tab-s7-fe" title="Samsung Galaxy Tab S7 FE" class="cdt-product__name">Samsung Galaxy Tab S7 FE</a>
+                                    <a href="" title="Samsung Galaxy Tab S7 FE" class="cdt-product__name">Samsung Galaxy Tab S7 FE</a>
                                 </h3>
                                 <div class="cdt-product__price">
                                     <div class="tcdm text-left">
@@ -409,20 +423,20 @@
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Snapdragon 750G</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>12.4"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>10090 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 750G</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.4"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>10090 mAh</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Snapdragon 750G</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>12.4"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>10090 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 750G</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.4"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>10090 mAh</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -435,16 +449,17 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/samsung-galaxy-tab-s7-fe" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-tab-s7-fe" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <!--SP 5-->
+                        <div class="cdt-product ipad product-10" id="tablet_5">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/ipad-pro-129-2020-wi-fi-128gb">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/3/24/637206509278186097_ipad-pro-129-wf-dd.png" alt="iPad Pro 12.9 2020 WI-FI 128GB" title="iPad Pro 12.9 2020 WI-FI 128GB" height="214">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/21/637546068952545209_ipad-pro-12-9-cell-dd.jpg" alt="iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB" height="214">
                                     </span>
                                 </a>
                                 <div class="cdt-product__label">
@@ -454,38 +469,33 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/ipad-pro-129-2020-wi-fi-128gb" title="iPad Pro 12.9 2020 WI-FI 128GB" class="cdt-product__name">iPad Pro 12.9 2020 WI-FI 128GB</a>
+                                    <a href="" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB" class="cdt-product__name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB</a>
                                 </h3>
                                 <div class="cdt-product__memory--price mmr3-price">
-                                    <div class="mmr-box item1 active">
-                                        <strong>128GB</strong>
-                                    </div>
-                                    <div class="mmr-box item1">
-                                        <strong>256GB</strong>
-                                    </div>
+                                    <div class="mmr-box item1 active"><strong>128GB</strong></div>
+                                    <div onclick="SanPham10()" class="mmr-box item1"><strong>256GB</strong></div>
+                                    <div onclick="SanPham10_3()" class="mmr-box item1"><strong>512GB</strong></div>
                                 </div>
                                 <div class="cdt-product__show-promo">
-                                    <div class="progress pdiscount2">23.999.000 ₫
+                                    <div class="progress pdiscount2">33.999.000 ₫
                                         <div class="progress-bar" style="width: 92%;"></div>
                                     </div>
-                                    <div class="strike-price"><strike>25.999.000 ₫</strike></div>
+                                    <div class="strike-price"><strike>35.999.000 ₫</strike></div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A12Z Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>12.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>6 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>128 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>9720 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A12Z Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>12.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>6 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>128 GB</span>
-                                        <span data-title="Dung lượng pin"><i class="icon-battery-full"></i>9720 mAh</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -497,18 +507,147 @@
                                         <span>
                                             <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
                                         </span>
-                                        <div id="plistppromotion33895" class="cdt-product__text-promo">Giảm thêm 5% tối đa 700.000đ</div>
+                                        <div id="plistppromotion33895" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/ipad-pro-129-2020-wi-fi-128gb" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?ipad-pro-129-2020-wi-fi-128gb" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <div class="cdt-product  product-10_2" id="tablet_5-2">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-cellular-64gb">
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/3/24/637206509278186097_ipad-pro-129-wf-dd.png" alt="iPad Pro 12.9 2021 M1 Wi-Fi 5G 256GB" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 256GB" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 256GB" class="cdt-product__name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 256GB</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham10_2()" class="mmr-box item1"><strong>128GB</strong></div>
+                                    <div class="mmr-box item1 active"><strong>256GB</strong></div>
+                                    <div onclick="SanPham10_3()" class="mmr-box item1"><strong>512GB</strong></div>
+                                </div>
+                                <div class="cdt-product__price">
+                                    <div class="tcdm text-left">
+                                        <div class="price">37.999.000 ₫</div>
+                                    </div>
+                                    <div class="tcdm text-right">
+                                        <span>Chỉ từ</span>
+                                        <p>
+                                            <strong>3.353.000đ</strong>/tháng
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
+                                        
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 700.000đ">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634113728869952_pencil 2.png" alt="Giảm 10% Apple Pencil">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
+                                        </span>
+                                        <div id="plistppromotion33895" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cdt-product  product-10_3" id="tablet_5-3">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/21/637546068952545209_ipad-pro-12-9-cell-dd.jpg" alt="iPad Pro 12.9 2021 M1 Wi-Fi 5G 512GB" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 512GB" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 2.000.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="iPad Pro 12.9 2021 M1 Wi-Fi 5G 512GB" class="cdt-product__name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 512GB</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham10_2()" class="mmr-box item1"><strong>128GB</strong></div>
+                                    <div onclick="SanPham10()" class="mmr-box item1"><strong>256GB</strong></div>
+                                    <div  class="mmr-box item1 active"><strong>512GB</strong></div>
+                                </div>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress pdiscount2">41.999.000 ₫
+                                        <div class="progress-bar" style="width: 92%;"></div>
+                                    </div>
+                                    <div class="strike-price"><strike>43.999.000 ₫</strike></div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">512 GB</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple M1</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">12.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">8 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">512 GB</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 700.000đ">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634113728869952_pencil 2.png" alt="Giảm 10% Apple Pencil">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
+                                        </span>
+                                        <div id="plistppromotion33895" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SP 6-->
+                        <div class="cdt-product ipad product-6" id="tablet_6">
+                            <div class="cdt-product__img">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
                                         <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/19/637361485297525121_ipad-air-10-9-wifi-cel-dd.png" alt="iPad Air 10.9 2020 Wi-Fi + Cellular 64GB" title="iPad Air 10.9 2020 Wi-Fi + Cellular 64GB" height="214">
                                     </span>
@@ -521,13 +660,13 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-cellular-64gb" title="iPad Air 10.9 2020 Wi-Fi + Cellular 64GB" class="cdt-product__name">iPad Air 10.9 2020 Wi-Fi + Cellular 64GB</a>
+                                    <a href="" title="iPad Air 10.9 2020 Wi-Fi + Cellular 64GB" class="cdt-product__name">iPad Air 10.9 2020 Wi-Fi + Cellular 64GB</a>
                                 </h3>
                                 <div class="cdt-product__memory--price mmr3-price">
                                     <div class="mmr-box item1 active">
                                         <strong>64GB</strong>
                                     </div>
-                                    <div class="mmr-box item1">
+                                    <div onclick="SanPham6()" class="mmr-box item1">
                                         <strong>256GB</strong>
                                     </div>
                                 </div>
@@ -536,23 +675,22 @@
                                         <div class="progress-bar" style="width: 99%;"></div>
                                     </div>
                                     <div class="strike-price"><strike>20.999.000 ₫</strike>
-                                        <div class="cd">4 ngày 02:34:35</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A14 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A14 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A14 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>64 GB</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A14 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">64 GB</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -568,49 +706,57 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-cellular-64gb" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?ipad-air-10-9-2020-wi-fi-cellular-64gb" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <div class="cdt-product  product-6_2" id="tablet_6-2">
                             <div class="cdt-product__img">
-                                <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-256gb">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/19/637361504114695552_ipad-air-10-9-wifi-256-dd.png" alt="iPad Air 10.9 2020 Wi-Fi 256GB" title="iPad Air 10.9 2020 Wi-Fi 256GB" height="214">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/19/637361485297525121_ipad-air-10-9-wifi-cel-dd.png" alt="iPad Air 10.9 2020 Wi-Fi + Cellular 256GB" title="iPad Air 10.9 2020 Wi-Fi + Cellular 256GB" height="214">
                                     </span>
                                 </a>
                                 <div class="cdt-product__label">
                                     <span class="badge badge-warning">Trả góp 0%</span>
-                                    <span class="badge badge-primary">Giảm 200.000đ</span>
                                 </div>
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-256gb" title="iPad Air 10.9 2020 Wi-Fi 256GB" class="cdt-product__name">iPad Air 10.9 2020 Wi-Fi 256GB</a>
+                                    <a href="" title="iPad Air 10.9 2020 Wi-Fi + Cellular 256GB" class="cdt-product__name">iPad Air 10.9 2020 Wi-Fi + Cellular 256GB</a>
                                 </h3>
-                                <div class="cdt-product__show-promo">
-                                    <div class="progress">21.299.000 ₫
-                                        <div class="progress-bar" style="width: 99%;"></div>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham6_2()" class="mmr-box item1 ">
+                                        <strong>64GB</strong>
                                     </div>
-                                    <div class="strike-price"><strike>21.499.000 ₫</strike>
-                                        <div class="cd">4 ngày 02:34:13</div>
+                                    <div class="mmr-box item1 active">
+                                        <strong>256GB</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__price">
+                                    <div class="tcdm text-left">
+                                        <div class="price">24.999.000 ₫</div>
+                                    </div>
+                                    <div class="tcdm text-right">
+                                        <span>Chỉ từ</span>
+                                        <p><strong>3.089.000đ</strong>/tháng</p>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A14 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>256 GB</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A14 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="CPU"><i class="icon-cpu"></i>A14 Bionic</span>
-                                        <span data-title="Màn hình"><i class="icon-tablet"></i>10.9"</span>
-                                        <span data-title="RAM&nbsp;"><i class="icon-ram"></i>4 GB</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>256 GB</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">A14 Bionic</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -622,12 +768,176 @@
                                         <span>
                                             <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
                                         </span>
-                                        <div id="plistppromotion35180" class="cdt-product__text-promo">Giảm thêm 5% tối đa 700.000đ</div>
+                                        <div id="plistppromotion35181" class="cdt-product__text-promo">Giảm thêm 5% tối đa 700.000đ</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/may-tinh-bang/ipad-air-10-9-2020-wi-fi-256gb" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?ipad-air-10-9-2020-wi-fi-256gb" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SP 7-->
+                        <div class="cdt-product huawei " id="tablet_7">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://cdn.tgdd.vn/Products/Images/522/241299/huawei-matepad-11-9-1-600x600.jpg" alt="Huawei MatePad 11" title="Huawei MatePad 11" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 1.000.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Huawei MatePad 11" class="cdt-product__name">Huawei MatePad 11</a>
+                                </h3>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress">12.990.000 ₫
+                                        <div class="progress-bar" style="width: 99%;"></div>
+                                    </div>
+                                    <div class="strike-price"><strike>13.990.000 ₫</strike>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 865 8 nhân</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9" IPS LCD</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">6 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
+                                        <span data-title="Pin, Sạc">7250 mAh, 18W</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 865 8 nhân</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">10.9" IPS LCD</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">6 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
+                                        <span data-title="Pin, Sạc">7250 mAh, 18W</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 700.000đ">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634113728869952_pencil 2.png" alt="Giảm 10% Apple Pencil">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
+                                        </span>
+                                        <div id="plistppromotion35180" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SP 8-->
+                        <div class="cdt-product xiaomi " id="tablet_8">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/24/637681006753061490_Xiaomi-Pad-5-256GB-dd.jpg" alt="Xiaomi Pad 5 256GB" title="Xiaomi Pad 5 256GB" height="214">
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Xiaomi Pad 5 256GB" class="cdt-product__name">Xiaomi Pad 5 256GB</a>
+                                </h3>
+                                <div class="cdt-product__price">
+                                    <div class="tcdm text-left">
+                                        <div class="price">10.490.000 ₫</div>
+                                    </div>
+                                    <div class="tcdm text-right">
+                                        <span>Chỉ từ</span>
+                                        <p><strong>1.317.000đ</strong>/tháng</p>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 860</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">11.0"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">6 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>8720 mAh</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 860</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">11.0"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">6 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">256 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>8720 mAh</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ">
+                                        </span>
+                                        <div id="plistppromotion37856" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SP 9-->
+                        <div class="cdt-product lenovo " id="tablet_9">
+                            <div class="cdt-product__img" >
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/24/637681040107389087_lenovo-tab-p11-pro-wi-fi-4g-128gb-dd.jpg" alt="Lenovo Tab P11 Pro WI-FI 4G 128GB" title="Lenovo Tab P11 Pro WI-FI 4G 128GB" height="214">
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 2.500.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Lenovo Tab P11 Pro WI-FI 4G 128GB" class="cdt-product__name">Lenovo Tab P11 Pro WI-FI 4G 128GB</a>
+                                </h3>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress pdiscount2">12.090.000 ₫
+                                        <div class="progress-bar" style="width: 83%;"></div>
+                                    </div>
+                                    <div class="strike-price"><strike>14.590.000 ₫</strike></div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 730G</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">11.5"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>8600 mAh</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Snapdragon 730G</span>
+                                        <span data-title="Màn hình"><img class="icon-display" src="Tablet/Images/computer-tablet.png">11.5"</span>
+                                        <span data-title="RAM&nbsp;"><img class="icon-ram" src="Tablet/Images/ram.png">4 GB</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-hdd" src="Dong ho thong minh\Images\hdd.png">128 GB</span>
+                                        <span data-title="Dung lượng pin"><img class="icon-battery-full" src="Tablet/Images/full-battery.png"><i class="icon-battery-full"></i>8600 mAh</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ">
+                                        </span>
+                                        <div id="plistppromotion37820" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
@@ -703,6 +1013,9 @@
               </div>
             </div>
         </footer>
+
+        <script type="text/javascript" src="event.js"></script>
+        <script type="text/javascript" src="Tablet/select.js"></script>
 
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="js/home_page/image_carousel.js"></script>

@@ -27,13 +27,6 @@
     background-color: #fff;  
     }
   
-  a {
-    color: #0168fa;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;  
-    }
-  
   .container {
     max-width: 100%;
     width: 123rem;
@@ -62,12 +55,6 @@
         width: 100%;  
     }  
     }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;  
-    }
-  
   
   
   h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
@@ -175,9 +162,10 @@
     }
   
   .btn-secondary {
-    color: #fff;
-    background: #99a2aa;
-    outline: none;  
+    color: #cb1c22;
+    background: #fff;
+    border: 1px solid #cb1c22;
+    outline: 0;  
     }
     .btn-secondary:active {
       outline: none;
@@ -189,7 +177,7 @@
     }
   
   .btn-secondary:hover {
-    background: #6c757d;  
+    background: #ced4da;  
     }
   
   .btn-primary:disabled {
@@ -285,56 +273,7 @@
     background: #343a40;  
     }
   
-  
-  /*---breadcrumb---*/
-  .breadcrumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 15px 40px; 
-    }
-    .breadcrumb-margin {
-      margin-top: 10px;
-      margin-bottom: 10px;  
-    }
-    .breadcrumb-item {
-      color: #0275d8;
-      line-height: 24px;
-      font-size: 14px;  
-    }
-    .breadcrumb-item + .breadcrumb-item:before {
-        display: inline-block;
-        padding-right: 5px;
-        padding-left: 5px;
-        color: #cccccc;
-        font-size: 16px;
-        content: '/';  
-    }
-      @media only screen and (max-width: 600px) {
-        .breadcrumb-item {
-          font-size: 12.4px;
-          line-height: 12.4px;  
-    }  
-    }
-    .breadcrumb-item a {
-        font-size: 14px;
-        line-height: 20px;
-        color: #0275d8;  
-    }
-        @media only screen and (max-width: 600px) {
-          .breadcrumb-item a {
-            font-size: 12.4px;
-            line-height: 12.4px;
-            color: #4a4a4a;  
-    }  
-    }
-    .breadcrumb-item:last-child {
-        color: #212529;  
-    }
-  
+
   
   /*---card---*/
   .card {

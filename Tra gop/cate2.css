@@ -2,7 +2,7 @@ body {
     background-color: #f3f3f3;
 }
 
-.fs-ctf-cl {
+.fs-ctf-cl1 {
     background: transparent;
 }
 
@@ -606,7 +606,7 @@ body {
 }
 
 
-    f-cmtpaging2 .f-cmtpg-f,
+    .f-cmtpaging2 .f-cmtpg-f,
     .f-cmtpaging2 .f-cmtpg-l,
     .f-cmtpaging2 ul li a {
         display: inline-block;
@@ -621,3 +621,10 @@ body {
         margin-left: 3px;
         border: 1px solid #bbbbbb;
     }
+
+/* --------- mobile------------ */
+@media only screen and (max-width: 759px) {
+    .fs-tgtopmn li {
+        padding: 0 4px;
+    }
+}

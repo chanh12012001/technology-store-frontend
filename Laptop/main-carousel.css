@@ -4,7 +4,6 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    background-color: #FFCC01;
 }
 
 .main-carousel{
@@ -63,10 +62,31 @@
     object-fit: cover;
     border-radius: 5px;
   }
+
+.main-carousel3{
+    margin: 10px 10px;
+    overflow: hidden;
+}
+.cell3 {
+    width: 25%;
+    margin: 0px 3px;
+    overflow: hidden;
+    counter-increment: cell;
+    text-align: center;   
+    background-color: #fff; 
+  }
+  
+  .cell3 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
 .main-carousel .flickity-page-dots {
    position: static;
 }
-
+.main-carousel3 .flickity-page-dots {
+    display: none;
+}
 #slider-wrapper {
     margin: 0px 27px;
     display: flex;
@@ -91,17 +111,49 @@
 /* --------- mobile------------ */
 @media only screen and (max-width: 759px) {
     .banner-image-wrapper {
-        display: none;
+      margin: 15px 10px;
     }
-
+    #slider-wrapper {
+      margin: 0px 10px;
+      display: flex;
+      justify-content: space-between;
+    }
     .main-carousel{
         margin: 10px 10px;
     }
-
-    .cell {
+      .cell {
         width: 100%;
-    }
+      }
+      .cell img {
+        height: 100%;
+      }
 
+    .main-carousel1{
+      margin: 10px 5px;
+    }
+      .cell1 img {
+        height: 100%;
+      }
+
+    .main-carousel2{
+      margin: 0px 2px;
+    }
+      .cell2 {
+          width: 100%;
+      }
+      .cell2 img {
+        height: 100%;
+      }
+
+    .main-carousel3{
+      margin: 10px 5px;
+    }
+      .cell3 {
+        width: 50%;
+      }
+      .cell3 img {
+        height: 100%;
+      }
     .previous, .next {
         display: none;
     }
@@ -115,7 +167,7 @@
   }
   /* fill-in selected dot */
   .flickity-page-dots .dot.is-selected {
-    background: rgb(0, 0, 0);
+    background: #fff;
   }
 }
 
@@ -125,11 +177,23 @@
     .banner-image-wrapper {
         margin: 15px 20px;
     }
-
+    #slider-wrapper {
+      margin: 0px 10px;
+      display: flex;
+      justify-content: space-between;
+    }
     .main-carousel{
         margin: 15px 20px;
     }
-
+    .main-carousel3{
+      margin: 10px 5px;
+    }
+      .cell3 {
+        width: 33.33%;
+      }
+      .cell3 img {
+        height: 100%;
+      }
     .banner-image-inner {
         width: 100%;
     }

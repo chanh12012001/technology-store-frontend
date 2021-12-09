@@ -6,6 +6,11 @@
     -o-transition:all .3s;
     transition:all .3s
 }
+.product-1_2,.product-2_2,.product-3_2,.product-4_2
+,.product-5_2,.product-6_2,.product-7_2,.product-8_2,.product-9_2
+,.product-10_2,.product-10_3,.product-11_2,.product-11_3{
+    display: none;
+}
 .cdt-product-wrapper{
     display:-webkit-box;
     display:-ms-flexbox;
@@ -13,11 +18,7 @@
     -ms-flex-wrap:wrap;
     flex-wrap:wrap
 }
-.cdt-product-wrapper .cdt-product{
-    -ms-flex-preferred-size:33.33%;
-    flex-basis:33.33%;
-    width:33.33%
-}
+
 .cdt-product__img{
     margin-bottom:15px;
     position:relative;
@@ -197,7 +198,7 @@
     font-size:11px;
     font-weight:400;
     line-height:normal;
-    color:#6c757d
+    color:#333
 }
 @media (max-width:1200px){
     .cdt-product__memory--price .mmr-box strong{
@@ -270,10 +271,10 @@
 }
 .cdt-product__config__param span{
     display:inline-block;
-    font-size:14px;
+    font-size:15px;
     line-height:19px;
-    color:#6c757d;
-    margin-bottom:9px;
+    color:#333;
+    margin-bottom:10px;
     position:relative;
     cursor:help
 }
@@ -318,7 +319,7 @@
     visibility:visible
 }
 .cdt-product__config__param span:not(:last-child){
-    margin-right:10px
+    margin-right:20px
 }
 .cdt-product__config__param span i{
     margin-right:5px;
@@ -392,15 +393,13 @@
     text-align:center;
     padding:10px 0
 }
-.cdt-product__btn .btn:hover{
-    color:#fff
-}
+
 .cdt-product__btn .btn-main{
-    width:160px;
+    width:48%;
     margin-right:10px
 }
 .cdt-product__btn .btn-sub{
-    width:100px;
+    width:48%;
     font-weight:500
 }
 
@@ -469,6 +468,12 @@
     margin-bottom:0
 }
 .cdt-product-wrapper .cdt-product{
+    -ms-flex-preferred-size:33.33%;
+    flex-basis:33.33%;
+    width:33.33%;
+    height:100%
+}
+.cdt-product-wrapper .cdt-product-1{
     -ms-flex-preferred-size:33.33%;
     flex-basis:33.33%;
     width:33.33%;
@@ -748,4 +753,25 @@
 }
 .cdt-product-wrapper.list-layout .cdt-product__btn .btn-sub{
     width:96px
+}
+
+/* mobile: width <740px */
+@media only screen and (max-width: 759px){
+    
+    .cdt-product-wrapper .cdt-product {
+        width: 50%;
+        flex-basis: unset;
+    }
+    .cdt-product__btn {
+        padding: 0px 5px;
+        left: 2px;
+    }
+    .cdt-product__btn .btn {
+        width: 150px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .cdt-product__show-promo {
+        display: inline;
+    }
 }

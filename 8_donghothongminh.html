@@ -19,103 +19,144 @@
 
         <link rel="stylesheet" href="css/home_page/footer.css">
         <link rel="stylesheet" href="Dong ho thong minh/style.css">
+        <link rel="stylesheet" href="Dong ho thong minh/icon.css">
+        <script src="js/home_page/header.js"></script>
 
-        <link rel="stylesheet" href="event.js">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link type="text/css" rel="stylesheet" href="Laptop/main-carousel.css">
         <title>Công nghệ Store</title>
     </head>
 
-    <body>  
+    <body onresize="loading()">  
         <!--header-->     
         <div class="header">
-            <div class="header_top">
-                <div class='header_menu'>
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
                     <i class="fas fa-bars"></i>
                 </div>
-                <a1 href="/">
-                    <img class="icon_logo" src="images\logoQStore.png" alt="">
-                </a1>
-                <a1 href="" class="header_address">
+                <a href="">
+                    <img class="icon_logo" src="css/home_page/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
                     <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
-                </a1>   
+                </a>   
                 <div class='header_search'>
                     <input type="text" class='input' placeholder="Tìm kiếm...">
                     <i class="fas fa-search icon-search"></i>
                 </div>
-                <a1 href="" class='header_shoppingcart'>
+                <a href="13_giohang.html" class='header_shoppingcart'>
                     <i class="fas fa-shopping-cart"></i>
                     <span id='content_shopping_cart_header'>Giỏ hàng</span> 
-                </a1>
-                <a1 href="" class='header_history'>Lịch sử <br> đơn hàng</a1>
-                <a1 href="" class='header_ad'>
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
                     <span class='dot_content'><span class='dot_animation'></span></span>
                     Mua thẻ nạp ngay
-                </a1>
-                <a1 href="" class='header_new'>
+                </a>
+                <a href="" class='header_new'>
                     Tin tức
-                </a1>
-                <a1 href="" class='header_QA'>
+                </a>
+                <a href="" class='header_QA'>
                     Hỏi đáp
-                </a1>
+                </a>
             </div>
 
-            <div class="header_main">
+            <div class="header_main" id='header_m'>
                 <div>
                     <ul class="main-menu">
                         <li>
-                            <a1 href="">
+                            <a href="3_dienthoai.html">
                                 <i class="fas fa-mobile-alt"></i>
                                 <span>Điện thoại</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="4_laptop.html">
                                 <i class="fas fa-laptop"></i>
                                 <span>Laptop</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="5_tablet.html">
                                 <i class="fas fa-tablet-alt"></i>
                                 <span>Tablet</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="6_hanggiadung.html">
                                 <i class="fas fa-blender"></i>
                                 <span>Hàng gia dụng</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="7_phukien.html">
                                 <i class="fas fa-headphones"></i>
                                 <span>Phụ kiện</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="8_donghothongminh.html">
                                 <i class="fas fa-clock"></i>
                                 <span>Đồng hồ thông minh</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="9_sim&the.html">
                                 <i class="fas fa-sim-card"></i>
                                 <span>Sim & Thẻ</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="2_suachua.html">
                                 <i class="fas fa-tools"></i>    
                                 <span>Sửa chữa</span>
-                            </a1>
+                            </a>
                         </li>
                         <li>
-                            <a1 href="">
+                            <a href="11_tragop_ĐT.html">
                                 <i class="fas fa-hand-holding-usd"></i>
                                 <span>Trả góp 0%</span>
-                            </a1>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -125,7 +166,7 @@
         <div class="row f-event-container">
             <ol class="breadcrumb breadcrumb-margin">
                 <li class="breadcrumb-item">
-                    <a href="/" title="Trang chủ">Trang chủ</a>
+                    <a href="1_index.html" title="Trang chủ">Trang chủ</a>
                 </li>
                 <li class="breadcrumb-item active">Phụ kiện</li>
             </ol>
@@ -142,56 +183,36 @@
         </div>
         <!--Dong ho thong minh-->
         <div class="col-9 p-0">
+            <!--Hãng sản xuất-->
             <div class="card m-b-30 fpheadbox">
                 <div class="card-header">
-                    <div class="cdt-head">
-                        <h1 class="cdt-head_title">Đồng hồ thông minh<span>(69 sản phẩm)</span></h1>
+                    <div onclick="Smartwatch()" class="cdt-head">
+                        <button class="cdt-head_title" style="width:350px">Đồng hồ thông minh</button>
                     </div>
                 </div>
                 <div class="card-body cdt-brand-pd">
                     <div class="cdt-brand-img swiper-container swiper-container-horizontal">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide-active">
-                                <a href="/smartwatch/apple-watch">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340508272454264_Watch-Apple@2x.jpg" alt="Apple (Watch)">
-                                </a>
-                            </div>
-                            <div class="swiper-slide swiper-slide-next">
-                                <a href="/smartwatch/samsung">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/smartwatch/oppo">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/23/637390711269805103_Oppo@2x.jpg" alt="OPPO">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/smartwatch/xiaomi">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/smartwatch/garmin">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494666861275_Garmin@2x.jpg" alt="Garmin">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/smartwatch/masstel">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel">
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="/smartwatch/huawei">
-                                    <img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_Huawei@2x.jpg" alt="Huawei">
-                                </a>
-                            </div>
+                            <div onclick="Apple()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340508272454264_Watch-Apple@2x.jpg" alt="Apple (Watch)"></a></div>
+                            <div onclick="Samsung()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></a></div>
+                            <div onclick="Oppo()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/23/637390711269805103_Oppo@2x.jpg" alt="OPPO"></a></div>
+                            <div onclick="Xiaomi()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></a></div>
+                            <div onclick="Garmin()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494666861275_Garmin@2x.jpg" alt="Garmin"></a></div>
+                            <div onclick="Masstel()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel"></a></div>
+                            <div onclick="Huawei()" class="swiper-slide"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_Huawei@2x.jpg" alt="Huawei"></a></div>
                         </div>
-                        <div class="swiper-button-next swiper-button-disabled">
-                            <i class="icon-right-open-big"></i>
-                        </div>
-                        <div class="swiper-button-prev swiper-button-disabled">
-                            <i class="icon-left-open-big"></i>
+                    </div>
+                </div>
+                <div class="card-body cdt-brand-pd1">
+                    <div class="cdt-brand-img swiper-container swiper-container-horizontal">
+                        <div class="main-carousel1">
+                            <div onclick="Apple()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340508272454264_Watch-Apple@2x.jpg" alt="Apple (Watch)"></div>
+                            <div onclick="Samsung()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></div>
+                            <div onclick="Oppo()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/23/637390711269805103_Oppo@2x.jpg" alt="OPPO"></div>
+                            <div onclick="Xiaomi()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></div>
+                            <div onclick="Garmin()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494666861275_Garmin@2x.jpg" alt="Garmin"></div>
+                            <div onclick="Masstel()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel"></div>
+                            <div onclick="Huawei()" class="cell1"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340494667486283_Huawei@2x.jpg" alt="Huawei"></div>
                         </div>
                     </div>
                 </div>
@@ -201,43 +222,22 @@
             </div>
             <div class="card fplistbox">
                 <div class="card-body p-0 p-t-15 p-b-30 fplistpdbox">
+                    <!--Lọc-->
                     <div class="cdt-normal p-l-15 p-r-15 m-b-25 sortfirstbox">
                         <div class="cdt-list-tab">
-                            <span>Ưu tiên xem: </span>
-                            <div class="btn-group">
-                                <ul class="listfilterv4" data-query="sort">
-                                    <li class="frowitem sort sortdefault active">
-                                        <a class="btn btn-outline-secondary" data-value="ban-chay-nhat">Bán chạy nhất</a>
-                                    </li>
-                                    <li class="frowitem sort">
-                                        <a class="btn btn-outline-secondary" data-value="tra-gop-0">Trả góp 0%</a>
-                                    </li>
-                                    <li class="frowitem sort">
-                                        <a class="btn btn-outline-secondary" data-value="gia-thap-den-cao">Giá thấp</a>
-                                    </li>
-                                    <li class="frowitem sort">
-                                        <a class="btn btn-outline-secondary" data-value="gia-cao-den-thap">Giá cao</a>
-                                    </li><li class="frowitem sort">
-                                        <a class="btn btn-outline-secondary" data-value="uu-dai-online">Ưu đãi online</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="frow" id="sort"></div>
                         </div>
-                        <div class="cdt-grid-list">
-                            <label class="cdt-dropdown">
-                                <div class="cdt-dropdown-button">Bán chạy nhất</div>
-                                <ul class="cdt-dropdown-menu">
-                                    <li class="frowitem sort sortdefault active" data-value="ban-chay-nhat">Bán chạy nhất</li>
-                                    <li class="frowitem sort" data-value="tra-gop-0">Trả góp 0%</li>
-                                    <li class="frowitem sort" data-value="gia-thap-den-cao">Giá thấp</li>
-                                    <li class="frowitem sort" data-value="gia-cao-den-thap">Giá cao</li>
-                                    <li class="frowitem sort" data-value="uu-dai-online">Ưu đãi online</li>
-                                </ul>
-                            </label>
-                        </div>
+                        <select onclick="Select_smartwatch()" class="ddlViewBy_smartwatch">
+                            <option>Ưu đãi online</option>
+                            <option>Trả góp 0%</option>
+                            <option>Giá thấp</option>
+                            <option>Giá cao</option>
+                        </select>
                     </div>
+                    <!--Sản phẩm-->
                     <div class="cdt-product-wrapper m-b-20">
-                        <div class="cdt-product  ">
+                        <!--SP 1-->
+                        <div class="cdt-product samsung product-1 " id="smartwatch_1">
                             <div class="cdt-product__img">
                                 <a href="/smartwatch/dong-ho-samsung-galaxy-watch-4?size-mat=40-mm">
                                     <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/26/637655667503189019_samsung-galaxy-watch-4-hong-small-dd.jpg" alt="Samsung Galaxy Watch 4 40mm" title="Samsung Galaxy Watch 4 40mm" height="214">
@@ -251,10 +251,10 @@
                                     <a href="/smartwatch/dong-ho-samsung-galaxy-watch-4?size-mat=40-mm" title="Samsung Galaxy Watch 4 40mm" class="cdt-product__name">Samsung Galaxy Watch 4 40mm</a>
                                 </h3>
                                 <div class="cdt-product__memory--price mmr3-price">
-                                    <div class="mmr-box item1 active">
+                                    <div class="mmr-box item1 active" id="0">
                                         <strong>40 mm</strong>
                                     </div>
-                                    <div class="mmr-box item1">
+                                    <div onclick="SanPham1()" class="mmr-box item1" id="1">
                                         <strong>44 mm</strong>
                                     </div>
                                 </div>
@@ -264,32 +264,85 @@
                                     </div>
                                     <div class="tcdm text-right">
                                         <span>Chỉ từ</span>
-                                        <p><strong>985.000đ</strong>/tháng</p>
+                                        <p><strong>985.000đ</strong>/ tháng</p>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.2"</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Exynos W920</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>16 GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.2"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.2"</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Exynos W920</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>16 GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.2"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/smartwatch/dong-ho-samsung-galaxy-watch-4?size-mat=40-mm" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-4-40mm" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
+                        <div class="cdt-product  product-1_2" id="smartwatch_1-2">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/15/637646596475707571_samsung-galaxy-watch-4-xanh-dd.jpg" alt="Samsung Galaxy Watch 4 44mm" title="Samsung Galaxy Watch 4 44mm" height="214">
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Samsung Galaxy Watch 4 40mm" class="cdt-product__name">Samsung Galaxy Watch 4 44mm</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham1_2()" class="mmr-box item1 ">
+                                        <strong>40 mm</strong>
+                                    </div>
+                                    <div class="mmr-box item1 active">
+                                        <strong>44 mm</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__price">
+                                    <div class="tcdm text-left">
+                                        <div class="price">6.990.000 ₫</div>
+                                    </div>
+                                    <div class="tcdm text-right">
+                                        <span>Chỉ từ</span>
+                                        <p><strong>1.060.000đ</strong>/ tháng</p>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SP 2 -->
+                        <div class="cdt-product samsung product-2" id="smartwatch_2">
                             <div class="cdt-product__img">
                                 <a href="/smartwatch/samsung-galaxy-watch-4-classic?size-mat=42-mm">
                                     <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/25/637654844132831247_samsung-galaxy-watch-4-classic-small-bac-dd.jpg" alt="Samsung Galaxy Watch 4 Classic 42mm" title="Samsung Galaxy Watch 4 Classic 42mm" height="214">
@@ -306,7 +359,7 @@
                                     <div class="mmr-box item1 active">
                                         <strong>42 mm</strong>
                                     </div>
-                                    <div class="mmr-box item1">
+                                    <div onclick="SanPham2()" class="mmr-box item1">
                                         <strong>46 mm</strong>
                                     </div>
                                 </div>
@@ -316,32 +369,85 @@
                                     </div>
                                     <div class="tcdm text-right">
                                         <span>Chỉ từ</span>
-                                        <p><strong>1.285.000đ</strong>/tháng</p>
+                                        <p><strong>1.285.000đ</strong>/ tháng</p>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.2"</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Exynos W920</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>16 GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.2"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.2"</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Exynos W920</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>16 GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.2"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/smartwatch/samsung-galaxy-watch-4-classic?size-mat=42-mm" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-4-classic-42mm" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  product-sale">
+                        <div class="cdt-product  product-2_2" id="smartwatch_2-2">
+                            <div class="cdt-product__img">
+                                <a href="/smartwatch/samsung-galaxy-watch-4-classic?size-mat=46-mm">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/15/637646652027504452_samsung-galaxy-watch-4-classic-den-dd.jpg" alt="Samsung Galaxy Watch 4 Classic 46mm" title="Samsung Galaxy Watch 4 Classic 46mm" height="214">
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="/smartwatch/samsung-galaxy-watch-4-classic?size-mat=46-mm" title="Samsung Galaxy Watch 4 Classic 42mm" class="cdt-product__name">Samsung Galaxy Watch 4 Classic 46mm</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham2_2()" class="mmr-box item1">
+                                        <strong>42 mm</strong>
+                                    </div>
+                                    <div class="mmr-box item1 active">
+                                        <strong>46 mm</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__price">
+                                    <div class="tcdm text-left">
+                                        <div class="price">8.990.000 ₫</div>
+                                    </div>
+                                    <div class="tcdm text-right">
+                                        <span>Chỉ từ</span>
+                                        <p><strong>1.360.000đ</strong>/ tháng</p>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos W920</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">16 GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SP 3 -->
+                        <div class="cdt-product apple product-3" id="smartwatch_3">
                             <div class="cdt-product__img" >
                                 <a href="/smartwatch/apple-watch-se-gps-40mm-vien-nhom-day-cao-su">
                                     <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/29/637369907197319165_Apple&nbsp;Watch SE GPS&nbsp;40mm dai dien.png" alt="Apple&nbsp;Watch SE GPS&nbsp;40mm viền nhôm dây cao su" title="Apple&nbsp;Watch SE GPS&nbsp;40mm viền nhôm dây cao su" height="214">
@@ -359,7 +465,7 @@
                                     <div class="mmr-box item1 active">
                                         <strong>40 mm</strong>
                                     </div>
-                                    <div class="mmr-box item1">
+                                    <div onclick="SanPham3()" class="mmr-box item1">
                                         <strong>44 mm</strong>
                                     </div>
                                 </div>
@@ -373,18 +479,18 @@
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>40mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S5</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">40mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S5</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>40mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S5</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">40mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S5</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -397,14 +503,76 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/smartwatch/apple-watch-se-gps-40mm-vien-nhom-day-cao-su" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-se-gps-40mm-vien-nhom-day-cao-su" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  product-sale">
+                        <div class="cdt-product  product-3_2" id="smartwatch_3-2">
+                            <div class="cdt-product__img" >
+                                <a href="">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/29/637369907304814905_Apple&nbsp;Watch SE GPS&nbsp;44mm den dai dien.png" alt="Apple&nbsp;Watch SE GPS&nbsp;44mm viền nhôm dây cao su" title="Apple&nbsp;Watch SE GPS&nbsp;44mm viền nhôm dây cao su" height="214">
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 1.500.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Apple&nbsp;Watch SE GPS&nbsp;40mm viền nhôm dây cao su" class="cdt-product__name">Apple&nbsp;Watch SE GPS&nbsp;44mm viền nhôm dây cao su</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham3_2()" class="mmr-box item1 ">
+                                        <strong>40 mm</strong>
+                                    </div>
+                                    <div class="mmr-box item1 active">
+                                        <strong>44 mm</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress pdiscount2">8.499.000 ₫
+                                        <div class="progress-bar" style="width: 89%;"></div>
+                                    </div>
+                                    <div class="strike-price">
+                                        <strike>9.999.000 ₫</strike>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">44mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S5</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">44mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S5</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                        </span>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
+                                        </span>
+                                        <div id="plistppromotion35121" class="cdt-product__text-promo"> Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SP 4 -->
+                        <div class="cdt-product apple product-4" id="smartwatch_4">
                             <div class="cdt-product__img"  >
-                                <a href="/smartwatch/apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su">
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
                                         <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/29/637369904317142085_apple-watch-series-6-gps-40mm-dd.png" alt="Apple Watch Series 6 GPS 40mm viền nhôm dây cao su" title="Apple Watch Series 6 GPS 40mm viền nhôm dây cao su" height="214">
                                     </span>
@@ -416,11 +584,11 @@
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/smartwatch/apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su" title="Apple Watch Series 6 GPS 40mm viền nhôm dây cao su" class="cdt-product__name">Apple Watch Series 6 GPS 40mm viền nhôm dây cao su</a>
+                                    <a href="" title="Apple Watch Series 6 GPS 40mm viền nhôm dây cao su" class="cdt-product__name">Apple Watch Series 6 GPS 40mm viền nhôm dây cao su</a>
                                 </h3>
                                 <div class="cdt-product__memory--price mmr3-price">
                                     <div class="mmr-box item1 active"><strong>40 mm</strong></div>
-                                    <div class="mmr-box item1"><strong>44 mm</strong></div>
+                                    <div onclick="SanPham4()" class="mmr-box item1"><strong>44 mm</strong></div>
                                 </div>
                                 <div class="cdt-product__show-promo">
                                     <div class="progress">9.479.000 ₫
@@ -428,23 +596,22 @@
                                     </div>
                                     <div class="strike-price">
                                         <strike>11.999.000 ₫</strike>
-                                        <div class="cd">5 ngày 08:28:48</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>40mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S6</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">40mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S6</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>40mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S6</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>32GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">40mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S6</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
@@ -457,109 +624,191 @@
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/smartwatch/apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  ">
-                            <div class="cdt-product__img">
-                                <a href="/smartwatch/dong-ho-thong-minh-garmin-forerunner-245">
+                        <div class="cdt-product  product-4_2" id="smartwatch_4-2">
+                            <div class="cdt-product__img"  >
+                                <a href="">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/5/637532091680200208_forerunner-245-xam-dd.jpg" alt="Đồng hồ thông minh Garmin Forerunner 245" title="Đồng hồ thông minh Garmin Forerunner 245" height="214">
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="cdt-product__info">
-                                h3>
-                                    <a href="/smartwatch/dong-ho-thong-minh-garmin-forerunner-245" title="Đồng hồ thông minh Garmin Forerunner 245" class="cdt-product__name">Đồng hồ thông minh Garmin Forerunner 245</a>
-                                </h3>
-                                <div class="cdt-product__price">
-                                    <div class="tcdm text-left">
-                                        <div class="price">7.790.000 ₫</div>
-                                    </div>
-                                </div>
-                                <div class="cdt-product__config list-layout">
-                                    <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1,2” (30,4 mm)</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>200 giờ dữ liệu hoạt động</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>silicone</span>
-                                    </div>
-                                </div>
-                                <div class="cdt-product__config">
-                                    <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1,2” (30,4 mm)</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>200 giờ dữ liệu hoạt động</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>silicone</span>
-                                    </div>
-                                </div>
-                                <div class="cdt-product__btn">
-                                    <a href="/smartwatch/dong-ho-thong-minh-garmin-forerunner-245" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?dong-ho-thong-minh-garmin-forerunner-245" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cdt-product  ">
-                            <div class="cdt-product__img">
-                                <a href="/smartwatch/apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna">
-                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2018/11/15/636778799310641475_00509082-1.jpg" alt="Apple Watch Series 3 GPS 38mm viền nhôm dây cao su" title="Apple Watch Series 3 GPS 38mm viền nhôm dây cao su" height="214">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/9/29/637369905092301429_Apple&nbsp;Watch Series&nbsp;6 GPS&nbsp;44mm dai dien.png" alt="Apple Watch Series 6 GPS 44mm viền nhôm dây cao su" title="Apple Watch Series 6 GPS 44mm viền nhôm dây cao su" height="214">
                                     </span>
                                 </a>
                                 <div class="cdt-product__label">
                                     <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 3.000.000đ</span>
                                 </div>
                             </div>
                             <div class="cdt-product__info">
                                 <h3>
-                                    <a href="/smartwatch/apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna" title="Apple Watch Series 3 GPS 38mm viền nhôm dây cao su" class="cdt-product__name">Apple Watch Series 3 GPS 38mm viền nhôm dây cao su</a>
+                                    <a href="" title="Apple Watch Series 6 GPS 44mm viền nhôm dây cao su" class="cdt-product__name">Apple Watch Series 6 GPS 44mm viền nhôm dây cao su</a>
                                 </h3>
                                 <div class="cdt-product__memory--price mmr3-price">
-                                    <div class="mmr-box item1 active">
-                                        <strong>38 mm</strong>
-                                    </div>
-                                    <div class="mmr-box item1">
-                                        <strong>42 mm</strong>
-                                    </div>
+                                    <div onclick="SanPham4_2()" class="mmr-box item1 "><strong>40 mm</strong></div>
+                                    <div class="mmr-box item1 active"><strong>44 mm</strong></div>
                                 </div>
-                                <div class="cdt-product__price">
-                                    <div class="tcdm text-left">
-                                        <div class="price">4.999.000 ₫</div>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress">9.999.000 ₫
+                                        <div class="progress-bar" style="width: 79%;"></div>
                                     </div>
-                                    <div class="tcdm text-right">
-                                        <span>Chỉ từ</span>
-                                        <p><strong>627.500đ</strong>/tháng</p>
+                                    <div class="strike-price">
+                                        <strike>12.999.000 ₫</strike>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config list-layout">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>38mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S3</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>8GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">44mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S6</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                 </div>
                                 <div class="cdt-product__config">
                                     <div class="cdt-product__config__param">
-                                        <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>38mm</span>
-                                        <span data-title="CPU"><i class="icon-cpu"></i>Apple S3</span>
-                                        <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>8GB</span>
-                                        <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Cao su</span>
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">44mm</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Apple S6</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Cao su</span>
                                     </div>
                                     <div class="cdt-product__img-promo">
                                         <span class="active">
                                             <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
                                         </span>
-                                        <div id="plistppromotion26555" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                                        <span>
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FECredit">
+                                        </span>
+                                        <div id="plistppromotion35117" class="cdt-product__text-promo"> Giảm thêm 5% tối đa 500.000đ</div>
                                     </div>
                                 </div>
                                 <div class="cdt-product__btn">
-                                    <a href="/smartwatch/apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                    <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cdt-product  product-sale">
+                        <!-- SP 5 -->
+                        <div class="cdt-product oppo product-5" id="smartwatch_5">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/3/9/637193630528058692_oppo-watch-dd.png" alt="Oppo Watch 41mm Wifi (OW19W6)" title="Oppo Watch 41mm Wifi (OW19W6)" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 1.680.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Oppo Watch 41mm Wifi (OW19W6)" class="cdt-product__name">Oppo Watch 41mm Wifi (OW19W6)</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div class="mmr-box item1 active">
+                                        <strong>41 mm</strong>
+                                    </div>
+                                    <div onclick="SanPham5()" class="mmr-box item1">
+                                        <strong>46 mm</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress">4.310.000 ₫
+                                        <div class="progress-bar" style="width: 72%;"></div>
+                                    </div>
+                                    <div class="strike-price">
+                                        <strike>5.990.000 ₫</strike>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.6"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Qualcomm™ Snapdragon 3100 & Ambiq Micro Apollo3 Wireless SoC</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">RAM 1GB + ROM 8GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.6"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Qualcomm™ Snapdragon 3100 & Ambiq Micro Apollo3 Wireless SoC</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">RAM 1GB + ROM 8GB</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active"><img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ"></span>
+                                        <span class=""><img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE"></span>
+                                        <div  class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cdt-product  product-5_2" id="smartwatch_5-2">
+                            <div class="cdt-product__img">
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/10/26/637393079305036851_oppo-watch-46-den-dd.png" alt="Oppo Watch 46mm Wifi (OW19W8)" title="Oppo Watch 46mm Wifi (OW19W8)" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 2.240.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Oppo Watch 46mm Wifi (OW19W8)" class="cdt-product__name">Oppo Watch 46mm Wifi (OW19W8)</a>
+                                </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div onclick="SanPham5_2()" class="mmr-box item1 ">
+                                        <strong>41 mm</strong>
+                                    </div>
+                                    <div class="mmr-box item1 active">
+                                        <strong>46 mm</strong>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress">5.750.000 ₫
+                                        <div class="progress-bar" style="width: 72%;"></div>
+                                    </div>
+                                    <div class="strike-price">
+                                        <strike>7.990.000 ₫</strike>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình">1.91"</span>
+                                        <span data-title="CPU">Qualcomm™ Snapdragon 3100 & Ambiq Micro Apollo3 Wireless SoC</span>
+                                        <span data-title="Bộ nhớ trong">RAM 1GB + ROM 8GB</span>
+                                        <span data-title="Chất liệu dây">Silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình">1.91"</span>
+                                        <span data-title="CPU">Qualcomm™ Snapdragon 3100 & Ambiq Micro Apollo3 Wireless SoC</span>
+                                        <span data-title="Bộ nhớ trong">RAM 1GB + ROM 8GB</span>
+                                        <span data-title="Chất liệu dây">Silicone</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active"><img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ"></span>
+                                        <span class=""><img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/5/637690318212003228_637650478804710193_icon-fecredit.jpg" alt="Giảm thêm 500.000đ qua thẻ tín dụng FE"></span>
+                                        <div  class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SP 6 -->
+                        <div class="cdt-product samsung " id="smartwatch_6">
                             <div class="cdt-product__img"  >
                                 <a href="/smartwatch/samsung-galaxy-watch-3-45mm-vien-thep-den-day-da">
                                     <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
@@ -575,6 +824,11 @@
                                 <h3>
                                     <a href="/smartwatch/samsung-galaxy-watch-3-45mm-vien-thep-den-day-da" title="Galaxy Watch 3 45mm viền thép đen dây da" class="cdt-product__name">Galaxy Watch 3 45mm viền thép đen dây da</a>
                                 </h3>
+                                <div class="cdt-product__memory--price mmr3-price">
+                                    <div class="mmr-box item1 active">
+                                        <strong>45 mm</strong>
+                                    </div>
+                                </div>
                                 <div class="cdt-product__show-promo">
                                     <div class="progress pdiscount2">5.990.000 ₫<div class="progress-bar" style="width: 60%;"></div>
                                 </div>
@@ -584,27 +838,28 @@
                             </div>
                             <div class="cdt-product__config list-layout">
                                 <div class="cdt-product__config__param">
-                                    <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.4"</span>
-                                    <span data-title="CPU"><i class="icon-cpu"></i>Exynos 9110</span>
-                                    <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>8 GB</span>
-                                    <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Da</span>
+                                    <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                    <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos 9110</span>
+                                    <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">8 GB</span>
+                                    <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Da</span>
                                 </div>
                             </div>
                             <div class="cdt-product__config">
                                 <div class="cdt-product__config__param">
-                                    <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.4"</span>
-                                    <span data-title="CPU"><i class="icon-cpu"></i>Exynos 9110</span>
-                                    <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>8 GB</span>
-                                    <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Da</span>
+                                    <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                    <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos 9110</span>
+                                    <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">8 GB</span>
+                                    <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Da</span>
                                 </div>
                             </div>
                             <div class="cdt-product__btn">
-                                <a href="/smartwatch/samsung-galaxy-watch-3-45mm-vien-thep-den-day-da" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-3-45mm-vien-thep-den-day-da" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                                <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                             </div>
                         </div>
                         </div>
-                        <div class="cdt-product  product-sale">
+                        <!-- SP 7 -->
+                        <div class="cdt-product samsung " id="smartwatch_7">
                         <div class="cdt-product__img"  >
                             <a href="/smartwatch/samsung-galaxy-watch-active-2-44mm">
                                 <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
@@ -620,6 +875,11 @@
                             <h3>
                                 <a href="/smartwatch/samsung-galaxy-watch-active-2-44mm" title="Galaxy Watch Active 2 44mm viền nhôm dây silicone" class="cdt-product__name">Galaxy Watch Active 2 44mm viền nhôm dây silicone</a>
                             </h3>
+                            <div class="cdt-product__memory--price mmr3-price">
+                                <div class="mmr-box item1 active">
+                                    <strong>44 mm</strong>
+                                </div>
+                            </div>
                             <div class="cdt-product__show-promo">
                                 <div class="progress pdiscount2">3.490.000 ₫<div class="progress-bar" style="width: 44%;"></div>
                             </div>
@@ -629,25 +889,125 @@
                         </div>
                         <div class="cdt-product__config list-layout">
                             <div class="cdt-product__config__param">
-                                <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.4"</span>
-                                <span data-title="CPU"><i class="icon-cpu"></i>Exynos 9110</span>
-                                <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>4 GB</span>
-                                <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos 9110</span>
+                                <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">4 GB</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                             </div>
                         </div>
                         <div class="cdt-product__config">
                             <div class="cdt-product__config__param">
-                                <span data-title="Kích thước màn hình"><i class="icon-a-watch"></i>1.4"</span>
-                                <span data-title="CPU"><i class="icon-cpu"></i>Exynos 9110</span>
-                                <span data-title="Bộ nhớ trong"><i class="icon-hdd-black"></i>4 GB</span>
-                                <span data-title="Chất liệu dây"><i class="icon-swatch-material"></i>Silicone</span>
+                                <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.4"</span>
+                                <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">Exynos 9110</span>
+                                <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">4 GB</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicone</span>
                             </div>
                         </div>
                         <div class="cdt-product__btn">
-                            <a href="/smartwatch/samsung-galaxy-watch-active-2-44mm" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                            <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-active-2-44mm" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                         </div>
                     </div>
+                        </div>
+                        <!-- SP 8 -->
+                        <div class="cdt-product garmin " id="smartwatch_8">
+                            <div class="cdt-product__img" >
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/5/637532091680200208_forerunner-245-xam-dd.jpg" alt="Đồng hồ thông minh Garmin Forerunner 245" title="Đồng hồ thông minh Garmin Forerunner 245" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 1.500.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Đồng hồ thông minh Garmin Forerunner 245" class="cdt-product__name">Đồng hồ thông minh Garmin Forerunner 245</a>
+                                </h3>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress pdiscount2">6.290.000 ₫
+                                        <div class="progress-bar" style="width: 81%;"></div>
+                                    </div>
+                                    <div class="strike-price"><strike>7.790.000 ₫</strike></div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1,2” (30,4 mm)</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">200 giờ dữ liệu hoạt động</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">silicone</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1,2” (30,4 mm)</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">200 giờ dữ liệu hoạt động</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">silicone</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ">
+                                        </span>
+                                        <div id="plistppromotion36364" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                                </div>
+                            </div>
+                        <!-- SP 9 -->
+                        <div class="cdt-product xiaomi " id="smartwatch_9">
+                            <div class="cdt-product__img" >
+                                <a href="">
+                                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/14/637539958832788998_xiaomi-mi-band-6-dd.jpg" alt="Vòng đeo tay thông minh Mi Band 6" title="Vòng đeo tay thông minh Mi Band 6" height="214">
+                                    </span>
+                                </a>
+                                <div class="cdt-product__label">
+                                    <span class="badge badge-warning">Trả góp 0%</span>
+                                    <span class="badge badge-primary">Giảm 300.000đ</span>
+                                </div>
+                            </div>
+                            <div class="cdt-product__info">
+                                <h3>
+                                    <a href="" title="Vòng đeo tay thông minh Mi Band 6" class="cdt-product__name">Vòng đeo tay thông minh Mi Band 6</a>
+                                </h3>
+                                <div class="cdt-product__show-promo">
+                                    <div class="progress pdiscount2">990.000 ₫
+                                        <div class="progress-bar" style="width: 77%;"></div>
+                                    </div>
+                                    <div class="strike-price"><strike>1.290.000 ₫</strike></div>
+                                </div>
+                                <div class="cdt-product__config list-layout">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.56"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">DA14697</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32 Mb</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicon</span>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__config">
+                                    <div class="cdt-product__config__param">
+                                        <span data-title="Kích thước màn hình"><img class="icon-a-watch" src="Dong ho thong minh\Images\smartwatch.png">1.56"</span>
+                                        <span data-title="CPU"><img class="icon-cpu" src="Dong ho thong minh\Images\cpu.png">DA14697</span>
+                                        <span data-title="Bộ nhớ trong"><img class="icon-ram" src="Dong ho thong minh\Images\hdd.png">32 Mb</span>
+                                        <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images\material.PNG">Silicon</span>
+                                    </div>
+                                    <div class="cdt-product__img-promo">
+                                        <span class="active">
+                                            <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/4/637426739557050119_logo-moca.png" alt="Giảm thêm 5% tối đa 500.000đ">
+                                        </span>
+                                        <div id="plistppromotion36469" class="cdt-product__text-promo">Giảm thêm 5% tối đa 500.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="cdt-product__btn">
+                                    <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                                    <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cdt-product--loadmore">
@@ -657,381 +1017,597 @@
             </div>
         </div>
         <!-- header image-->
-        <header  class='header_banner'>
-            <img src="Dong ho thong minh/Images/Dâydồnghồ.png" alt="" class='banner'>
-        </header>
+        <div class='banner-image-wrapper'>
+            <img class='banner-image-inner' src="Dong ho thong minh/Images/Dâydồnghồ.png" alt="">
+        </div>
         <!--Day dong ho-->
         <ul class="block__tab">
-            <li data-cate="7978" class="nb active" data-type="h" data-prop="" data-lnk="/day-dong-ho" data-txtdefaut="dây đồng hồ">
-                <a href="javascript:;">Nổi bật</a>
-            </li>
-            <li data-cate="7978" data-type="p" data-prop="167349" data-lnk="/day-dong-ho?g=day-apple-watch" data-txtdefaut="dây đồng hồ Apple">
-                <a href="javascript:;">Apple</a>
-            </li>
-            <li data-cate="7978" data-type="p" data-prop="167350" data-lnk="/day-dong-ho?g=day-samsung-watch" data-txtdefaut="dây đồng hồ Samsung">
-                <a href="javascript:;">Samsung</a>
-            </li>
-
-            <li data-cate="7978" data-type="p" data-prop="178761" data-lnk="/day-dong-ho?g=day-miband" data-txtdefaut="dây đồng hồ Mi Band">
-                <a href="javascript:;">Mi Band</a>
-            </li>
-            <li data-cate="7978" data-type="p" data-prop="168652" data-lnk="/day-dong-ho?g=day-silicone" data-txtdefaut="dây sillicon">
-                <a href="javascript:;">Dây sillicon</a>
-            </li>
-            <li data-cate="7978" data-type="p" data-prop="151621" data-lnk="/day-dong-ho?g=day-da-tong-hop" data-txtdefaut="dây da">
-                <a href="javascript:;">Dây da</a>
-            </li>
+            <button onclick="Noi_bat()" class="head_title active" id='NB'>Nổi bật</button>
+            
+            <button onclick="Apple_2()" class="head_title">Apple</button>
+            
+            <button onclick="Samsung_2()" class="head_title">Samsung</button>
+            
+            <button onclick="Xiaomi_2()" class="head_title">Xiaomi</button>
+            
+            <button onclick="Huawei_2()" class="head_title">Huawei</button>
+           
+            <button onclick="Oppo_2()" class="head_title">Oppo</button>
+            
         </ul>
         <div class="card fplistbox">
             <div class="card-body p-0 p-t-15 p-b-30 fplistpdbox">
                 <div class="cdt-normal p-l-15 p-r-15 m-b-25 sortfirstbox">
                     <div class="cdt-list-tab">
-                        <span>Ưu tiên xem: </span>
-                        <div class="btn-group">
-                            <ul class="listfilterv4" data-query="sort">
-                                <li class="frowitem sort sortdefault active">
-                                    <a class="btn btn-outline-secondary" data-value="ban-chay-nhat">Bán chạy nhất</a>
-                                </li>
-                                <li class="frowitem sort">
-                                    <a class="btn btn-outline-secondary" data-value="tra-gop-0">Trả góp 0%</a>
-                                </li>
-                                <li class="frowitem sort">
-                                    <a class="btn btn-outline-secondary" data-value="gia-thap-den-cao">Giá thấp</a>
-                                </li>
-                                <li class="frowitem sort">
-                                    <a class="btn btn-outline-secondary" data-value="gia-cao-den-thap">Giá cao</a>
-                                </li><li class="frowitem sort">
-                                    <a class="btn btn-outline-secondary" data-value="uu-dai-online">Ưu đãi online</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="cdt-grid-list">
-                        <label class="cdt-dropdown">
-                            <div class="cdt-dropdown-button">Bán chạy nhất</div>
-                            <ul class="cdt-dropdown-menu">
-                                <li class="frowitem sort sortdefault active" data-value="ban-chay-nhat">Bán chạy nhất</li>
-                                <li class="frowitem sort" data-value="tra-gop-0">Trả góp 0%</li>
-                                <li class="frowitem sort" data-value="gia-thap-den-cao">Giá thấp</li>
-                                <li class="frowitem sort" data-value="gia-cao-den-thap">Giá cao</li>
-                                <li class="frowitem sort" data-value="uu-dai-online">Ưu đãi online</li>
-                            </ul>
-                        </label>
-                    </div>
+                    <select onclick="Select_albert()" class="ddlViewBy_albert">
+                        <option>Ưu đãi online</option>
+                        <option>Giá thấp</option>
+                        <option>Giá cao</option>
+                    </select>
                 </div>
-                <div class="cdt-product-wrapper m-b-20">
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img">
-                            <a href="Dong ho thong minh\Images\day-da-dong-ho-1.jpg">
-                                <img src="Dong ho thong minh/Images/day-da-dong-ho-1.jpg" alt="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" title="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" height="214">
-                            </a>
-                        </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="Dong ho thong minh\Images\day-da-dong-ho-1.jpg" title="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" class="cdt-product__name">Dây da tổng hợp Apple Watch mặt 44mm M07-04-44</a>
-                            </h3>
-                            <div class="cdt-product__memory--price mmr3-price">
-                                <div class="mmr-box item1">
-                                    <strong>44 mm</strong>
-                                </div>
-                            </div>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">315.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>450.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây"><i class="Dây Apple watch"></i>Dây Apple watch</span>
-                                    <span data-title="Chất liệu dây"><i class="Dây da tổng hợp"></i>Dây da tổng hợp</span>
-                                    <span data-title="Màu dây"><i class="Phối màu"></i>Phối màu</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây"><i class="Dây Apple watch"></i>Dây Apple watch</span>
-                                    <span data-title="Chất liệu dây"><i class="Dây da tổng hợp"></i>Dây da tổng hợp</span>
-                                    <span data-title="Màu dây"><i class="Phối màu"></i>Phối màu</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/dong-ho-samsung-galaxy-watch-4?size-mat=40-mm" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-4-40mm" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
-                            </div>
+            </div>
+            <!--Sản phẩm-->
+            <div class="cdt-product-strap m-b-20">
+                <!--Sản phẩm 1-->
+                <div class="cdt-product apple_2 " id="albert_1">
+                    <div class="cdt-product__img">
+                        <a href="Dong ho thong minh\Images\day-da-dong-ho-1.jpg">
+                            <img src="Dong ho thong minh/Images/day-da-dong-ho-1.jpg" alt="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" title="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" height="214">
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 135.000đ</span>
                         </div>
                     </div>
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img">
-                            <a href="/Dong ho thong minh/Images/day-dong-ho-2.jpg">
-                                <img src="Dong ho thong minh/Images/day-dong-ho-2.jpg" alt="Dây nhựa TPU Miband 5 M001-03-05" title="Dây nhựa TPU Miband 5 M001-03-05" height="214">
-                            </a>
-                            <div class="cdt-product__label">
-                                <span class="badge badge-warning">Trả góp 0%</span>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="Dong ho thong minh\Images\day-da-dong-ho-1.jpg" title="Dây da tổng hợp Apple Watch mặt 44mm M07-04-44" class="cdt-product__name">Dây da tổng hợp Apple Watch mặt 44mm M07-04-44</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active">
+                                <strong>44 mm</strong>
                             </div>
                         </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="Dong ho thong minh/Images/day-dong-ho-2.jpg" title="Dây nhựa TPU Miband 5 M001-03-05" class="cdt-product__name">Dây nhựa TPU Miband 5 M001-03-05</a>
-                            </h3>
-                            <div class="cdt-product__memory--price mmr3-price">
-                                <div class="mmr-box item1 active">
-                                    <strong>42 mm</strong>
-                                </div>
-                                <div class="mmr-box item1">
-                                    <strong>46 mm</strong>
-                                </div>
-                            </div>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">55.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>8.999.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Miband</span>
-                                    <span data-title="Chất liệu dây">Dây nhựa TPU</span>
-                                    <span data-title="Màu dây">Xanh lá</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Miband</span>
-                                    <span data-title="Chất liệu dây">Dây nhựa TPU</span>
-                                    <span data-title="Màu dây">Xanh lá</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/samsung-galaxy-watch-4-classic?size-mat=42-mm" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?samsung-galaxy-watch-4-classic-42mm" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">315.000 ₫</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img" >
-                            <a href="/Dong ho thong minh/Images/day-dong-ho-3.jpg">
-                                <img src="Dong ho thong minh/Images/day-dong-ho-3.jpg" alt="Dây silicone M04-01-2" title="Dây silicone M04-01-2" height="214">
-                            </a>
-                            <div class="cdt-product__label">
-                                <span class="badge badge-warning">Trả góp 0%</span>
-                                <span class="badge badge-primary">Giảm 1.000.000đ</span>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>450.000 ₫</strike>
                             </div>
                         </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="/Dong ho thong minh/Images/day-dong-ho-3.jpg" title="Dây silicone M04-01-2" class="cdt-product__name">Dây silicone M04-01-2</a>
-                            </h3>
-                            <div class="cdt-product__memory--price mmr3-price">
-                                <div class="mmr-box item1 active">
-                                    <strong>40 mm</strong>
-                                </div>
-                                <div class="mmr-box item1">
-                                    <strong>44 mm</strong>
-                                </div>
-                            </div>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">105.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>150.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Samsung watch, Dây Huawei watch</span>
-                                    <span data-title="Độ rộng dây">20 mm</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Màu dây">Xanh dương</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Samsung watch, Dây Huawei watch</span>
-                                    <span data-title="Độ rộng dây">20 mm</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Màu dây">Xanh dương</span>
-                                </div>
-                                <div class="cdt-product__img-promo">
-                                    <span class="active">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
-                                    </span>
-                                    <div id="plistppromotion35121" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/apple-watch-se-gps-40mm-vien-nhom-day-cao-su" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-se-gps-40mm-vien-nhom-day-cao-su" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Phối màu</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img"  >
-                            <a href="/Dong ho thong minh/Images/day-dong-ho-4.jpg">
-                                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                    <img src="Dong ho thong minh/Images/day-dong-ho-4.jpg" alt="Dây silicone Apple Watch mặt 44 mm M01-02-44" title="Dây silicone Apple Watch mặt 44 mm M01-02-44" height="214">
-                                </span>
-                            </a>
-                        </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="/Dong ho thong minh/Images/day-dong-ho-4.jpg" title="Dây silicone Apple Watch mặt 44 mm M01-02-44" class="cdt-product__name">Dây silicone Apple Watch mặt 44 mm M01-02-44</a>
-                            </h3>
-                            <div class="cdt-product__memory--price mmr3-price">
-                                <div class="mmr-box item1 active"><strong>40 mm</strong></div>
-                                <div class="mmr-box item1"><strong>44 mm</strong></div>
-                            </div>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">140.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>200.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Apple watch</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Chất liệu dây">Xanh dương</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Apple watch</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Chất liệu dây">Xanh dương</span>
-                                </div>
-                                <div class="cdt-product__img-promo">
-                                    <span class="active">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
-                                    </span>
-                                    <div id="plistppromotion35117" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-series-6-gps-40mm-vien-nhom-day-cao-su" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Phối màu</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img">
-                            <a href="/Dong ho thong minh/Images/day-dong-ho-5.jpg">
-                                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                    <img src="Dong ho thong minh/Images/day-dong-ho-5.jpg" alt="45Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" title="Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" height="214">
-                                </span>
-                            </a>
-                        </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="/Dong ho thong minh/Images/day-dong-ho-4.jpg" title="Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" class="cdt-product__name">Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46</a>
-                            </h3>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">132.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>189.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Oppo Watch</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Màu dây">Xanh dương</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Oppo Watch</span>
-                                    <span data-title="Chất liệu dây">Dây silicone</span>
-                                    <span data-title="Màu dây">Xanh dương</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/dong-ho-thong-minh-garmin-forerunner-245" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?dong-ho-thong-minh-garmin-forerunner-245" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cdt-product  ">
-                        <div class="cdt-product__img">
-                            <a href="/Dong ho thong minh/Images/day-dong-ho-6.jpg">
-                                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
-                                    <img src="Dong ho thong minh/Images/day-dong-ho-6.jpg" alt="Dây da tổng hợp M06-04-22" title="Dây da tổng hợp M06-04-22" height="214">
-                                </span>
-                            </a>
-                        </div>
-                        <div class="cdt-product__info">
-                            <h3>
-                                <a href="/Dong ho thong minh/Images/day-dong-ho-6.jpg" title="Dây da tổng hợp M06-04-22" class="cdt-product__name">Dây da tổng hợp M06-04-22</a>
-                            </h3>
-                            <div class="cdt-product__memory--price mmr3-price">
-                                <div class="mmr-box item1 active">
-                                    <strong>40 mm</strong>
-                                </div>
-                                <div class="mmr-box item1">
-                                    <strong>42 mm</strong>
-                                </div>
-                            </div>
-                            <div class="cdt-product__price">
-                                <div class="tcdm text-left">
-                                    <div class="price">280.000 ₫</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__show-promo">
-                                <div class="strike-price">
-                                    <strike>400.000 ₫</strike>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config list-layout">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Samsung watch, Dây Huawei watch</span>
-                                    <span data-title="Độ rộng dây">22 mm</span>
-                                    <span data-title="Chất liệu dây">Dây da tổng hợp</span>
-                                    <span data-title="Màu dây">Nâu</span>
-                                </div>
-                            </div>
-                            <div class="cdt-product__config">
-                                <div class="cdt-product__config__param">
-                                    <span data-title="Loại dây">Dây Samsung watch, Dây Huawei watch</span>
-                                    <span data-title="Độ rộng dây">22 mm</span>
-                                    <span data-title="Chất liệu dây">Dây da tổng hợp</span>
-                                    <span data-title="Màu dây">Nâu</span>
-                                </div>
-                                <div class="cdt-product__img-promo">
-                                    <span class="active">
-                                        <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
-                                    </span>
-                                    <div id="plistppromotion26555" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
-                                </div>
-                            </div>
-                            <div class="cdt-product__btn">
-                                <a href="/smartwatch/apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
-                                <a href="https://fptshop.com.vn/so-sanh-san-pham?apple-watch-series-3-gps-38mm-vien-nhom-day-cao-su-trang-mtey2vna" class="btn btn-secondary btn-sm btn-sub">SO SÁNH</a>
-                            </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
                         </div>
                     </div>
                 </div>
-                <div class="cdt-product--loadmore">
-                    <a class="btn btn-light">Xem thêm</a>
+                <!--Sản phẩm 2-->
+                <div class="cdt-product xiaomi_2 product-6" id="albert_2">
+                    <div class="cdt-product__img">
+                        <a href="">
+                            <img src="Dong ho thong minh/Images/day-dong-ho-2.jpg" alt="Dây nhựa TPU Miband 5 M001-03-05" title="Dây nhựa TPU Miband 5 M001-03-05" height="214">
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 15.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="Dong ho thong minh/Images/day-dong-ho-2.jpg" title="Dây nhựa TPU Miband 5 M001-03-05" class="cdt-product__name">Dây nhựa TPU Miband 5 M001-03-05</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active">
+                                <strong>42 mm</strong>
+                            </div>
+                            <div onclick="SanPham6()" class="mmr-box item1">
+                                <strong>46 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">55.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>70.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Miband</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây nhựa TPU</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh lá</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Miband</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây nhựa TPU</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh lá</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="cdt-product  product-6_2" id="albert_2-2">
+                    <div class="cdt-product__img">
+                        <a href="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/7978/230420/day-nhua-tpu-miband-5-den-m001-06-05-1-600x600.jpg" alt="Dây nhựa TPU Miband 5 M001-03-05" title="Dây nhựa TPU Miband 5 M001-03-05" height="214">
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 15.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây nhựa TPU Miband 5 M001-03-05" class="cdt-product__name">Dây nhựa TPU Miband 5 M001-036-05</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div onclick="SanPham6_2()" class="mmr-box item1 ">
+                                <strong>42 mm</strong>
+                            </div>
+                            <div class="mmr-box item1 active">
+                                <strong>46 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">55.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>70.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Miband</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây nhựa TPU</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Đen</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Miband</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây nhựa TPU</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Đen</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Sản phẩm 3-->
+                <div class="cdt-product samsung_2 huawei_2 product-7" id="albert_3">
+                    <div class="cdt-product__img" >
+                        <a href="">
+                            <img src="Dong ho thong minh/Images/day-dong-ho-3.jpg" alt="Dây silicone M04-01-2" title="Dây silicone M04-01-2" height="214">
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 45.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây silicone M04-01-2" class="cdt-product__name">Dây silicone M04-01-2</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active">
+                                <strong>40 mm</strong>
+                            </div>
+                            <div onclick="SanPham7()" class="mmr-box item1">
+                                <strong>44 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">105.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>150.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">20 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh dương</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">20 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh dương</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion35121" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cdt-product  product-7_2" id="albert_3-2">
+                    <div class="cdt-product__img" >
+                        <a href="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/7978/220037/day-silicone-dong-ho-samsung-huawei-khac-size-20mm-xanh-lam-m04-02-20-1-600x600.jpg" alt="Dây silicone M04-02-20" title="Dây silicone M04-02-20" height="214">
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 45.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây silicone M04-02-20" class="cdt-product__name">Dây silicone M04-02-20</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div onclick="SanPham7_2()" class="mmr-box item1 ">
+                                <strong>40 mm</strong>
+                            </div>
+                            <div class="mmr-box item1 active">
+                                <strong>44 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">105.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>150.000₫ </strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">20 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh lá</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">20 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh lá</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion35121" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Sản phẩm 4-->
+                <div class="cdt-product apple_2 product-8" id="albert_4">
+                    <div class="cdt-product__img"  >
+                        <a href="">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                <img src="https://cdn.tgdd.vn/Products/Images/7978/220007/day-silicone-dong-ho-apple-watch-size-40mm-nau-m01-04-40-thum-600x600.jpg" alt="Dây silicone Apple Watch mặt 44 mm M01-02-44" title="Dây silicone Apple Watch mặt 40 mm M01-04-40" height="214">
+                            </span>
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 60.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây silicone Apple Watch mặt 40 mm M01-04-40" class="cdt-product__name">Dây silicone Apple Watch mặt 40 mm M01-04-40</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active"><strong>40 mm</strong></div>
+                            <div onclick="SanPham8()" class="mmr-box item1"><strong>44 mm</strong></div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">140.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>200.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Nâu</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Nâu</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion35117" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cdt-product  product-8_2" id="albert_4-2">
+                    <div class="cdt-product__img"  >
+                        <a href="">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                <img src="Dong ho thong minh/Images/day-dong-ho-4.jpg" alt="Dây silicone Apple Watch mặt 44 mm M01-02-44" title="Dây silicone Apple Watch mặt 44 mm M01-02-44" height="214">
+                            </span>
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 45.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây silicone Apple Watch mặt 44 mm M01-02-44" class="cdt-product__name">Dây silicone Apple Watch mặt 44 mm M01-02-44</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div onclick="SanPham8_2()" class="mmr-box item1 "><strong>40 mm</strong></div>
+                            <div class="mmr-box item1 active"><strong>44 mm</strong></div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">140.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>200.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Xanh dương</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Apple watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Xanh dương</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion35117" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Sản phẩm 5-->
+                <div class="cdt-product oppo_2 " id="albert_5">
+                    <div class="cdt-product__img">
+                        <a href="">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                <img src="Dong ho thong minh/Images/day-dong-ho-5.jpg" alt="45Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" title="Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" height="214">
+                            </span>
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 57.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46" class="cdt-product__name">Dây da tổng hợp Oppo Watch mặt 46 mm O001-02-46</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active">
+                                <strong>46 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">132.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>189.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Oppo Watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh dương</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Oppo Watch</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây silicone</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Xanh dương</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Sản phẩm 6-->
+                <div class="cdt-product samsung_2 huawei_2 product-9" id="albert_6">
+                    <div class="cdt-product__img">
+                        <a href="">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                <img src="Dong ho thong minh/Images/day-dong-ho-6.jpg" alt="Dây da tổng hợp M06-04-22" title="Dây da tổng hợp M06-04-22" height="214">
+                            </span>
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 120.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây da tổng hợp M06-04-22" class="cdt-product__name">Dây da tổng hợp M06-04-22</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div class="mmr-box item1 active">
+                                <strong>40 mm</strong>
+                            </div>
+                            <div onclick="SanPham9()" class="mmr-box item1">
+                                <strong>42 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">280.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>400.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">22 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Nâu</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">22 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Nâu</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion26555" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cdt-product  product-9_2" id="albert_6-2">
+                    <div class="cdt-product__img">
+                        <a href="">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 214px;">
+                                <img src="https://cdn.tgdd.vn/Products/Images/7978/220029/day-da-dong-ho-samsung-huawei-khac-size-22mm-den-m06-01-22-11-600x600.jpg" alt="Dây da tổng hợp M06-01-22" title="Dây da tổng hợp M06-01-22" height="214">
+                            </span>
+                        </a>
+                        <div class="cdt-product__label">
+                            <span class="badge badge-primary">Giảm 120.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cdt-product__info">
+                        <h3>
+                            <a href="" title="Dây da tổng hợp M06-01-22" class="cdt-product__name">Dây da tổng hợp M06-01-22</a>
+                        </h3>
+                        <div class="cdt-product__memory--price mmr3-price">
+                            <div onclick="SanPham9_2()" class="mmr-box item1 ">
+                                <strong>40 mm</strong>
+                            </div>
+                            <div class="mmr-box item1 active">
+                                <strong>42 mm</strong>
+                            </div>
+                        </div>
+                        <div class="cdt-product__price">
+                            <div class="tcdm text-left">
+                                <div class="price">280.000 ₫</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__show-promo">
+                            <div class="strike-price">
+                                <strike>400.000 ₫</strike>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config list-layout">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">22 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Đen</span>
+                            </div>
+                        </div>
+                        <div class="cdt-product__config">
+                            <div class="cdt-product__config__param">
+                                <span data-title="Loại dây"><img class="icon-watch-strap" src="Dong ho thong minh\Images/watch-strap.png">Dây Samsung watch, Dây Huawei watch</span>
+                                <span data-title="Độ rộng dây">22 mm</span>
+                                <span data-title="Chất liệu dây"><img class="icon-material" src="Dong ho thong minh\Images/material.PNG">Dây da tổng hợp</span>
+                                <span data-title="Màu dây"><img class="icon-color" src="Dong ho thong minh\Images/palette.png">Đen</span>
+                            </div>
+                            <div class="cdt-product__img-promo">
+                                <span class="active">
+                                    <img src="https://images.fpt.shop/unsafe/fit-in/45x45/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/1/637634112282751392_Day AW.png" alt=" Giảm 30% dây đeo chính hãng">
+                                </span>
+                                <div id="plistppromotion26555" class="cdt-product__text-promo"> Giảm 30% dây đeo chính hãng</div>
+                            </div>
+                        </div>
+                        <div class="cdt-product__btn">
+                            <a href="" class="btn btn-primary btn-sm btn-main">MUA NGAY</a>
+                            <a href="" class="btn btn-secondary btn-sm btn-sub">THÊM VÀO GIỎ HÀNG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cdt-product--loadmore">
+                <a class="btn btn-light">Xem thêm</a>
             </div>
         </div>
         <!--Footer-->
@@ -1100,10 +1676,12 @@
               </div>
             </div>
         </footer>
+        
+        <script type="text/javascript" src="event.js"></script>
+        <script type="text/javascript" src="Dong ho thong minh/select.js"></script>
+        <script type="text/javascript" src="Dong ho thong minh/title.js"></script>
 
-        <script src="https://fptshop.com.vn/Scripts/v4/fpt-shop/jfpts.main.js?v=2020101514787"></script>
-        <script src="https://fptshop.com.vn/Content/Publishing/js/sourceutm.min.js?v=6"></script>
-        <style>a.tooltips{outline:none}a.tooltips span{z-index:10;display:none;padding:10px 15px;margin-top:30px;margin-left:-160px;width:280px;-moz-box-shadow:0 0 5px 1px #ccc;-webkit-box-shadow:0 0 5px 1px #ccc;box-shadow:0 0 5px 1px #ccc}a.tooltips:hover span{display:inline;position:absolute;border:1px solid #ccc;background:#fff}.fs-ftrtit{font-size:15px}.box-container .box-left .gallery-thumbs .swiper-wrapper{justify-content:flex-start}.category-container{overflow:unset}.f-search{background-repeat:no-repeat;background-image:url(/Content/v4/images/iconhd.png?v=123);background-size:auto}.f-search{background-position:-7px -87px}.fs-ftcol1{padding:0 12px}</style>
+        <script src="https://fptshop.com.vn/dist/226.cbc2.b.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="js/home_page/image_carousel.js"></script>
         <script type="text/javascript" src="js/home_page/laptop_list_carousel.js"></script>
@@ -1112,5 +1690,6 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
+        
     </body>
 </html>

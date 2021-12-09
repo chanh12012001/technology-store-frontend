@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="Tra gop\cate.css">
+        <link rel="stylesheet" href="Tra gop\cate2.css">
+        <link rel="stylesheet" href="Tra gop\dropdow-bootstrap.css">
+        <link rel="stylesheet" href="Tra gop\popup-bootstrap.css">
+        <link rel="stylesheet" href="Tra gop\reset.css">
+        <link rel="stylesheet" href="Tra gop/style.css">
+        <link rel="stylesheet" href="css/home_page/footer.css">
+        <link rel="stylesheet" href="DienThoai/breadcrumb.css">
+        <link rel="stylesheet" href="Sim&The/mCSB.css">
+        <link rel="stylesheet" href="comment.css">
+        <link rel="stylesheet" href="Tra gop/flickity.css">
+        <link type="text/css" rel="stylesheet" href="Tra gop/main-caroucel.css">
+        <!--JS-->
+        <link rel="stylesheet" href="event.js">
+        <script src="js/home_page/header.js"></script>
+        
+        <title>Công nghệ Store</title>
+    </head>
+
+    <body onload="Loading()">
+        <!--header-->
+        <div class="header">
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="">
+                    <img class="icon_logo" src="css/home_page/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
+                    <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
+                </a>   
+                <div class='header_search'>
+                    <input type="text" class='input' placeholder="Tìm kiếm...">
+                    <i class="fas fa-search icon-search"></i>
+                </div>
+                <a href="13_giohang.html" class='header_shoppingcart'>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id='content_shopping_cart_header'>Giỏ hàng</span> 
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
+                    <span class='dot_content'><span class='dot_animation'></span></span>
+                    Mua thẻ nạp ngay
+                </a>
+                <a href="" class='header_new'>
+                    Tin tức
+                </a>
+                <a href="" class='header_QA'>
+                    Hỏi đáp
+                </a>
+            </div>
+
+            <div class="header_main" id='header_m'>
+                <div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="3_dienthoai.html">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Điện thoại</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4_laptop.html">
+                                <i class="fas fa-laptop"></i>
+                                <span>Laptop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="5_tablet.html">
+                                <i class="fas fa-tablet-alt"></i>
+                                <span>Tablet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="6_hanggiadung.html">
+                                <i class="fas fa-blender"></i>
+                                <span>Hàng gia dụng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="7_phukien.html">
+                                <i class="fas fa-headphones"></i>
+                                <span>Phụ kiện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="8_donghothongminh.html">
+                                <i class="fas fa-clock"></i>
+                                <span>Đồng hồ thông minh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="9_sim&the.html">
+                                <i class="fas fa-sim-card"></i>
+                                <span>Sim & Thẻ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2_suachua.html">
+                                <i class="fas fa-tools"></i>    
+                                <span>Sửa chữa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="11_tragop_ĐT.html">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Trả góp 0%</span>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--tra gop-->
+        <div class="f-wrap">
+            <!--event container-->
+            <div class="row f-event-container">
+                <ol class="breadcrumb breadcrumb-margin">
+                    <li class="breadcrumb-item">
+                        <a href="1_index.html" title="Trang chủ">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active">Trả góp 0%</li>
+                </ol>
+                <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://fptshop.com.vn/"},{"@type":"ListItem","position":2,"name":"Điện thoại","item":"https://fptshop.com.vn/dien-thoai"}]}</script>
+            </div>
+            <!--Tra gop-->
+            <div class="fs-ctf-row clearfix">
+                <!--left-->
+                <div class="fs-ctf-cl">
+                    <div class="fs-ctf-cl2">
+                        <h2 class="fs-ctfl-tit">Chọn gói trả góp</h2>
+                        <div class="fs-ctf-rmain">
+                            <ul class="fs-tgchoose">
+                                <li onclick="installment()" class="" id="active1" >
+                                    <a id="installment-active">
+                                        <span><img src="Tra gop\Images\tg-1.png" ></span>
+                                        <h3>Trả góp 0%</h3>
+                                    </a>
+                                </li>
+                                <li onclick="Low_interest_rates()" class="">
+                                    <a id="Low_interest_rates-active">
+                                        <span><img src="Tra gop\Images\lai-suat.png" alt=""></span>
+                                        <h3>Lãi suất thấp</h3>
+                                    </a>
+                                </li>
+                                <li onclick="credit()" class="">
+                                    <a id="credit-active">
+                                        <span><img src="Tra gop\Images\tra-gop.png" alt=""></span>
+                                        <h3>Trả góp thẻ tín dụng</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--right-->
+                <section class="main-fillter">
+                    <div class="fs-ctf-cr">
+                        <!--navigation bar-->
+                        <div class="fs-ctf-head fs-tgtophd clearfix">
+                            <div class="fs-wrap-list">
+                                <ul class="fs-tgtopmn clearfix menu-fillter">
+                                    <li class="active" data-value="1" data-text="dien-thoai"><a href="11_tragop_ĐT.html" title="">Điện thoại</a></li>
+                                    <li data-text="may-tinh-xach-tay"><a href="10_tragop.html" title="">Laptop</a></li>
+                                    <li data-text="may-tinh-bang"><a href="12_tragop_tablet.html" title="">Máy tính bảng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-carousel-dt">
+                            <div  onclick="Dienthoai_Iphone()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490193124614_iPhone-Apple@2x.jpg" alt="Apple (iPhone)"></div>
+                            <div  onclick="Dienthoai_Samsung()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></div>
+                            <div  onclick="Dienthoai_Oppo()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491304997311_Oppo@2x.jpg" alt="OPPO"></div>
+                            <div  onclick="Dienthoai_Xiaomi()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></div>
+                            <div  onclick="Dienthoai_Vivo()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Vivo@2x.jpg" alt="Vivo"></div>
+                            <div  onclick="Dienthoai_Tecno()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/22/637705137962743415_Tecno@2x.jpg" alt="Tecno"></div>
+                            <div  onclick="Dienthoai_Realme()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Realme@2x.jpg" alt="Realme"></div>
+                            <div  onclick="Dienthoai_Vsmart()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Vsmart@2x.jpg" alt="Vsmart"></div>
+                            <div  onclick="Dienthoai_Nokia()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340493755614653_Nokia@2x.jpg" alt="Nokia"></div>
+                            <div  onclick="Dienthoai_Masstel()" class="cell-dt"><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Masstel@2x.jpg" alt="Masstel"></div>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane tg-type1">
+                                <!--Lọc-->
+                                <div class="fs-ctf-head clearfix">
+                                    <div class="frow" id="sort"></div>
+                                    <div class="fs-ctf-hr clearfix">
+                                        <select onclick="Select_Phone()" class="ddlViewBy">
+                                            <option>Giá cao đến thấp</option>
+                                            <option>Giá thấp đến cao</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--Dien thoai-->
+                                    <!--Trả góp 0%-->
+                                    <div class="fs-carow clearfix fs-row3 viewgrid installment">
+                                        <div class="fs-lapitem iphone" id="tragop_1">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 13 Pro Max 1TB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg" alt="iPhone 13 Pro Max 1TB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 13 Pro Max 1TB"><span>iPhone 13 Pro Max 1TB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">47.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">49.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="tragop_2">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 13 Pro 1TB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/10/14/637698465072908782_iphone-13-pro-1tb-dd.jpg" alt="iPhone 13 Pro 1TB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 13 Pro 1TB"><span>iPhone 13 Pro 1TB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">44.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">46.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem samsung" id="tragop_3">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Samsung Galaxy Z Fold3 5G 512GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/10/25/637707686711533561_samsung-galaxy-z-fold3-den-dd.jpg" alt="Samsung Galaxy Z Fold3 5G 512GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Samsung Galaxy Z Fold3 5G 512GB"><span>Samsung Galaxy Z Fold3 5G 512GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">43.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">44.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                                <div class="fs-ilap-ch mCustomScrollbar"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="tragop_4">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 13 Pro Max 512GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg" alt="iPhone 13 Pro Max 512GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 13 Pro Max 512GB"><span>iPhone 13 Pro Max 512GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">41.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">43.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem oppo" id="tragop_5">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="OPPO Find X3 Pro 5G">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/12/1/637739831332038316_oppo-find-x3-pro-dd.jpg" alt="OPPO Find X3 Pro 5G"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="OPPO Find X3 Pro 5G"><span>OPPO Find X3 Pro 5G</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">19.990.000₫</p>
+                                                        <del class="fs-ilap-pridel">26.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="tragop_6">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 13 Pro 512GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/9/15/637673220884473897_iphone-13-pro-dd-1.jpg" alt="iPhone 13 Pro 512GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 13 Pro 512GB"><span>iPhone 13 Pro 512GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">38.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">40.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem xiaomi" id="tragop_7">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Xiaomi 11T Pro 12GB - 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/10/21/637704130291854176_00773670-dd.jpg" alt="Xiaomi 11T Pro 12GB - 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Xiaomi 11T Pro 12GB - 256GB"><span>Xiaomi 11T Pro 12GB - 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">14.990.000₫</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="tragop_8">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 13 Pro Max 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg" alt="iPhone 13 Pro Max 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 13 Pro Max 256GB"><span>iPhone 13 Pro Max 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">36.490.000₫</p>
+                                                                            <del class="fs-ilap-pridel">36.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem vivo" id="tragop_9">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Vivo V23e 8GB - 128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/11/22/637731793300543684_vivo-v23e-xanh-hong-dd.jpg" alt="Vivo V23e 8GB - 128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Vivo V23e 8GB - 128GB"><span>Vivo V23e 8GB - 128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">8.190.000₫</p>
+                                                        <del class="fs-ilap-pridel">8.490.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem vsmart" id="tragop_10">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Vsmart Aris 8GB-128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/11/5/637401687179661931_vsmart-aris-xanh-dd.png" alt="Vsmart Aris 8GB-128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Vsmart Aris 8GB-128GB"><span>Vsmart Aris 8GB-128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">4.490.000₫</p>
+                                                        <del class="fs-ilap-pridel">6.690.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fs-lapitem nokia" id="tragop_11">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Nokia 5.4 4GB -128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/12/25/637445014345646352_nokia-5-4-dd.png" alt="Nokia 5.4 4GB -128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Nokia 5.4 4GB -128GB"><span>Nokia 5.4 4GB -128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">3.490.000₫</p>
+                                                        <del class="fs-ilap-pridel">4.190.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fs-lapitem masstel" id="tragop_12">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Masstel Hapi 10 Fami">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/3/18/637201275804666609_masstel-hapi-10-fami-vang-dd.png" alt="Masstel Hapi 10 Fami"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Masstel Hapi 10 Fami"><span>Masstel Hapi 10 Fami</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">1.190.000₫</p>
+                                                    </div>
+                                                </div>
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>720 x 1280 Pixels 5.0 inches</li>
+                                                        <li><label>Camera :</label>5.0 MP 5.0 MP</li>
+                                                        <li><label>Pin :</label>2000 mAh</li>
+                                                        <li><label>RAM :</label>2 GB</li>
+                                                        <li><label>CPU :</label>MTK 6739</li>
+                                                        <li><label>HĐH:</label>Android 9</li></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fs-lapitem tecno" id="tragop_13">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="TECNO POVA 2 6GB-128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/10/27/637709417920359178_Pova2-trang-dd.jpg" alt="TECNO POVA 2 6GB-128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="TECNO POVA 2 6GB-128GB"><span>TECNO POVA 2 6GB-128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">4.790.000₫</p>
+                                                        <del class="fs-ilap-pridel">4.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="tragop_14">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 12 Pro Max 128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/14/637382721010154236_ip-12-pro-max-dd.png" alt="iPhone 12 Pro Max 128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 12 Pro Max 128GB"><span>iPhone 12 Pro Max 128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">30.999.000₫</p>
+                                                                            <del class="fs-ilap-pridel">32.999.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="fs-ilap-ch mCustomScrollbar">
+                                                    
+                                                </div>
+                                                    <div class="fs-icpromo">
+                                                        <div class="fs-icpmbox">
+                                        <p class="tkmspbb">Đặt trước nhận h&agrave;ng dự kiến 16/12-31/12/2020</p>
+                                        
+                                        <p class="tkmspbb">Ưu đ&atilde;i:</p>
+                                        
+                                        <ul>
+                                            <li>Trả g&oacute;p 0%</li>
+                                        </ul>
+                                        
+                                        <ul>
+                                            <li>Thu cũ đổi mới - Trợ gi&aacute; ngay 15%</li>
+                                        </ul>
+                                        
+                                        <ul>
+                                            <li>Tặng PMH 500,000đ mua Apple Watch/AirPods</li>
+                                        </ul>
+                                        
+                                        <ul>
+                                            <li>Tặng PMH 600,000đ mua Combo: Củ sạc nhanh 20W + Tai nghe EarPods</li>
+                                        </ul>
+                                        
+                                        <ul>
+                                            <li>Giảm th&ecirc;m 500,000đ thanh to&aacute;n qua VNPay/SmartPay</li>
+                                        </ul>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem samsung" id="tragop_15">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Samsung Galaxy S21 Ultra 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/3/31/637527850526788981_ss-s21-ultra-256-dd-1.jpg" alt="Samsung Galaxy S21 Ultra 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Samsung Galaxy S21 Ultra 256GB"><span>Samsung Galaxy S21 Ultra 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">28.990.000₫</p>
+                                                        <del class="fs-ilap-pridel">33.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Lãi suất thấp-->
+                                    <div class="fs-carow clearfix fs-row3 viewgrid Low-interest-rates">
+                                        <div class="fs-lapitem iphone" id="laisuat_1">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 11 64GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/26/637393169370871358_ip-11-dd.png" alt="iPhone 11 64GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 11 64GB"><span>iPhone 11 64GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">16.999.000₫</p>
+                                                            <del class="fs-ilap-pridel">18.999.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>828 x 1792 Pixels 6.1 inchs</li>
+                                                        <li><label>Camera :</label>Dual 12MP Ultra Wide and Wide cameras 12.0 MP</li>
+                                                        <li><label>Pin :</label>Lâu hơn iPhone XR 1h</li>
+                                                        <li><label>RAM :</label>4 GB</li>
+                                                        <li><label>CPU :</label>Apple A13 Bionic</li>
+                                                        <li><label>HĐH:</label>iOS 13</li></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem realme" id="laisuat_2">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Realme C11 2GB-32GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/7/7/637297374968711257_realme-c11-xanh-dd.png" alt="Realme C11 2GB-32GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Realme C11 2GB-32GB"><span>Realme C11 2GB-32GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">2.690.000₫</p>
+                                                    </div>
+                                                </div>
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>720 x 1600 Pixel 6.5"</li>
+                                                        <li><label>Camera :</label>13.0 MP + 2.0 MP 5.0 MP</li>
+                                                        <li><label>Pin :</label>5000 mAh</li>
+                                                        <li><label>RAM :</label>2 GB</li>
+                                                        <li><label>CPU :</label></li>
+                                                        <li><label>HĐH:</label>Android 10.0</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem iphone" id="laisuat_3">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 11 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/26/637393169370871358_ip-11-256-dd.png" alt="iPhone 11 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 11 256GB"><span>iPhone 11 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">20.990.000₫</p>
+                                                    </div>
+                                                </div>
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>828 x 1792 Pixels 6.1 inchs</li>
+                                                        <li><label>Camera :</label>Dual 12MP Ultra Wide and Wide cameras 12.0 MP</li>
+                                                        <li><label>Pin :</label>Lâu hơn iPhone XR 1h</li>
+                                                        <li><label>RAM :</label>4 GB</li>
+                                                        <li><label>CPU :</label>Apple A13 Bionic</li>
+                                                        <li><label>HĐH:</label>iOS 13</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem samsung" id="laisuat_4">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Samsung Galaxy S20+">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/3/3/637503636824959109_ss-s20-plus-dd.jpg" alt="Samsung Galaxy S20+"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Samsung Galaxy S20+"><span>Samsung Galaxy S20+</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">14.990.000₫</p>
+                                                            <del class="fs-ilap-pridel">16.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>2K+ (1440 x 3200 Pixels) 6.7 inchs</li>
+                                                        <li><label>Camera :</label>Chính 12 MP &amp; Phụ 64 MP, 12 MP, TOF 3D 10MP</li>
+                                                        <li><label>Pin :</label>4500 mAh</li>
+                                                        <li><label>RAM :</label>8 GB</li>
+                                                        <li><label>CPU :</label>Exynos 990</li>
+                                                        <li><label>HĐH:</label>Android 10.0</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem xiaomi" id="laisuat_5">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Xiaomi Redmi Note 9 4GB-128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/7/31/637318140211586419_xiaomi-redmi-note-9-xam-dd-bh.png" alt="Xiaomi Redmi Note 9 4GB-128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Xiaomi Redmi Note 9 4GB-128GB"><span>Xiaomi Redmi Note 9 4GB-128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">4.490.000₫</p>
+                                                            <del class="fs-ilap-pridel">4.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>1080 x 2340 Pixels 6.53 inchs</li>
+                                                        <li><label>Camera :</label>Chính 48MP và Phụ 8MP + 2MP + 2MP 13.0 MP</li>
+                                                        <li><label>Pin :</label>5020 mAh</li>
+                                                        <li><label>RAM :</label>4 GB</li>
+                                                        <li><label>CPU :</label>MediaTek Helio G85</li>
+                                                        <li><label>HĐH:</label>Android 10.0 (MIUI 11)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fs-lapitem xiaomi" id="laisuat_6">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Xiaomi Redmi 9A 2GB-32GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/7/31/637318137488561447_xiaomi-redmi-9a-xanh-dd-bh.png" alt="Xiaomi Redmi 9A 2GB-32GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Xiaomi Redmi 9A 2GB-32GB"><span>Xiaomi Redmi 9A 2GB-32GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">2.290.000₫</p>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>1600 x 720 Pixels 6.53 inchs</li>
+                                                        <li><label>Camera :</label>13.0 MP, f2.2 5 MP</li>
+                                                        <li><label>Pin :</label>5000 mAh</li>
+                                                        <li><label>RAM :</label>2 GB</li>
+                                                        <li><label>CPU :</label>MediaTek Helio G25</li>
+                                                        <li><label>HĐH:</label>Android 10.0</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--Trả góp thẻ tín dụng-->
+                                    <div class="fs-carow clearfix fs-row3 viewgrid credit">
+                                        <!--SP 1-->
+                                        <div class="fs-lapitem realme" id="tindung_1">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Realme C25 4GB-128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/4/12/637538403413415603_realme-c25-xanh-dd.jpg" alt="Realme C25 4GB-128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Realme C25 4GB-128GB"><span>Realme C25 4GB-128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">4.690.000₫</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 2-->
+                                        <div class="fs-lapitem  iphone" id="tindung_2">
+                                            <a class="fs-ilap-img" href="//fptshop.com.vn/dien-thoai/iphone-13-pro-max-128gb" target="_blank" title="iPhone 13 Pro Max 128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/9/15/637673213598401263_iphone-13-pro-max-dd-1.jpg" alt="iPhone 13 Pro Max 128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="/dien-thoai/iphone-13-pro-max-128gb" title="iPhone 13 Pro Max 128GB"><span>iPhone 13 Pro Max 128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">33.990.000₫</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 3-->
+                                        <div class="fs-lapitem vivo" id="tindung_3">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Vivo V23e 8GB - 128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/11/22/637731793300543684_vivo-v23e-xanh-hong-dd.jpg" alt="Vivo V23e 8GB - 128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Vivo V23e 8GB - 128GB"><span>Vivo V23e 8GB - 128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                        <p class="fs-ilap-pri">8.190.000₫</p>
+                                                        <del class="fs-ilap-pridel">8.490.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 4-->
+                                        <div class="fs-lapitem iphone" id="tindung_4">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 11 64GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/26/637393169370871358_ip-11-dd.png" alt="iPhone 11 64GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả góp 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 11 64GB"><span>iPhone 11 64GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">16.999.000₫</p>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>828 x 1792 Pixels 6.1 inchs</li>
+                                                        <li><label>Camera :</label>Dual 12MP Ultra Wide and Wide cameras 12.0 MP</li>
+                                                        <li><label>Pin :</label>Lâu hơn iPhone XR 1h</li>
+                                                        <li><label>RAM :</label>4 GB</li>
+                                                        <li><label>CPU :</label>Apple A13 Bionic</li>
+                                                        <li><label>HĐH:</label>iOS 13</li></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 5-->
+                                        <div class="fs-lapitem samsung" id="tindung_5">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Samsung Galaxy Z Fold3 5G 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/8/11/637643170642413961_samsung-galaxy-z-fold3-xanh-dd.jpg" alt="Samsung Galaxy Z Fold3 5G 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Samsung Galaxy Z Fold3 5G 256GB"><span>Samsung Galaxy Z Fold3 5G 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">40.990.000₫</p>
+                                                                            <del class="fs-ilap-pridel">41.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 6-->
+                                        <div class="fs-lapitem xiaomi" id="tindung_6">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Xiaomi POCO X3 Pro NFC 8GB-256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/5/19/637570519716076314_poco-x3-pro-den-dd.jpg" alt="Xiaomi POCO X3 Pro NFC 8GB-256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Xiaomi POCO X3 Pro NFC 8GB-256GB"><span>Xiaomi POCO X3 Pro NFC 8GB-256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">7.299.000₫</p>
+                                                            <del class="fs-ilap-pridel">7.999.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 7-->
+                                        <div class="fs-lapitem iphone" id="tindung_7">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone XR 64GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/26/637393169370716242_ip-xr-dd.png" alt="iPhone XR 64GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone XR 64GB"><span>iPhone XR 64GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">12.490.000₫</p>
+                                                            <del class="fs-ilap-pridel">12.990.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>828 x 1792 Pixels 6.1 inchs</li>
+                                                        <li><label>Camera :</label>12.0 MP 7.0 MP</li>
+                                                        <li><label>Pin :</label>Lâu hơn iPhone 8 Plus 1,5h</li>
+                                                        <li><label>RAM :</label>3 GB</li>
+                                                        <li><label>CPU :</label>Apple A12 Bionic</li>
+                                                        <li><label>HĐH:</label>iOS 13</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 8-->
+                                        <div class="fs-lapitem iphone" id="tindung_8">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="iPhone 12 Pro 128GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2020/10/14/637382695935086033_ip-12-pro-dd.png" alt="iPhone 12 Pro 128GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="iPhone 12 Pro 128GB"><span>iPhone 12 Pro 128GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">27.999.000₫</p>
+                                                            <del class="fs-ilap-pridel">29.999.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="scroller" id="style-1">
+                                                    <ul>
+                                                        <li><label>Màn hình :</label>1242 x 2688 Pixels 6.5 inchs</li>
+                                                        <li><label>Camera :</label>Triple 12MP Ultra Wide, Wide and Telephoto cameras 12.0 MP</li>
+                                                        <li><label>Pin :</label>Đang cập nhật</li>
+                                                        <li><label>RAM :</label>4 GB</li>
+                                                        <li><label>CPU :</label>Apple A14 Bionic</li>
+                                                        <li><label>HĐH:</label>iOS 14</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--SP 9-->
+                                        <div class="fs-lapitem xiaomi" id="tindung_9">
+                                            <a class="fs-ilap-img" href="" target="_blank" title="Xiaomi 11 Lite 5G NE 8GB - 256GB">
+                                                <p><img src="https://fptshop.com.vn/Uploads/Thumbs/2021/10/22/637705049638837488_00773657-dd.jpg" alt="Xiaomi 11 Lite 5G NE 8GB - 256GB"></p>
+                                                <div class="fs-ilap-label">
+                                                    <div class="fs-ilap-labelbox">
+                                                            <label class="fs-ilap-lb fs-ilap-tg"><span>Trả g&#243;p 0%</span></label>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="fs-ilap-if">
+                                                <div class="fs-ilap-itop">
+                                                    <h3 class="fs-ilap-name"><a href="" title="Xiaomi 11 Lite 5G NE 8GB - 256GB"><span>Xiaomi 11 Lite 5G NE 8GB - 256GB</span></a></h3>
+                                                    <div class="fs-ilap-price">
+                                                            <p class="fs-ilap-pri">9.490.000₫</p>
+                                                            <del class="fs-ilap-pridel">10.499.000 ₫</del>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                <div class="paging-cc">
+                                    <div class="f-cmtpaging">
+                                        <a class="f-cmtpg-l" href="javascript:;" data-page="1" data-total="171" title="">Đầu</a>
+                                        <ul class="clearfix">
+                                            <li class="active"><a href="javascript:;" data-page="1" data-total="171" title="">1</a></li>
+                                            <li><a href="javascript:;" data-page="2" data-total="171" title="">2</a></li>
+                                            <li><a href="javascript:;" data-page="3" data-total="171" title="">3</a></li>
+                                        </ul>
+                                        <a class="f-cmtpg-l" href="javascript:;" data-page="10" data-total="171" title="">Cuối</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane tg-type2">
+                                <div class="fs-ctf-head clearfix">
+                                    <div class="fs-ctf-hr clearfix">
+                                    </div>
+                                </div>
+                                <div class="fs-carow clearfix  viewgrid" id="main-tg-b"></div>
+                                <div class="paging-cc-2">
+                                    <div class="f-cmtpaging2">
+                                        <a class="f-cmtpg-l" href="javascript:void()" data-page="2" title="">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--right-->
+                        </div>
+                        <div class="fs-icate clearfix">
+                        </div>
+                        <!--Product seen-->
+                    </div>
+                </section>
+                
+            </div>
+            <!--Comment-->
+            <div class="ss-cmt" id="binh-luan">
+                <div class="container">
+                    <div class="fs-comment" id="hoi-dap" data-modul="3">
+                        <div class="fs-cmttit">Hỏi và đáp <span class="fshop-cmtcount">44</span></div> 
+                        <div class="fs-cmtmain"> 
+                            <div class="fs-cmttop clearfix"> 
+                                <textarea rows="3" class="f-cmttarea txa-cmt" id="txa-cmt" placeholder="Viết câu hỏi của bạn"></textarea> 
+                                <p class="noticmt">Mời bạn viết bình luận.(Tối thiểu 3 ký tự)</p> 
+                                <div id="uploads" class="uploads"></div> 
+                                <ul class="fs-cmbtns">  
+                                    <li>
+                                        <button class="fs-cmbtn-send" id="btn-cmt-gui" type="button">Gửi câu hỏi</button>
+                                    </li> 
+                                </ul> 
+                            </div>
+                        </div> 
+                        <div class="fshop-cmt-cmtmores f-cmtpaging" id="ntc-viewmore-comment" data-page="2" data-total="44" data-pagesize="10" data-step="1" style="display: block;">
+                            <ul class="tesst">
+                                <li class="active"><a class="pageNumber" data-page="1" href="javascript:;">1</a></li>
+                                <li><a class="pageNumber" data-page="2" href="javascript:;">2</a></li>
+                                <li><a class="pageNumber" data-page="3" href="javascript:;">3</a></li>
+                                <li><a class="pageNumber" data-page="4" href="javascript:;">4</a></li>
+                                <li><a href="javascript:;">...</a></li>
+                                <li><a class="pageNumber" data-page="2" href="javascript:;">»</a></li>
+                                <li><a class="pageNumber" data-page="5.4" href="javascript:;">»»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="art">
+              <div class="content">
+                <section>
+                  <header>HỖ TRỢ KHÁCH HÀNG</header>
+                  <a href="">Hướng dẫn đặt hàng</a>
+                  <a href="">Phương thức vận chuyển</a>
+                  <a href="">Chính sách đổi trả</a>
+                  <a href="">Hướng dẫn trả góp</a>
+                  <a href="">Câu hỏi thường gặp</a>
+                  <a href="">Hỗ trợ khách hàng</a>
+                  <a href="">Báo lỗi bảo mật</a>
+                </section>
+                <section>
+                  <header>THÔNG TIN CỬA HÀNG</header>
+                  <a href="">Giới thiệu cửa hàng</a>
+                  <a href="">Chính sách bảo mật</a>
+                  <a href="">Thông tin tuyển dụng</a>
+                  <a href="">Điều khoản sử dụng</a>
+                  <a href="">Chính sách giải quyết khiếu nại</a>
+                  <a href="">Bán hàng doanh nghiệp</a>
+                </section>
+                <section>
+                    <header>PHƯƠNG THỨC THANH TOÁN</header>
+                    <p>
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="70" alt="">
+                    </p>
+                </section>
+               <section class='footer-info'>
+                <section>
+                    <header class='connect-us'>KẾT NỐI VỚI CHÚNG TÔI</header>
+                    <div class="social">
+                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-telegram-plane"></i>
+                    </div>
+                  </section>
+                  <section>
+                      <header class ='download-ios-and'>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</header>
+                      <p>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" width="134" alt="">
+                            </a>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" width="134" alt="">
+                            </a>
+                        </p>
+                  </section>
+               </section>
+                
+              </div>
+              <div class="address-info">
+                Địa chỉ: Trường Đại học công nghệ thông tin, Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+              </div>
+              <div class="notice">
+                Copyright Protected &copy;
+                <strong>Phạm Văn Chánh - Hồ Quang - Nguyễn Minh Thái</strong>
+              </div>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" src="Tra gop/installment.js"></script>
+        <script type="text/javascript" src="Tra gop/select.js"></script>
+        <script type="text/javascript" src="Tra gop/items.js"></script>
+
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/home_page/image_carousel.js"></script>
+        <script type="text/javascript" src="js/home_page/laptop_list_carousel.js"></script>
+        <script type="text/javascript" src="Laptop/grid-list.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js"></script>
+    </body>
+</html>

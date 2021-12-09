@@ -4,6 +4,13 @@
     padding:17px 15px;
     height:74px
 }
+.cdt-brand-pd1{
+    display: none;
+    border-top:none;
+    position:relative;
+    padding:17px 15px;
+    height:74px
+}
 .cdt-brand-img{
     position:unset
 }
@@ -204,4 +211,68 @@
 }
 .cdt-grid-list span:not(:last-child){
     margin-right:20px
+}
+.cdt-dropdown{
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+    margin-right:15px
+}
+.cdt-dropdown.active .cdt-dropdown-menu{
+    visibility:visible;
+    opacity:1
+}
+.ddlViewBy,.ddlViewBy_1,.ddlViewBy_2,.ddlViewBy_3,.ddlViewBy_4,.ddlViewBy_5,.ddlViewBy_6,.ddlViewBy_7,
+.ddlViewBy_8,.ddlViewBy_9,.ddlViewBy_10,.ddlViewBy_11,.ddlViewBy_12,.ddlViewBy_13,.ddlViewBy_14,
+.ddlViewBy_smartwatch,.ddlViewBy_albert {
+    display:inline-block;
+    border:solid 1px #ced4da;
+    border-radius:4px;
+    color: #000;
+    padding:6px 9px 6px 2px;
+    font-size:14px;
+    line-height:16px;
+    background-color:#fff;
+    cursor:pointer;
+    white-space:nowrap;
+    min-width:118px
+}
+.ddlViewBy option li{
+    padding:5px 10px;
+    cursor:pointer;
+    white-space:nowrap
+}
+.ddlViewBy option li.active{
+    font-weight:700;
+    background-color:#a1a1a11c
+}
+.ddlViewBy option li:active,.ddlViewBy option li:focus,.ddlViewBy option li:hover{
+    font-weight:700;
+    background-color:#a1a1a11c
+}
+/* mobile: width <740px */
+@media only screen and (max-width: 759px){
+    .cdt-list-tab {
+        display: none;
+    }
+    .cdt-grid-list {
+        float: right;
+    }
+    .cdt-brand-pd {
+        display: none;
+    }
+    .cdt-brand-pd1 {
+        display: block;
+        padding: 5px 5px;
+    }
+}
+/* tablet: width >= 760px and width <= 1150px */
+@media only screen and (min-width: 760px) and (max-width: 1150px){
+    .cdt-brand-pd {
+        display: none;
+    }
+    .cdt-brand-pd1 {
+        display: block;
+        padding: 0px 5px;
+    }
 }

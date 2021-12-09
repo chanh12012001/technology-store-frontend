@@ -134,11 +134,70 @@ button,input[type=button]  {
 	 content: "\0020"; 
 	 display: block; 
 	 height: 0; 
-	 overflow: hidden; }  
+	 overflow: hidden; 
+	}  
 .clearfix:after  {
-	 clear: both; }  
+	 clear: both; 
+	}  
 .clearfix  {
-	 zoom: 1; }
+	 zoom: 1;
+	 max-width: 1200px;
+	 margin: auto; 
+	}
 img  {
 	vertical-align: middle;
+}
+
+
+/* mobile: width <740px */
+@media only screen and (max-width: 759px){
+
+    .clearfix  {
+		zoom: 1;
+		justify-content: space-between;
+        padding-left: 3px;
+		padding-right: 3px;
+	   }
+	.fs-ctf-cl {
+		width: 35%;
+	}
+	.fs-ctf-cr {
+		width: 60%;
+	}
+	.viewgrid.fs-row3 .fs-lapitem {
+		width: 100%;
+		height: 33%;
+	}
+	.fs-ctf-head{
+		padding: 0;
+        position: relative;
+        border-bottom: solid 1px #e7e7e7;
+    }
+}
+
+/* tablet: width >= 740px and width <= 1024px */
+@media only screen and (min-width: 760px) and (max-width: 1150px){
+
+    .clearfix{
+		zoom: 1;
+        width: 100%;
+        padding: 2px 7px;
+    }   
+	.fs-ctf-cl {
+		width: 30%;
+		margin-left: 15px;
+	}
+	.fs-ctf-cr {
+		width: 65%;
+		margin-right: 15px;
+	}
+	.viewgrid.fs-row3 .fs-lapitem {
+		width: 50%;
+		height: 33%;
+	}
+	.fs-ctf-head{
+		padding: 0;
+        position: relative;
+        border-bottom: solid 1px #e7e7e7;
+    }
 }

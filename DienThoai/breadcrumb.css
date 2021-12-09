@@ -1,4 +1,4 @@
-.breadcrumb-item a{
+.breadcrumb-item A{
     position:relative
 }
 .breadcrumb-item a:before{
@@ -44,11 +44,13 @@
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
     list-style:none;
-    margin: 15px 40px;
 }
 .breadcrumb-margin{
     margin-top:10px;
-    margin-bottom:10px
+    margin-bottom:10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 .breadcrumb-item{
     color:#0275d8;
@@ -63,11 +65,26 @@
     font-size:16px;
     content:"/"
 }
-.breadcrumb-item a{
+.breadcrumb-item A{
     font-size:14px;
     line-height:1;
     color:#0275d8
 }
 .breadcrumb-item:last-child{
     color:#212529
+}
+/* --------- mobile------------ */
+@media only screen and (max-width: 759px) {
+    .breadcrumb-margin{
+        margin: 5px;
+        max-width: 100%;
+    }
+}
+
+/* --------------tablet--------------- */
+@media only screen and (min-width: 760px) and (max-width: 1150px){
+    .breadcrumb-margin{
+        margin: 10px;
+        max-width: 100%;
+    }
 }

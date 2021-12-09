@@ -247,13 +247,12 @@ tbody.collapse.in {
 
 .close {
     float:right;
-    font-size:21px;
+    font-size:34px;
     font-weight:700;
     line-height:1;
-    color:#000;
-    text-shadow:0 1px 0 #fff;
+    color:#fff;
+    text-shadow:0 2px 0 #000;
     filter:alpha(opacity=20);
-    opacity:.2
 }
 .close:focus,.close:hover {
     color:#000;
@@ -339,13 +338,18 @@ button.close {
     opacity:.5
 }
 .modal-header {
+    text-align: center;
     padding:15px;
-    border-bottom:1px solid #e5e5e5
+    border-bottom:1px solid #e5e5e5;
+    background-image: linear-gradient( to right, #25aae1, #4481eb, #04befe, #3f86ed );
+    box-shadow: 0 4px 15px 0 rgb(65 132 234 / 75%);
 }
 .modal-header .close {
     margin-top:-2px
 }
 .modal-title {
+    font-size: 24px;
+    font-weight: 600;
     margin:0;
     line-height:1.42857143
 }

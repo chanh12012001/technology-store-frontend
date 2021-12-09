@@ -1,118 +1,201 @@
-// Hover-Carousel component
-// By Yair Even-Or
-// written in jQuery 2013 -> refactored to vanilla 2020
-// https://github.com/yairEO/hover-carousel
-
-function HoverCarousel( elm, settings ){
-    this.DOM = {
-      scope: elm,
-      wrap: elm.querySelector('ul').parentNode
+function Loading(){
+  var x = $('.characters').children();
+  x[0].classList.add('active');
+  
+}
+function Phu_kien_noi_bat(){
+  var x = $('.characters').children();
+    for(var i=0; i<x.length; i++){
+        x[0].classList.add('active');
+        if(i != 0){
+            x[i].classList.remove('active');
+        }
     }
-    
-    this.containerWidth = 0;
-    this.scrollWidth = 0;
-    this.posFromLeft = 0;    // Stripe position from the left of the screen
-    this.stripePos = 0;    // When relative mouse position inside the thumbs stripe
-    this.animated = null;
-    this.callbacks = {}
-    
-    this.init()
-  }
-  
-  HoverCarousel.prototype = {
-    init(){
-      this.bind()
-    },
-    
-    destroy(){
-      this.DOM.scope.removeEventListener('mouseenter', this.callbacks.onMouseEnter)
-      this.DOM.scope.removeEventListener('mousemove', this.callbacks.onMouseMove)
-    },
-  
-    bind(){
-      this.callbacks.onMouseEnter = this.onMouseEnter.bind(this)
-      this.callbacks.onMouseMove = e => {
-        if( this.mouseMoveRAF ) 
-          cancelAnimationFrame(this.mouseMoveRAF)
-  
-        this.mouseMoveRAF = requestAnimationFrame(this.onMouseMove.bind(this, e))
+    var y = $('.card-body').children();
+    for(var i=0; i<y.length; i++){
+        y[0].classList.show();
+        if(i != 0){
+            y[i].classList.hide();
+        }
+    }
+}
+function Bao_da_op_lung(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[1].classList.add('active');
+          if(i != 1){
+              x[i].classList.remove('active');
+          }
       }
-      
-      this.DOM.scope.addEventListener('mouseenter', this.callbacks.onMouseEnter)
-      this.DOM.scope.addEventListener('mousemove', this.callbacks.onMouseMove)
-    },
-    
-    // calculate the thumbs container width
-    onMouseEnter(e){
-      this.nextMore = this.prevMore = false // reset
-  
-      this.containerWidth       = this.DOM.wrap.clientWidth;
-      this.scrollWidth          = this.DOM.wrap.scrollWidth; 
-      // padding in percentage of the area which the mouse movement affects
-      this.padding              = 0.2 * this.containerWidth; 
-      this.posFromLeft          = this.DOM.wrap.getBoundingClientRect().left;
-      var stripePos             = e.pageX - this.padding - this.posFromLeft;
-      this.pos                  = stripePos / (this.containerWidth - this.padding*2);
-      this.scrollPos            = (this.scrollWidth - this.containerWidth ) * this.pos;
-  
-      // temporary add smoothness to the scroll 
-      this.DOM.wrap.style.scrollBehavior = 'smooth';
-      
-      if( this.scrollPos < 0 )
-        this.scrollPos = 0;
-      
-      if( this.scrollPos > (this.scrollWidth - this.containerWidth) )
-        this.scrollPos = this.scrollWidth - this.containerWidth
-  
-      this.DOM.wrap.scrollLeft = this.scrollPos
-      this.DOM.scope.style.setProperty('--scrollWidth',  (this.containerWidth / this.scrollWidth) * 100 + '%');
-      this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
-  
-      // lock UI until mouse-enter scroll is finihsed, after aprox 200ms
-      clearTimeout(this.animated)
-      this.animated = setTimeout(() => {
-        this.animated = null
-        this.DOM.wrap.style.scrollBehavior = 'auto';
-      }, 200)
-  
-      return this
-    },
-  
-    // move the stripe left or right according to mouse position
-    onMouseMove(e){
-      // don't move anything until inital movement on 'mouseenter' has finished
-      if( this.animated ) return
-  
-      this.ratio = this.scrollWidth / this.containerWidth
-      
-      // the mouse X position, "normalized" to the carousel position
-      var stripePos = e.pageX - this.padding - this.posFromLeft 
-      
-      if( stripePos < 0 )
-          stripePos = 0
-  
-      // calculated position between 0 to 1
-      this.pos = stripePos / (this.containerWidth - this.padding*2) 
-      
-      // calculate the percentage of the mouse position within the carousel
-      this.scrollPos = (this.scrollWidth - this.containerWidth ) * this.pos 
-  
-      this.DOM.wrap.scrollLeft = this.scrollPos
-      
-      // update scrollbar
-      if( this.scrollPos < (this.scrollWidth - this.containerWidth) )
-        this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
-  
-      // check if element has reached an edge
-      this.prevMore = this.DOM.wrap.scrollLeft > 0
-      this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
-      
-      this.DOM.scope.setAttribute('data-at',
-        (this.prevMore  ? 'left ' : ' ')
-        + (this.nextMore ? 'right' : '')
-      )
-    }
-  }
-             
-  var carouselElm = document.querySelector('.carousel')
-  new HoverCarousel(carouselElm) 
+    $('.List-product').children('.Op_lung').show();
+    $('.List-product').children().not('.Op_lung').hide();
+}
+function Sac_du_phong(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[2].classList.add('active');
+          if(i != 2){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Sac_du_phong').show();
+      $(this).children().not('.Sac_du_phong').hide();
+  })
+}
+function The_nho(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[3].classList.add('active');
+          if(i != 3){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.The_nho').show();
+      $(this).children().not('.The_nho').hide();
+  })
+}
+function Dan_man_hinh(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[4].classList.add('active');
+          if(i != 4){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Dan_man_hinh').show();
+      $(this).children().not('.Dan_man_hinh').hide();
+  })
+}
+function Tai_nghe(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[5].classList.add('active');
+          if(i != 5){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Tai_nghe').show();
+      $(this).children().not('.Tai_nghe').hide();
+  })
+}
+function Loa(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[6].classList.add('active');
+          if(i != 6){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Loa').show();
+      $(this).children().not('.Loa').hide();
+  })
+}
+function USB(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[7].classList.add('active');
+          if(i != 7){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.USB').show();
+      $(this).children().not('.USB').hide();
+  })
+}
+function Cap_sac(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[8].classList.add('active');
+          if(i != 8){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Cap_sac').show();
+      $(this).children().not('.Cap_sac').hide();
+  })
+}
+function Chuot(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[9].classList.add('active');
+          if(i != 9){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Chuot').show();
+      $(this).children().not('.Chuot').hide();
+  })
+}
+function Ban_phim(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[10].classList.add('active');
+          if(i != 10){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Ban_phim').show();
+      $(this).children().not('.Ban_phim').hide();
+  })
+}
+function Balo(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[11].classList.add('active');
+          if(i != 11){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Balo').show();
+      $(this).children().not('.Balo').hide();
+  })
+}
+function Muc_in(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[12].classList.add('active');
+          if(i != 12){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Muc_in').show();
+      $(this).children().not('.Muc_in').hide();
+  })
+}
+function Router(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[13].classList.add('active');
+          if(i != 13){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Router').show();
+      $(this).children().not('.Router').hide();
+  })
+}
+function Phu_kien_khac(){
+  var x = $('.characters').children();
+      for(var i=0; i<x.length; i++){
+          x[14].classList.add('active');
+          if(i != 14){
+              x[i].classList.remove('active');
+          }
+      }
+  $('.List-product').each(function(e){
+      $(this).children('.Phu_kien_khac').show();
+      $(this).children().not('.Phu_kien_khac').hide();
+  })
+}
