@@ -3,5 +3,25 @@ $('.main-carousel').flickity({
     wrapAround: true,
     autoPlay:true,
 });
+$('.main-carousel1').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
+$('.main-carousel2').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
+$('.main-carousel3').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
+$('.main-carousel-dt').flickity({
+    cellAlign: 'left',
+    wrapAround: true,
+    autoPlay:true,
+});
 
  
