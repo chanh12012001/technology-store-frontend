@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="Sim&The/sim.css">
         <link rel="stylesheet" href="Sim&The/tool.css">
         <link rel="stylesheet" href="Sim&The/style.css">
-        <link rel="stylesheet" href="Sim&The/dialog.css">
+        <link rel="stylesheet" href="Sim&The/modal.css">
+
         <link rel="stylesheet" href="DienThoai/breadcrumb.css">
         <link rel="stylesheet" href="css/home_page/footer.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -1975,7 +1976,7 @@
                                             <ul class="clearfix si-sbc3 cl-game">
                                                 <li>
                                                     <label> 
-                                                        <input type="radio" data-ncc="ncc-Garena" data-type="Garena" name="cardgame"> 
+                                                        <input type="radio" data-ncc="ncc-Garena" data-type="Garena" name="cardgame" checked=""> 
                                                         <span>
                                                             <img src="Sim&The\Images\Garena.png" alt="">
                                                         </span> 
@@ -2086,9 +2087,6 @@
                                                     </label>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div class="si-sblbe1">
-                                            <a class="providergame" href="#ncc-Zing" data-toggle="modal" style="text-decoration:underline;color:red;padding:-10px 0 10px 0">Thông tin nhà cung cấp thẻ game</a>
                                         </div>
                                         <!--Bước 2-->
                                         <p class="si-sbtit"><strong>Bước 2:</strong> Chọn mệnh giá thẻ</p>
@@ -2422,7 +2420,7 @@
                                                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
                                                         <div class="panel-body">
                                                             <ul class="ck-popnh-l clearfix" id="ulbank">
-                                                                <li><label> <input type="radio" class="Bankcode" name="ckpopnh" value="ABBANK"> <span><img src="https://fptshop.com.vn/gio-hang-v2/Content/Checkout/images/bank/ABB.jpg" alt=""></span> </label></li>
+                                                                <li><label> <input type="radio" class="Bankcode" name="ckpopnh" checked="" value="ABBANK"> <span><img src="https://fptshop.com.vn/gio-hang-v2/Content/Checkout/images/bank/ABB.jpg" alt=""></span> </label></li>
                                                                 <li><label> <input type="radio" class="Bankcode" name="ckpopnh" value="ACB"> <span><img src="https://fptshop.com.vn/gio-hang-v2/Content/Checkout/images/bank/ACB.jpg" alt=""></span> </label></li>
                                                                 <li><label> <input type="radio" class="Bankcode" name="ckpopnh" value="AGRIBANK"> <span><img src="https://fptshop.com.vn/gio-hang-v2/Content/Checkout/images/bank/AGB.jpg" alt=""></span> </label></li>
                                                                 <li><label> <input type="radio" class="Bankcode" name="ckpopnh" value="BACABANK"> <span><img src="https://fptshop.com.vn/gio-hang-v2/Content/Checkout/images/bank/BAB.jpg" alt=""></span> </label></li>
@@ -2477,8 +2475,45 @@
                                                     </ul>
                                                 </div>
                                                 <div class="ck-poptt-rlbott">
-                                                    <p class="ck-poptt-rlbuy"><a> THANH TOÁN NGAY </a></p>
+                                                    <button class="truck-button">
+                                                        <span class="default">THANH TOÁN NGAY</span>
+                                                        <span class="success">
+                                                            HOÀN TẤT
+                                                            <svg viewbox="0 0 12 10">
+                                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="truck">
+                                                            <div class="wheel"></div>
+                                                            <div class="back"></div>
+                                                            <div class="front"></div>
+                                                            <div class="box"></div>
+                                                        </div>
+                                                    </button>
+                                                    
                                                     <p class="ck-poptt-rlnoti"><span><img src="https://fptshop.com.vn/sim-the/Content/Topup/images/lock.jpg" alt=""></span> Bạn sẽ chuyển sang liên kết an toàn</p>
+                                                </div>
+                                                <div id="myModal" class="thongbao">
+                                                    <div class="model">
+                                                        <form action="#">
+                                                            <span class="close1">&times;</span>
+                                                            <h2>Bạn đã thanh toán thành công!</h2>
+                                                            <div class="wrapper">
+                                                                <a class="btn-outline-1" href="9_sim&the.html">
+                                                                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect class="shape" height="40" width="150"></rect>
+                                                                    </svg>
+                                                                    <div class="text">Ở lại trang</div>
+                                                               </a>
+                                                               <a class="btn-outline-2" href="1_index.html">
+                                                                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect class="shape" height="40" width="150"></rect>
+                                                                </svg>
+                                                                <div class="text">Trang chủ</div>
+                                                           </a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2534,9 +2569,44 @@
                                                     </ul>
                                                 </div>
                                                 <div class="ck-poptt-rlbott">
-                                                    <p class="btn-loading" style="display:none;text-align:center"><a><img src="https://fptshop.com.vn/sim-so-dep/sim/Desktop/images/loading.gif"></a></p>
-                                                    <p class="ck-poptt-rlbtn"><a class="cks3buy" href="javascript:"> THANH TOÁN NGAY </a></p>
+                                                    <button class="truck-button">
+                                                        <span class="default">THANH TOÁN NGAY</span>
+                                                        <span class="success">
+                                                            HOÀN TẤT
+                                                            <svg viewbox="0 0 12 10">
+                                                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        <div class="truck">
+                                                            <div class="wheel"></div>
+                                                            <div class="back"></div>
+                                                            <div class="front"></div>
+                                                            <div class="box"></div>
+                                                        </div>
+                                                    </button>
                                                     <p class="ck-poptt-rlnoti"><span><img src="https://fptshop.com.vn/sim-the/Content/Topup/images/lock.jpg" alt=""></span> Bạn sẽ chuyển sang liên kết an toàn</p>
+                                                </div>
+                                                <div id="myModal_2" class="thongbao">
+                                                    <div class="model">
+                                                        <form action="#">
+                                                            <span class="close1">&times;</span>
+                                                            <h2>Bạn đã thanh toán thành công!</h2>
+                                                            <div class="wrapper" style="top: 58%">
+                                                                <a class="btn-outline-1" href="9_sim&the.html">
+                                                                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                                                    <rect class="shape" height="40" width="150"></rect>
+                                                                    </svg>
+                                                                    <div class="text">Ở lại trang</div>
+                                                               </a>
+                                                               <a class="btn-outline-2" href="1_index.html">
+                                                                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect class="shape" height="40" width="150"></rect>
+                                                                </svg>
+                                                                <div class="text">Trang chủ</div>
+                                                           </a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2549,8 +2619,8 @@
                 </div>
             </div>
         </section>
-        
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script type="text/javascript" src="Sim&The/event.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="js/home_page/image_carousel.js"></script>
         <script type="text/javascript" src="js/home_page/laptop_list_carousel.js"></script>

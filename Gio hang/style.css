@@ -439,8 +439,11 @@
     padding:12px
 }
 .area-total .discountcode .applycode.active{
-    display:block;
-    margin:10px 0
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px;
+    width: 100%;
+    overflow: visible;
 }
 .area-total .discountcode .coupon .applycode{
     overflow:hidden
@@ -896,7 +899,23 @@
     float:left;
     width:49%;
     margin:2% 1% 2% 0;
-    cursor:pointer
+    display: block;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+    text-align: left;
+    color: #288ad6;
+    position: relative;
+    cursor: pointer;
+}
+.cntry-district .btn-click option {
+    display: block;
+    overflow: hidden;
+    padding: 6px;
+    color: #288ad6;
+    margin: 0 5px 5px 0;
+    max-width: 150px;
 }
 .cntry-district .btn-click:nth-child(2){
     margin-right:0;
@@ -1008,9 +1027,12 @@
     top:0}#tab-1 .only-at-store__title{
     display:block;
     text-transform:uppercase;
-    margin-bottom:5px}#tab-2 .cntry-district .btn-click .select .boxsearch{
-    margin:0}#tab-2 .cntry-district .btn-click .boxsearch a{
-    top:10px}#tab-2 .only-at-store__title{
+    margin-bottom:5px}
+    #tab-2 .cntry-district .btn-click .select .boxsearch{
+    margin:0}
+    #tab-2 .cntry-district .btn-click .boxsearch a{
+    top:10px}
+    #tab-2 .only-at-store__title{
     display:block;
     margin-bottom:5px;
     text-transform:uppercase
@@ -1189,7 +1211,7 @@
 .deli-address form .filladdress{
     display:block;
     overflow:hidden;
-    width:49%
+    width:100%
 }
 .deli-address form .filladdress input{
     margin:0
@@ -1402,6 +1424,7 @@
     padding:0 0 10px
 }
 .anotheroption form .cough span{
+    color: #000;
     display:inline-block;
     vertical-align:middle;
     margin-right:15px;
@@ -1987,13 +2010,25 @@ section{
     display:block;
     margin:14px auto
 }
-.choosenumber .number{
+.choosenumber .input-qty{
     font-size:14px;
     color:#333;
     float:left;
     width:33%;
     height:30px;
-    text-align:center
+    text-align:center;
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
 }
 .choosenumber .plus{
     float:right;
@@ -2056,4 +2091,9 @@ section{
     border-top-left-radius:40px;
     border-top-right-radius:40px;
     bottom:-1px
+}
+
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
 }

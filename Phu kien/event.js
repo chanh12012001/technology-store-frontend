@@ -1,7 +1,12 @@
+$('#Ban_Phim').click(function(){
+    // The object "myObject" is sent to the modal window.
+    location.assign("7_phukien.html");
+    setTimeout(Ban_phim, 2000);
+})
 function Loading(){
-  var x = $('.characters').children();
-  x[0].classList.add('active');
-  
+    var x = $('.characters').children();
+        x[0].classList.add('active');
+    
 }
 function Phu_kien_noi_bat(){
   var x = $('.characters').children();
@@ -199,3 +204,5 @@ function Phu_kien_khac(){
       $(this).children().not('.Phu_kien_khac').hide();
   })
 }
+
+    
