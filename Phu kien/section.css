@@ -1,0 +1,52 @@
+    .section-common {
+        position:relative;
+        z-index:1
+    }
+    .section-common {
+        padding-bottom:30px
+    } 
+    .section-common [class*="section-"] {
+        margin-bottom:30px
+    } 
+    .section-common--banner {
+        margin-bottom:10px
+    } 
+    .section-common .section-search__inner {
+        max-width:500px;
+        margin:0 auto;
+        margin-bottom:0
+    } 
+     
+    .section-accessories .card-header {
+        padding:10px 15px
+    } 
+    
+    .section-normal .card-header--custom .typography {
+        align-items:baseline
+    } 
+    .section-normal .normal-top {
+        padding:15px
+    } 
+    .section-normal .normal-top h2 {
+        font-size:20px;
+        font-weight:bold;
+        line-height:1;
+        color:#212529;
+        margin-bottom:0
+    } 
+    .section-normal .normal-filter {
+        padding:15px
+    } 
+    .section-normal .normal-body {
+        display:flex;
+        flex-wrap:wrap
+    } 
+    .section-normal .normal-body .product-item {
+        flex-basis:25%
+    } 
+    .section-normal .swiper-normal .swiper-button-disabled {
+        display:none
+    }
+    .section-normal .swiper-custom,.section-flash-sale .swiper-custom,.section-banner.swiper-custom.banner-cate {
+        padding-bottom:10px;
+    }

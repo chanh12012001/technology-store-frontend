@@ -1,0 +1,146 @@
+/*badge*/
+.badge{
+    
+    display:inline-block;
+    padding:3px 6px;
+    font-size:10px;
+    font-weight:400;
+    line-height:10px;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:3px
+}
+.badge:empty{
+    display:none
+}
+.btn .badge{
+    position:relative;
+    top:-1px
+}
+.badge-primary{
+    color:#fff;
+    background:#cb1c22
+}
+.badge-secondary{
+    color:#fff;
+    background:#99a2aa
+}
+.badge-success{
+    color:#fff;
+    background:#33b530
+}
+.badge-info{
+    color:#fff;
+    background:#34b4f9
+}
+.badge-warning{
+    color:#fff;
+    background:#ea9d02
+}
+.badge-danger{
+    color:#fff;
+    background:#e02c1f
+}
+.badge-light{
+    color:#fff;
+    background:#e9ecef
+}
+.badge-dark{
+    color:#fff;
+    background:#343a40
+}
+
+/*fplistpbox*/
+.fplistpdbox{
+    display:block;
+    -webkit-animation:mfade-in .6s;
+    animation:mfade-in .6s
+}
+.fplistpdbox.hide{
+    display:none
+}
+:root{
+    --white:#fff;
+    --black:#000;
+    --red:#cd1817
+}
+
+
+/*card header*/
+.cdt-head_title{
+    width: 200px;
+   font-size: 28px;
+   font-weight: 600;
+   color: #000;
+   cursor: pointer;
+   height: 55px;
+   text-align:center;
+   border: none;
+   background-size: 300% 100%;
+   background-color: #fff;
+   border-radius: 50px;
+   -o-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+ }
+.cdt-head_title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
+    opacity: 0;
+    transition: all .3s
+ }
+ .cdt-head_title:hover{
+    color:#fff;  
+    background-image: linear-gradient(
+       to right,
+       #25aae1,
+       #4481eb,
+       #04befe,
+       #3f86ed
+     );
+     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+ .cdt-head_title:hover::before{
+    opacity: 1;
+    background-color: #fff;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  }
+
+
+.cdt-head {
+    text-align: center;
+}
+.cdt-head span{
+    display:inline-block;
+    color:#6c757d;
+    margin-left:10px;
+    font-size:18px;
+    line-height:1
+}
+
+:root{
+    --height-img:214px
+}
+
+
+
+
+
+
+
+
+
+

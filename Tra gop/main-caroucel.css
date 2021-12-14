@@ -1,0 +1,38 @@
+.banner-image-wrapper {
+    margin: 15px 40px;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.main-carousel-dt{
+    margin: 10px 10px;
+    overflow: hidden;
+}
+.cell-dt {
+    width: 20%;
+    margin: 0px 0;
+    overflow: hidden;
+    counter-increment: cell;
+    text-align: center;   
+    background-color: #fff; 
+  }
+  
+  .cell-dt img {
+    width: 85%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+.main-carousel-dt .flickity-page-dots {
+    display: none;
+}
+
+/* --------- mobile------------ */
+@media only screen and (max-width: 759px) {
+    .cell-dt {
+        width: 33.33%;
+         
+      }
+}
+/* --------------tablet--------------- */
+@media only screen and (min-width: 760px) and (max-width: 1150px){}

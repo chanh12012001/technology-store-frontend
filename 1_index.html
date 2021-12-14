@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel=" stylesheet" href="css/slick.css">
+        <link type="text/css" rel="stylesheet" href="css/home_page/home_page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="js/home_page/header.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/home_page/category.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+        <title>Công nghệ Store</title>      
+    </head>
+
+    <body>
+        <!-- header image-->
+        <header  class='header_banner'>
+            <img src='css/home_page/images/banner1.png' alt="" class='banner'>
+        </header>
+
+        <!-- header -->
+        <div class="header">
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="">
+                    <img class="icon_logo" src="css/home_page/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
+                    <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
+                </a>   
+                <div class='header_search'>
+                    <input type="text" class='input' placeholder="Tìm kiếm...">
+                    <i class="fas fa-search icon-search"></i>
+                </div>
+                <a href="13_giohang.html" class='header_shoppingcart'>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id='content_shopping_cart_header'>Giỏ hàng</span> 
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
+                    <span class='dot_content'><span class='dot_animation'></span></span>
+                    Mua thẻ nạp ngay
+                </a>
+                <a href="" class='header_new'>
+                    Tin tức
+                </a>
+                <a href="" class='header_QA'>
+                    Hỏi đáp
+                </a>
+            </div>
+
+            <div class="header_main" id='header_m'>
+                <div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="3_dienthoai.html">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Điện thoại</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="4_laptop.html">
+                                <i class="fas fa-laptop"></i>
+                                <span>Laptop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="5_tablet.html">
+                                <i class="fas fa-tablet-alt"></i>
+                                <span>Tablet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="6_hanggiadung.html">
+                                <i class="fas fa-blender"></i>
+                                <span>Hàng gia dụng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="7_phukien.html">
+                                <i class="fas fa-headphones"></i>
+                                <span>Phụ kiện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="8_donghothongminh.html">
+                                <i class="fas fa-clock"></i>
+                                <span>Đồng hồ thông minh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="9_sim&the.html">
+                                <i class="fas fa-sim-card"></i>
+                                <span>Sim & Thẻ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2_suachua.html">
+                                <i class="fas fa-tools"></i>    
+                                <span>Sửa chữa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="11_tragop_ĐT.html">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Trả góp 0%</span>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Slider -->
+        <div id='slider-wrapper'>
+          <div class="slider s--ready">
+            <div class="slider__slide">
+              <div class="slider__slide-parts">
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://www.androidappsourcecode.com/wp-content/uploads/2018/12/electronics1.jpg&quot;);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__slide-parts">
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://salt.tikicdn.com/cache/w1080/ts/banner/7c/2e/59/ed61c0a9c84937afd9ba711291da44be.png.webp&quot;);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide s--prev">
+              <div class="slider__slide-parts">
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg&quot;);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide s--active">
+              <div class="slider__slide-parts">
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg&quot;);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__slide-parts">
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
+                </div>
+                <div class="slider__slide-part">
+                  <div class="slider__slide-part-inner" style="background-image: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg&quot;);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__control"></div>
+            <div class="slider__control slider__control--right"></div>
+          </div>
+
+          <div class="banner-right-wrapper">
+              <img class='banner-right' src="css/home_page/images/banner_right_2.jpeg" alt="">
+
+              <img class='banner-right' src="css/home_page/images/banner_right_1.png" alt="">
+          </div>
+        </div>
+        
+        <!-- Category -->
+        <div class="container-wrapper">
+          <div class='category-title' >
+            <img class='icon-hightlight' src="css/home_page/images/icon_hightlight.png" alt="">
+            <h2>Danh mục nổi bật</h2>
+          </div>
+          <div class="slider-category">
+            <a href="3_dienthoai.html" class="item">
+              <img src="css/home_page/images/category1.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Điện thoại</h2>
+            </a>
+            <a href="" class="item">
+              <img src="css/home_page/images/category2.png" alt="">
+                <div class="border"></div>
+              <h2 class="category-name">Samsung</h2>
+            </a>
+            <a href="4_laptop.html" class="item">
+              <img src="css/home_page/images/category3.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Laptop</h2>
+            </a>
+            <a href="8_donghothongminh.html" class="item">
+              <img src="css/home_page/images/category4.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name smart-watch">Đồng hồ thông minh</h2>
+            </a>
+            <a href="" class="item">
+              <img src="css/home_page/images/category5.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Apple</h2>
+            </a>
+            <a href="6_hanggiadung.html" class="item">
+              <img src="css/home_page/images/category6.png" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Điện gia dụng</h2>
+            </a>
+            <a href="" class="item">
+              <img src="css/home_page/images/category7.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Dell</h2>
+            </a>
+            <a href="" class="item">
+              <img src="css/home_page/images/category8.png" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Máy cũ</h2>
+            </a>
+            <a href="" class="item">
+              <img src="css/home_page/images/category9.webp" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Tai phone</h2>
+            </a>
+
+            <a href="" class="item">
+              <img src="css/home_page/images/category10.jpeg" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Máy in</h2>
+            </a>
+
+            <a href="5_tablet.html" class="item">
+              <img src="css/home_page/images/category11.png" alt="">
+              <div class="border"></div>
+              <h2 class="category-name">Tablet</h2>
+            </a>
+          </div>
+        </div>
+
+        <!-- banner-image -->
+        <div class='banner-image-wrapper'>
+            <img class='banner-image-inner' src="css/home_page/images/banner2.png" alt="">
+        </div>
+
+        <!-- phone -->
+        <div class="container-phone-wrapper">
+            <div class='phone-list-title' >
+                <h2>Điện thoại nổi bật</h2>
+                <div class="fill-product">
+                    <span>Apple</span>
+                    <span>Samsung</span>
+                    <span>Oppo</span>
+                    <span>Xem tất cả</span>
+                </div>
+            </div>
+           <div class="list-card">
+            <div class="card a">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+            </div>
+    
+            <div class="card b">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+    
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+  
+            <div class="card c">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+            </div>
+    
+            <div class="card d">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+            </div>
+
+            <div class="card e">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card f">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card g">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card h">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card y">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span>Buy Now</span>
+                </div>
+            </div>
+
+            <div class="card k">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span><i class="fas fa-cart-plus"></i></span>
+                    <span>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+           </div>
+        </div>   
+
+        <!-- banner-slider -->
+        <div class="main-carousel">
+            <div class="cell"><img src="css/home_page/images/banner3.jpeg"></div>
+            <div class="cell"><img src="css/home_page/images/banner4.jpeg"></div>
+            <div class="cell"><img src="css/home_page/images/banner4.jpeg"></div>
+            <div class="cell"><img src="css/home_page/images/banner3.jpeg"></div>
+            <div class="cell"><img src="css/home_page/images/banner4.jpeg"></div>
+            <div class="cell"><img src="css/home_page/images/banner3.jpeg"></div>
+        </div>
+
+        <!-- laptop -->
+        <div class="container-laptop-wrapper">
+            <div class='laptop-list-title' >
+                <h2>Laptop nổi bật</h2>
+                <div class="fill-product">
+                    <span>Apple</span>
+                    <span>Dell</span>
+                    <span>Axus</span>
+                    <span>Xem tất cả</span>
+                </div>
+            </div>
+           <div class="list-laptop">
+            <div class="card a">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+            </div>
+    
+            <div class="card b">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+    
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+  
+            <div class="card c">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+            </div>
+    
+            <div class="card d">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+                
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+    
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+    
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+            </div>
+
+            <div class="card e">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card f">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card g">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card h">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+
+            <div class="card y">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+            </div>
+
+            <div class="card k">
+                <div class="image">
+                    <img src="css/home_page/images/watch1.png" alt="">
+                </div>
+                <div class="prod-details">
+                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                </div>  
+            
+                <div class="prod-price">
+                    <span class='root-price'>23.000.000đ</span>
+                    <span class='cut-price'>28.000.000đ</span>
+                </div>
+
+                <div class = "product-info-top">
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>    
+                    <h2 class = "sm-title">100</h2>
+                </div>  
+
+                <div class="buy-prod">
+                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                    <span class='buy-btn'>Buy Now</span>
+                </div>
+
+                <div class = "off-info">
+                    <h2 class = "offer">25% off</h2>
+                </div>
+            </div>
+           </div>
+        </div>  
+
+        <!-- accessories -->
+        <div class="cat-accessories-wrapper">
+            <div class='accessories-title' >
+                <h2>Phụ kiện nổi bật</h2>
+            </div>
+            <div class="accessories-list">
+             <a class="card-body" id="Ban_Phim">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/keyboard.png" alt="img">
+                 </div>
+                 <p class="card-big-text">Bàn phím</p>
+            </a>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/speaker.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Loa</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/cable.webp" alt="img">
+                 </div>
+                 <p class="card-big-text">Cáp sạc</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/mouse.jpg" alt="img">
+                 </div>
+                 <p class="card-big-text">Chuột</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/headphone.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Tai nghe</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/router.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Router</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/usb.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Usb</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/bumper.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Ốp lưng</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/backup_charger.jpeg" alt="img">
+                 </div>
+                 <p class="card-big-text">Sạc dự phòng</p>
+             </div>
+             <div class="card-body">
+                 <div class="card-icon">
+                     <img src="css/home_page/images/accessories/shelf.webp" alt="img">
+                 </div>
+                 <p class="card-big-text">Giá đỡ laptop</p>
+             </div>
+             <div class="card-body">
+                <div class="card-icon">
+                    <img src="css/home_page/images/accessories/bag.jpeg" alt="img">
+                </div>
+                <p class="card-big-text">Túi đựng laptop</p>
+            </div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <img src="css/home_page/images/accessories/hub.png" alt="img">
+                </div>
+                <p class="card-big-text">Hub</p>
+            </div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <img src="css/home_page/images/accessories/dansceen.jpeg" alt="img">
+                </div>
+                <p class="card-big-text">Dán màn hình</p>
+            </div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <img src="css/home_page/images/accessories/3dots.jpeg" alt="img">
+                </div>
+                <p class="card-big-text">Khác</p>
+            </div>
+            </div>
+         </div>
+
+        <!-- news -->
+        <div class="news-wrapper">
+            <div class="news-title">
+                <h2>Tin tức công nghệ</h2>
+            </div>
+
+            <div class="news-body">
+                <div class="col1-news">
+                    <div class="col1-news-left">
+                        <div class="thumb rounded">
+                            <span class="post-format">
+                                <i class="icon-picture"></i>
+                            </span>
+                            <a href="#">
+                                <div class="inner">
+                                    <img src="css/home_page/images/editors-lg.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <ul class="meta">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img class="author" src="css/home_page/images/author-sm.jpg" alt="">
+                                    Techie Coder
+                                </a>
+                            </li>
+                            <li class="list-inline-item">05 Jun 2021</li>
+                        </ul>
+                        <h5 class="post-title mb-3 mt-3">
+                            <a href="#">Đồng hồ thông minh BeU - Đồng hồ thương hiệu Việt đáng mua nhất</a>
+                        </h5>
+                        <p class="excerpt mb-0">                   
+                            Apple đã công bố tất cả 4 mẫu iPhone 13 series (iPhone 2021) hồi tháng 9 và nhận được sự quan tâm lớn từ người dùng. Xem và lựa chọn phiên bản ưng ý nhất nhé.
+                        </p>
+                    </div>
+                    <div class="col1-news-right">
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>         
+                            <div class="details">
+                                <h6 class="post-title">
+                                    <a href="">
+                                        Ứng dụng iMovie trên macOS Monterey được nâng cấp, có thể chỉnh sửa video cho chế độ Điện ảnh của iPhone 13
+                                    </a>
+                                </h6>
+                                <ul class="meta">
+                                    <li class="list-inline-item">25 May 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>         
+                            <div class="details">
+                                <h6 class="post-title">
+                                    <a href="">
+                                        Tất tần tật các smartphone màn hình to từ giá rẻ đến cao cấp, đang giảm tiền triệu, tặng mẹ yêu dịp 20/10 thì tuyệt vời
+                                    </a>
+                                </h6>
+                                <ul class="meta">
+                                    <li class="list-inline-item">25 May 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>         
+                            <div class="details">
+                                <h6 class="post-title">
+                                    <a href="">
+                                        Ứng dụng iMovie trên macOS Monterey được nâng cấp, có thể chỉnh sửa video cho chế độ Điện ảnh của iPhone 13
+                                    </a>
+                                </h6>
+                                <ul class="meta">
+                                    <li class="list-inline-item">25 May 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>         
+                            <div class="details">
+                                <h6 class="post-title">
+                                    <a href="">
+                                        Tất tần tật các smartphone màn hình to từ giá rẻ đến cao cấp, đang giảm tiền triệu, tặng mẹ yêu dịp 20/10 thì tuyệt vời
+                                    </a>
+                                </h6>
+                                <ul class="meta">
+                                    <li class="list-inline-item">25 May 2021</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col2-news">
+                    <div class="col2-news-body">
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>
+                            <div class="post-title">Get vaccinated to stop the chain of corona</div>
+                            <ul class="meta">
+                                <li class="list-inline-item">Techie Coder</li>
+                                <li class="list-inline-item">05 Jun 2021</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>
+                            <div class="post-title">10 Things to do for being safe of corona</div>
+                            <ul class="meta">
+                                <li class="list-inline-item">Techie Coder</li>
+                                <li class="list-inline-item">05 Jun 2021</li>
+                            </ul>
+                        </div>
+
+                        <div class="post-item">
+                            <div class="image-post">
+                                <img src="css/home_page/images/editors-lg.jpg" alt="">
+                            </div>
+                            <div class="post-title">Get vaccinated to stop the chain of corona</div>
+                            <ul class="meta">
+                                <li class="list-inline-item">Techie Coder</li>
+                                <li class="list-inline-item">05 Jun 2021</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="art">
+              <div class="content">
+                <section>
+                  <header>HỖ TRỢ KHÁCH HÀNG</header>
+                  <a href="">Hướng dẫn đặt hàng</a>
+                  <a href="">Phương thức vận chuyển</a>
+                  <a href="">Chính sách đổi trả</a>
+                  <a href="">Hướng dẫn trả góp</a>
+                  <a href="">Câu hỏi thường gặp</a>
+                  <a href="">Hỗ trợ khách hàng</a>
+                  <a href="">Báo lỗi bảo mật</a>
+                </section>
+                <section>
+                  <header>THÔNG TIN CỬA HÀNG</header>
+                  <a href="">Giới thiệu cửa hàng</a>
+                  <a href="">Chính sách bảo mật</a>
+                  <a href="">Thông tin tuyển dụng</a>
+                  <a href="">Điều khoản sử dụng</a>
+                  <a href="">Chính sách giải quyết khiếu nại</a>
+                  <a href="">Bán hàng doanh nghiệp</a>
+                </section>
+                <section>
+                    <header>PHƯƠNG THỨC THANH TOÁN</header>
+                    <p>
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="70" alt="">
+                    </p>
+                </section>
+               <section class='footer-info'>
+                <section>
+                    <header class='connect-us'>KẾT NỐI VỚI CHÚNG TÔI</header>
+                    <div class="social">
+                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-telegram-plane"></i>
+                    </div>
+                  </section>
+                  <section>
+                      <header class ='download-ios-and'>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</header>
+                      <p>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" width="134" alt="">
+                            </a>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" width="134" alt="">
+                            </a>
+                        </p>
+                  </section>
+               </section>
+                
+              </div>
+              <div class="address-info">
+                Địa chỉ: Trường Đại học công nghệ thông tin, Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+              </div>
+              <div class="notice">
+                Copyright Protected &copy;
+                <strong>Phạm Văn Chánh - Hồ Quang - Nguyễn Minh Thái</strong>
+              </div>
+            </div>
+        </footer>
+    
+        <script src="https://unpkg.com/showmodaldialog"></script>
+        <script type="text/javascript" src="Phu kien/event.js"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <script type="text/javascript" src="js/home_page/image_carousel.js"></script>
+      <script type="text/javascript" src="js/home_page/laptop_list_carousel.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.6/index.min.js"></script>
+      <script type="text/javascript" src="js/home_page/slider.js"></script>
+      <script type="text/javascript" src="js/home_page/category.js"></script>      
+    </body>
+</html>
