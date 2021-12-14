@@ -23,4 +23,5 @@ $('.main-carousel-dt').flickity({
     wrapAround: true,
     autoPlay:true,
 });
+
  
