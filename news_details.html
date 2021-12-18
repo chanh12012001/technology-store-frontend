@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridy Blog</title>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="css/news_details/style.css">
+
+</head>
+<body>
+    
+    <!-- Header -->
+      <!-- header image-->
+      <header  class='header_banner'>
+        <img src='css/news_details/images/banner1.png' alt="" class='banner'>
+    </header>
+
+    <!-- header -->
+    <div class="header">
+        <div class="header_top" id="header_t">
+            <div id='header_menu'>
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="index.html">
+                <img class="icon_logo" src="css/news_details/images/logoQStore.png" alt="">
+            </a>
+            <a href="" class="header_address">
+                <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
+            </a>   
+            <div class='header_search'>
+                <input type="text" class='input' placeholder="Tìm kiếm...">
+                <i class="fas fa-search icon-search"></i>
+            </div>
+            <a href="cart_page.html" class='header_shoppingcart'>
+                <i class="fas fa-shopping-cart"></i>
+                <span id='content_shopping_cart_header'>Giỏ hàng</span> 
+            </a>
+            <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+            <a href="" class='header_ad'>
+                <span class='dot_content'><span class='dot_animation'></span></span>
+                Mua thẻ nạp ngay
+            </a>
+            <a href="news_page.html" class='header_new'>
+                Tin tức
+            </a>
+            <a href="" class='header_QA'>
+                Hỏi đáp
+            </a>
+        </div>
+
+        <div class="header_main" id='header_m'>
+            <div>
+                <ul class="main-menu">
+                    <li>
+                        <a href="product_list.html">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Điện thoại</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-laptop"></i>
+                            <span>Laptop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-tablet-alt"></i>
+                            <span>Tablet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-blender"></i>
+                            <span>Hàng gia dụng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="accessory_page.html">
+                            <i class="fas fa-headphones"></i>
+                            <span>Phụ kiện</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-clock"></i>
+                            <span>Đồng hồ thông minh</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-sim-card"></i>
+                            <span>Sim & Thẻ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-tools"></i>    
+                            <span>Sửa chữa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>Trả góp 0%</span>
+                        </a>
+                    </li>
+
+                    <hr id='divider'></hr>
+
+                    <div class='div_header'>
+                        <ul class='ul_header'>
+                            <li>
+                                <a href="news_page.html" class='header_new' id='header_new'>
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Tin tức</span> 
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="" class='header_QA' id='header_QA'>
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>Hỏi đáp</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <a href="" class='header_ad' id='header_ad'>
+                            <span class='dot_content'><span class='dot_animation'></span></span>
+                            Mua thẻ nạp ngay
+                        </a>                            
+                    </div>        
+
+                    <li class='profile'>
+                        <a href="">
+                            <i class="fas fa-phone-volume"></i>
+                            <span>Gọi ngay</span>
+                            <span id='phone'>012.345.6789</span>
+                            <span>(7:30 - 22:00)</span>
+                        </a>
+                        <br>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                            <span>Fanpage:</span>
+                            <span>Công Nghệ Store</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- .Header -->
+
+    <!-- Main Site -->
+       <main id="site-main">
+
+            <!-- Post Content -->
+                <section class="container">
+                    <div class="layout-2 row">
+                        <div class="col-8">
+                            <article id="post">
+                                <!-- article heading -->
+                                <div class="headings text-center">
+        
+                                    <div class="title">
+                                        <h2 class="text-title text-dark display-1">Đánh giá iOS 15.2 chính thức: Có tính năng theo dõi lịch sử sửa chữa iPhone, tự động ẩn ảnh nhạy cảm và sửa các lỗi nhỏ (liên tục cập nhật)</h2>
+                                    </div>
+        
+                                    <div class="meta">
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-user text-primary"></i> Văn Chánh
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-clock text-primary"></i>  55 phút trước
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-comments text-primary"></i> 3 bình luận
+                                        </a>
+                                    </div>
+        
+                                </div>
+        
+                                <!-- thumbnail  -->
+                                <div class="thumbnail mt-3">
+                                    <img src="css/news_details/images/ios15.jpeg" class="thumbnail" alt="">
+                                </div>
+        
+                                <!-- content -->
+                                <div class="content text-dark display-2 secondary-title mt-3">
+                                    <p>
+                                        Vào ngày 3/12, Apple đã phát hành iOS 15.2 Beta 4 cho người dùng iPhone và các nhà phát triển đã đăng ký. Bản cập nhật này mang đến các tính năng mới và liên tục cải tiến, đi kèm với sự khắc phục một vài lỗi tồn đọng ở bản cũ. Ở bản cập nhật này, Apple đã công bố các chủ nhân của App Store Award năm 2021 với việc chọn ra 15 ứng dụng và trò chơi tốt nhất.
+                                    </p>
+                                    <p>
+                                        Bên cạnh đó, iOS 15.2 Beta 4 mang đến một vài thay đổi đáng chú ý cho người dùng iPhone và iPad. Đáng chú ý nhất là tính năng Báo cáo quyền riêng tư của ứng dụng vào trong mục Quyền riêng tư của Cài đặt. Với điều này, người dùng giờ đây có thể xem dữ liệu được các ứng dụng truy cập, bao gồm cả ứng dụng của bên thứ ba và ứng dụng của Apple
+                                    </p>
+                                    <p>
+                                        Hiện tại, Apple cũng đang phát triển iOS 15.2 để bổ sung các tính năng mới chưa được phát hành của iOS 15. Theo đó, bản cập nhật này bổ sung báo cáo quyền riêng tư của ứng dụng, một tính năng cho phép người dùng xem hoạt động ứng dụng trong một phần mới của ứng dụng Cài đặt. Bên cạnh đó, nó cũng hỗ trợ Legacy Contact, tính năng cho phép người dùng chọn một người để truy cập Apple ID trong trường hợp họ qua đời.
+                                    </p>
+                                </div>
+
+                                <div class="thumbnail mt-3">
+                                    <img src="css/news_details/images/ios152.jpeg" class="thumbnail" alt="">
+                                </div>
+
+                                <!-- content -->
+                                <div class="content text-dark display-2 secondary-title mt-3">
+                                    <h3>
+                                        Hỗ trợ chế độ quay video ProRes cho iPhone 13 Pro
+                                    </h3>
+                                    <p>
+                                        ProRes là định dạng nén video chất lượng cao mà không bị mất dữ liệu được Apple ra mắt vào năm 2007. Đây là định dạng để sử dụng trong quá trình hậu sản xuất và hỗ trợ độ phân giải video lên đến 8K. Giờ đây, iPhone 13 Pro sau khi cập nhật iOS 15.1 Beta 3 có thể sẽ sử dụng được tính năng quay video Pro Res.
+                                    </p>
+                                    <p>
+                                        Dành cho những bạn nào chưa biết thì tính năng quay video ProRes giới hạn ở 30 FPS cùng độ phân giải 1080p trên các thiết bị có 128GB dung lượng lưu trữ. Tuy nhiên, các mẫu iPhone có dung lượng cao hơn có thể quay video với độ phân giải lên đến 4K. Apple cho biết video HDR ProRes 10-bit chiếm 1,7GB ở chế độ HD.
+                                    </p>
+
+                                    <h3>
+                                        Cải tiến chế độ Look Around trên Bản đồ
+                                    </h3>
+
+                                    <p>
+                                        Bên cạnh 2 sự thay đổi về các tính năng liên quan đến camera, iOS 15.1 Beta 3 cũng đã cải thiện chất lượng hình ảnh của tính năng Look Around trên ứng dụng BẢn đồ với hình ảnh hiển thị nhanh và ít mờ hơn.
+                                    </p>
+                                </div>
+                            </article>
+        
+                            <!-- post footer -->
+                            <div class="post-footer mb-3">                 
+                                
+                                
+                                <!-- comments -->
+                                <div class="post-comments py-2">
+                                    <h3 class="text-center display-1 secondary-title py-2">5 BÌNH LUẬN</h3>
+        
+                                    <div class="comment-details">
+                                        <div class="comment-item py-2">
+                                            <div class="d-flex">
+                                                <div class="avatar px-2">
+                                                    <img src="css/news_details/images/face1.jpg" class="rounded" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <h5 class="display-2 m-0">Brandon Kelly</h5>
+                                                    <p class="title-secondary text-dark">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <!-- comment reply -->
+                                            <div class="reply py-2">
+                                                <div class="d-flex">
+                                                    <div class="avatar px-2">
+                                                        <img src="css/news_details/images/face2.jpg" class="rounded" alt="">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <h5 class="display-2 m-0">Brandon Kelly</h5>
+                                                        <p class="title-secondary text-dark">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="comment-item py-2">
+                                            <div class="d-flex">
+                                                <div class="avatar px-2">
+                                                    <img src="css/news_details/images/face3.jpg" class="rounded" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <h5 class="display-2 m-0">Brandon Kelly</h5>
+                                                    <p class="title-secondary text-dark">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    
+                                    <!-- comment form -->
+                                    <div class="comment-form">
+        
+                                        <h3 class="text-center display-1 secondary-title py-2">Mời bạn thảo luận</h3>
+        
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="text" class="form-control" placeholder="Website">
+                                        </div>
+        
+                                        <textarea class="form-control mt-3" placeholder="Message" rows="10"></textarea>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <!-- .post footer -->
+                        </div>
+                        <div class="col-4">
+                            <aside id="sidebar" class="px-1">
+
+                                <!-- categories -->
+                                <section class="categories">
+                                    <h2 class="text-center text-dark">Danh mục nổi bật</h2>
+
+                                    <div class = "category-list">
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-angle-right"></i>   Điện thoại
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-angle-right"></i>   Macbook pro M1X 2021
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-angle-right"></i>   Airpod pro 6
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-angle-right"></i>   Đồng hồ thông minh
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-angle-right"></i>   Máy tính bảng
+                                        </a>
+                                    </div>
+                                </section>
+
+                                <!-- Trending post -->
+                                <section class="trending-post mt-3">
+
+                                    <h2 class="text-center text-dark py-2">Bài viết nổi bật</h2>
+
+                                    <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="css/news_details/images/img1.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="css/news_details/images/img2.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </div>
+
+                                           <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="css/news_details/images/img3.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="css/news_details/images/img4.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <img src="css/news_details/images/img4.jpg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="#" class="link text-primary">
+                                                            Fashion
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="text-title display-2 text-dark">
+                                                        Looking for some feedback for this rejected track technology
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             Clock Wed 02, 2019
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
+                            </aside>
+                        </div>
+                    </div>
+
+
+                </section>
+            <!-- .Post Content -->
+
+       </main>
+    <!-- .Main Site -->
+
+   <!-- footer -->
+   <footer>
+    <div class="art">
+      <div class="content">
+        <section>
+          <header>HỖ TRỢ KHÁCH HÀNG</header>
+          <a href="">Hướng dẫn đặt hàng</a>
+          <a href="">Phương thức vận chuyển</a>
+          <a href="">Chính sách đổi trả</a>
+          <a href="">Hướng dẫn trả góp</a>
+          <a href="">Câu hỏi thường gặp</a>
+          <a href="">Hỗ trợ khách hàng</a>
+          <a href="">Báo lỗi bảo mật</a>
+        </section>
+        <section>
+          <header>THÔNG TIN CỬA HÀNG</header>
+          <a href="">Giới thiệu cửa hàng</a>
+          <a href="">Chính sách bảo mật</a>
+          <a href="">Thông tin tuyển dụng</a>
+          <a href="">Điều khoản sử dụng</a>
+          <a href="">Chính sách giải quyết khiếu nại</a>
+          <a href="">Bán hàng doanh nghiệp</a>
+        </section>
+        <section>
+            <header>PHƯƠNG THỨC THANH TOÁN</header>
+            <p>
+                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="70" alt="">
+                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="70" alt="">
+                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="70" alt="">
+                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="70" alt="">
+                <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="70" alt="">
+            </p>
+        </section>
+       <section class='footer-info'>
+        <section>
+            <header class='connect-us'>KẾT NỐI VỚI CHÚNG TÔI</header>
+            <div class="social">
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-telegram-plane"></i>
+            </div>
+          </section>
+          <section>
+              <header class ='download-ios-and'>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</header>
+              <p>
+                    <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" width="134" alt="">
+                    </a>
+                    <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" width="134" alt="">
+                    </a>
+                </p>
+          </section>
+       </section>
+        
+      </div>
+      <div class="address-info">
+        Địa chỉ: Trường Đại học công nghệ thông tin, Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+      </div>
+      <div class="notice">
+        Copyright Protected &copy;
+        <strong>Phạm Văn Chánh - Hồ Quang - Nguyễn Minh Thái</strong>
+      </div>
+    </div>
+</footer>
+
+
+
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous"></script>
+
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="js/news_details/main.js"></script>
+</body>
+</html>

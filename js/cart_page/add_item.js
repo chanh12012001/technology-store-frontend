@@ -1,0 +1,21 @@
+// function add(){
+//     var a1 = localStorage.getItem('img')
+//     var a3 = localStorage.getItem('price')
+//     var a4 = localStorage.getItem('cutprice')
+//     console.log(a1,a3,a4)
+//     var content = '<li class="product-item"><div class="imgsp"><a href="" target="_blank"><img data-src="'+a1+'" src="https://cdn.tgdd.vn/Products/Images/7077/225949/mi-band-5-thumb-1-1-400x400.jpg" alt="Vòng đeo tay thông minh Mi Band 5" loading="lazy" class=" ls-is-cached lazyloaded"></a><button><span></span> Xóa </button> </div><div data-tmp-price-original="'+a4+'" data-tmp-price-discount="'+a3+'" data-tmp-product-name="Vòng đeo tay thông minh Mi Band 5" data-tmp-product-type="1" data-tmp-quantity="1" data-tmp-max-quantity="5" class="infosp"><div class="name-price"><div class="name-container"><a href="" class="product-item__name"> Vòng đeo tay thông minh Mi Band 5 </a></div><span> 590.000₫ <strike>990.000₫</strike></span></div><hr style="width: 65%; visibility: hidden;"><div fragment="120970d51ea" class="choose-color"><div class="product-size-and-color-selection"><aside><span> Màu: <span class="color-text">Đen</span></span><div class="sg-color" style="display: none;"><div class="select-color active"><img data-src="https://cdn.tgdd.vn/Products/Images/7077/225949/mi-band-5-thumb-1-1-400x400.jpg" src="https://cdn.tgdd.vn/Products/Images/7077/225949/mi-band-5-thumb-1-1-400x400.jpg" loading="lazy" class="lazyload"><small>Đen</small> </div></div></aside></div><div class="choosenumber" fragment="f5a6167859"><div class="minus is-form" style="pointer-events: all;"><i style="background-color: rgb(40, 138, 214);"></i></div><input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1"> <div class="plus is-form" style="pointer-events: all;"><i style="background-color: rgb(40, 138, 214);"></i><i style="background-color: rgb(40, 138, 214);"></i></div><input type="hidden"></div></div></div><input fragment="fbcdddca04" type="hidden" value="true"></li>'
+//     var add = document.createElement("li")
+//     add.innerHTML = content;
+//     document.querySelector('.listing-cart').append(add)
+// }
+
+
+function add(){
+    var objects = JSON.parse(localStorage.getItem('productItems'));
+    for (let i = 0; i<objects.length; i++){
+        var content = '<li class="product-item"><div class="imgsp"><a href="" target="_blank"><img data-src="'+objects[i].img+'" src="'+objects[i].img+'" alt="Vòng đeo tay thông minh Mi Band 5" loading="lazy" class=" ls-is-cached lazyloaded"></a><button><span></span> Xóa </button> </div><div data-tmp-price-original="'+objects[i].cutprice+'" data-tmp-price-discount="'+objects[i].price+'" data-tmp-product-name="'+objects[i].name+'" data-tmp-product-type="1" data-tmp-quantity="1" data-tmp-max-quantity="5" class="infosp"><div class="name-price"><div class="name-container"><a href="" class="product-item__name"> '+objects[i].name+' </a></div><span> '+objects[i].price+' <strike>'+objects[i].cutprice+'</strike></span></div><hr style="width: 65%; visibility: hidden;"><div fragment="120970d51ea" class="choose-color"><div class="product-size-and-color-selection"><aside><span> Màu: <span class="color-text">Đen</span></span><div class="sg-color" style="display: none;"><div class="select-color active"><img data-src="https://cdn.tgdd.vn/Products/Images/7077/225949/mi-band-5-thumb-1-1-400x400.jpg" src="https://cdn.tgdd.vn/Products/Images/7077/225949/mi-band-5-thumb-1-1-400x400.jpg" loading="lazy" class="lazyload"><small>Đen</small> </div></div></aside></div><div class="choosenumber" fragment="f5a6167859"><div class="minus is-form" style="pointer-events: all;"><i style="background-color: rgb(40, 138, 214);"></i></div><input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1"> <div class="plus is-form" style="pointer-events: all;"><i style="background-color: rgb(40, 138, 214);"></i><i style="background-color: rgb(40, 138, 214);"></i></div><input type="hidden"></div></div></div><input fragment="fbcdddca04" type="hidden" value="true"></li>'
+        var add = document.createElement("li")
+        add.innerHTML = content;
+        document.querySelector('.listing-cart').append(add)
+    }
+}
