@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/product_details/images/favicon.png" rel="shortcut icon">
+    <title>Công nghệ Store</title>
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="css/product_details/app.css">
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="css/product_details/images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== Main Header ======-->
+
+         <!-- header image-->
+         <header  class='header_banner'>
+            <img src='css/product_details/images/banner1.png' alt="" class='banner'>
+        </header>
+
+        <!-- header -->
+        <div class="header">
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="index.html">
+                    <img class="icon_logo" src="css/product_details/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
+                    <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
+                </a>   
+                <div class='header_search'>
+                    <input type="text" class='input' placeholder="Tìm kiếm...">
+                    <i class="fas fa-search icon-search"></i>
+                </div>
+                <a href="cart_page.html" class='header_shoppingcart'>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id='content_shopping_cart_header'>Giỏ hàng</span> 
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
+                    <span class='dot_content'><span class='dot_animation'></span></span>
+                    Mua thẻ nạp ngay
+                </a>
+                <a href="news_page.html" class='header_new'>
+                    Tin tức
+                </a>
+                <a href="" class='header_QA'>
+                    Hỏi đáp
+                </a>
+            </div>
+
+            <div class="header_main" id='header_m'>
+                <div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="product_list.html">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Điện thoại</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-laptop"></i>
+                                <span>Laptop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-tablet-alt"></i>
+                                <span>Tablet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-blender"></i>
+                                <span>Hàng gia dụng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessory_page.html">
+                                <i class="fas fa-headphones"></i>
+                                <span>Phụ kiện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-clock"></i>
+                                <span>Đồng hồ thông minh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-sim-card"></i>
+                                <span>Sim & Thẻ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-tools"></i>    
+                                <span>Sửa chữa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Trả góp 0%</span>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        <!--====== End - Main Header ======-->
+
+
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-t-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+
+                            <!--====== Product Breadcrumb ======-->
+                            <div class="pd-breadcrumb u-s-m-b-30">
+                                <ul class="pd-breadcrumb__list">
+                                    
+                                    <li class="has-separator">
+
+                                        <a href="shop-side-version-2.html">Điện thoại</a></li>
+                                    <li class="is-marked">
+
+                                        <a href="shop-side-version-2.html">Iphone 13s</a></li>
+                                </ul>
+                            </div>
+                            <!--====== End - Product Breadcrumb ======-->
+
+
+                            <!--====== Product Detail Zoom ======-->
+                            <div class="pd u-s-m-b-30">
+                                <div class="slider-fouc pd-wrap">
+                                    <div id="pd-o-initiate">
+                                        <div class="pd-o-img-wrap" data-src="css/product_details/images/product-d-1.jpeg">
+
+                                            <img class="u-img-fluid" src="css/product_details/images/product-d-1.jpeg" data-zoom-image="css/product_details/images/product-d-1.jpeg" alt="">
+                                        </div>
+                                        <div class="pd-o-img-wrap" data-src="css/product_details/images/product-d-2.png">
+
+                                            <img class="u-img-fluid" src="css/product_details/images/product-d-2.png" data-zoom-image="css/product_details/images/product-d-2.png" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="css/product_details/images/product-d-3.png">
+
+                                            <img class="u-img-fluid" src="css/product_details/images/product-d-3.png" data-zoom-image="css/product_details/images/product-d-3.png" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="css/product_details/images/product-d-4.png">
+
+                                            <img class="u-img-fluid" src="css/product_details/images/product-d-4.png" data-zoom-image="css/product_details/images/product-d-4.png" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="css/product_details/images/product-d-5.png">
+
+                                            <img class="u-img-fluid" src="css/product_details/images/product-d-5.png" data-zoom-image="css/product_details/images/product-d-5.png" alt=""></div>
+                                    </div>
+
+                                    <span class="pd-text">Click for larger zoom</span>
+                                </div>
+                                <div class="u-s-m-t-15">
+                                    <div class="slider-fouc">
+                                        <div id="pd-o-thumbnail">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-1.jpeg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-2.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-3.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-4.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-5.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--====== End - Product Detail Zoom ======-->
+                        </div>
+                        <div class="col-lg-7">
+
+                            <!--====== Product Right Side Details ======-->
+                            <div class="pd-detail">
+                                <div>
+
+                                    <span class="pd-detail__name">iPhone 12 Mini 64GB Chính Hãng (VN/A)</span></div>
+                                <div>
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__price">15.290.000đ</span>
+
+                                        <span class="pd-detail__discount">(Giảm sốc: 12%)</span><del class="pd-detail__del">16.990.000đ</del></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                        <span class="pd-detail__review u-s-m-l-4">
+
+                                            <a data-click-scroll="#view-review">23 Bình luận</a></span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+                                    <div class="pd-detail__inline">
+
+                                        <span class="pd-detail__stock">Kho: 200</span>
+
+                                        <span class="pd-detail__left">Chỉ còn: 2</span></div>
+                                </div>
+                                <div class="u-s-m-b-15">
+
+                                    <span class="pd-detail__preview-desc">Thông số kỹ thuật </br> Hãng sản xuất: Apple. Kích thước: 131.5 x 64.2 x 7.4 mm. Trọng lượng: 135g. Bộ nhớ trong: 64/128/256 GB. Loại: SIMNano-SIM. Loại màn hình: Super Retina XDR OLED, HDR10, Dolby Vision, Wide color gamut, True-tone Kích..</span></div>
+                                
+                                <div class="u-s-m-b-15">
+                                   <span class="pd-detail__select_color">Chọn màu</span> 
+                                   <form class="pd-detail__form_11">
+                                       <!-- Đen -->
+                                       <input type="radio" name="brandType" id="1" class="hidebx">
+                                       <label for="1" class="lbl-radio">
+                                            <div class="display-box">
+                                                <img class ="size" src="css/product_details/images/colors/black.webp">
+                                            </div>
+                                       </label>
+
+                                       <!-- Đen -->
+                                       <input type="radio" name="brandType" id="2" class="hidebx">
+                                       <label for="2" class="lbl-radio">
+                                            <div class="display-box">
+                                                <img class ="size" src="css/product_details/images/colors/pink-nhat.webp">
+                                            </div>
+                                       </label>
+
+                                       <!-- Đen -->
+                                       <input type="radio" name="brandType" id="3" class="hidebx">
+                                       <label for="3" class="lbl-radio">
+                                            <div class="display-box">
+                                                <img class ="size" src="css/product_details/images/colors/red.webp">
+                                            </div>
+                                       </label>
+
+                                       <!-- Đen -->
+                                       <input type="radio" name="brandType" id="4" class="hidebx">
+                                       <label for="4" class="lbl-radio">
+                                            <div class="display-box">
+                                                <img class ="size" src="css/product_details/images/colors/green.webp">
+                                            </div>
+                                       </label>
+
+                                       <!-- Đen -->
+                                       <input type="radio" name="brandType" id="5" class="hidebx">
+                                       <label for="5" class="lbl-radio">
+                                            <div class="display-box">
+                                                <img class ="size" src="css/product_details/images/colors/purpose.webp">
+                                            </div>
+                                       </label>
+                                   </form>
+                                </div>
+
+                                <div class="u-s-m-b-15">
+                                    <form class="pd-detail__form">
+                                        <div class="pd-detail-inline-2">
+                                            <div class="u-s-m-b-15">
+
+                                                <!--====== Input Counter ======-->
+                                                <div class="input-counter">
+
+                                                    <span class="input-counter__minus fas fa-minus"></span>
+
+                                                    <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                    <span class="input-counter__plus fas fa-plus"></span></div>
+                                                <!--====== End - Input Counter ======-->
+                                            </div>
+                                            <div class="u-s-m-b-15">
+
+                                                <button class="btn btn--e-brand-b-2" type="submit">Add to Cart</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="u-s-m-b-15">
+
+                                    <span class="pd-detail__label u-s-m-b-8">Chính sách sản phẩm:</span>
+                                    <ul class="pd-detail__policy-list">
+                                        <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                            <span>Bảo vệ người mua hàng.</span></li>
+                                        <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                            <span>Hoàn tiền 100% nếu không nhận được đơn đặt hàng.</span></li>
+                                        <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                            <span>Trả hàng nếu sản phẩm không đúng như mô tả.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--====== End - Product Right Side Details ======-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--====== Product Detail Tab ======-->
+            <div class="u-s-p-y-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pd-tab">
+                                <div class="u-s-m-b-30">
+                                    <ul class="nav pd-tab__list">
+                                        <li class="nav-item">
+
+                                            <a class="nav-link active" data-toggle="tab" href="#pd-desc">MÔ TẢ</a></li>
+                                        <li class="nav-item">
+
+                                            <a class="nav-link" data-toggle="tab" href="#pd-tag">TAGS</a></li>
+                                        <li class="nav-item">
+
+                                            <a class="nav-link" id="view-review" data-toggle="tab" href="#pd-rev">ĐÁNH GIÁ
+
+                                                <span>(23)</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+
+                                    <!--====== Tab 1 ======-->
+                                    <div class="tab-pane fade show active" id="pd-desc">
+                                        <div class="pd-tab__desc">
+                                            <div class="u-s-m-b-15">
+                                                <p>iPhone 12 ra mắt với vai trò mở ra một kỷ nguyên hoàn toàn mới. Tốc độ mạng 5G siêu tốc, bộ vi xử lý A14 Bionic nhanh nhất thế giới smartphone, màn hình OLED tràn cạnh tuyệt đẹp và camera siêu chụp đêm, tất cả đều có mặt trên iPhone 12.</p>
+                                                <ul>
+                                                    <li>-  Thiết kế mỏng nhẹ, nhỏ gọn và đẳng cấp.</li>
+                                                    <li>-  Ceramic Shield, bảo vệ an toàn cho mặt kính.</li>
+                                                    <li>-  iPhone 12 chống nước hoàn hảo.</li>
+                                                    <li>-  Màu sắc mới của iPhone 12.</li>
+                                                    <li>-  5G siêu tốc, mở ra kỷ nguyên di động mới.</li>
+                                                    <li>-  Apple A14 Bionic, bộ vi xử lý nhanh nhất thế giới smartphone.</li>
+                                                    <li>-  Màn hình OLED Super Retina XDR siêu sắc nét.</li>
+                                                    <li>-  Hệ thống camera mới, thách thức màn đêm.</li>
+                                                    <li>-  Smart HDR 3, chụp đẹp trong mọi hoàn cảnh.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="u-s-m-b-30"><iframe src="https://www.youtube.com/embed/1Owpx6i7YJ0" allowfullscreen></iframe></div>
+                                            <div class="u-s-m-b-30">
+                                                <ul>
+                                                    <li><i class="fas fa-check u-s-m-r-8"></i>
+
+                                                        <span>BBảo vệ người mua hàng.</span></li>
+                                                    <li><i class="fas fa-check u-s-m-r-8"></i>
+
+                                                        <span>Hoàn tiền 100% nếu không nhận được đơn đặt hàng.</span></li>
+                                                    <li><i class="fas fa-check u-s-m-r-8"></i>
+
+                                                        <span>Trả hàng nếu sản phẩm không đúng như mô tả.</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="u-s-m-b-15">
+                                                <h4>THÔNG TIN SẢN PHẨM</h4>
+                                            </div>
+                                            <div class="u-s-m-b-15">
+                                                <div class="pd-table gl-scroll">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Thương hiệu</td>
+                                                                <td>Apple</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Xuất xứ</td>
+                                                                <td>Trung quốc</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Width, Height</td>
+                                                                <td>71x146(mm)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Màu màn hình</td>
+                                                                <td>16 triệu</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Trọng lượng</td>
+                                                                <td>164g</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Phiên bản</td>
+                                                                <td>A14 Bionic</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Số nhân CPU</td>
+                                                                <td>6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    Công nghệ màn hình</td>
+                                                                <td>OLED</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Tần số quét</td>
+                                                                <td>60 Hz</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>GPU</td>
+                                                                <td>Apple GPU 4 nhân</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Tab 1 ======-->
+
+
+                                    <!--====== Tab 2 ======-->
+                                    <div class="tab-pane" id="pd-tag">
+                                        <div class="pd-tab__tag">
+                                            <h2 class="u-s-m-b-15">ADD YOUR TAGS</h2>
+                                            <div class="u-s-m-b-15">
+                                                <form>
+
+                                                    <input class="input-text input-text--primary-style" type="text">
+
+                                                    <button class="btn btn--e-brand-b-2" type="submit">ADD TAGS</button></form>
+                                            </div>
+
+                                            <span class="gl-text">Sử dụng dấu cách để phân tách các thẻ. Sử dụng dấu ngoặc kép (') cho các cụm từ.</span>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Tab 2 ======-->
+
+
+                                    <!--====== Tab 3 ======-->
+                                    <div class="tab-pane" id="pd-rev">
+                                        <div class="pd-tab__rev">
+                                            <div class="u-s-m-b-30">
+                                                <div class="pd-tab__rev-score">
+                                                    <div class="u-s-m-b-8">
+                                                        <h2>23 Bình luận - 4.6 (Tổng thể)</h2>
+                                                    </div>
+                                                    <div class="gl-rating-style-2 u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                                    <div class="u-s-m-b-8">
+                                                        <h4>Chúng tôi muốn nhận ý kiến từ bạn!</h4>
+                                                    </div>
+
+                                                    <span class="gl-text">Hãy cho chúng tôi nhận xét của bạn về sản phẩm này</span>
+                                                </div>
+                                            </div>
+                                            <div class="u-s-m-b-30">
+                                                <form class="pd-tab__rev-f1">
+                                                    <div class="rev-f1__group">
+                                                        <div class="u-s-m-b-15">
+                                                            <h2>23 Đánh giá for iPhone 12 Mini 64GB Chính Hãng (VN/A)</h2>
+                                                        </div>
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label for="sort-review"></label><select class="select-box select-box--primary-style" id="sort-review">
+                                                                <option selected>Sắp xếp theo: Xếp hạng cao nhất</option>
+                                                                <option>Sắp xếp theo: Xếp hạng thấp nhất</option>
+                                                            </select></div>
+                                                    </div>
+                                                    <div class="rev-f1__review">
+                                                        <div class="review-o u-s-m-b-15">
+                                                            <div class="review-o__info u-s-m-b-8">
+
+                                                                <span class="review-o__name">Văn Chánh</span>
+
+                                                                <span class="review-o__date">27-9-2021 10:57:43</span></div>
+                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                <span>(4)</span></div>
+                                                            <p class="review-o__text">Mua đập hộp về 1 hôm thì thấy bụi ở Camera trước đưa ra hỏi shop nói phải đưa đi hãng kiểm tra mất 15 ngày. Thật sự rất nản.</p>
+                                                        </div>
+                                                        <div class="review-o u-s-m-b-15">
+                                                            <div class="review-o__info u-s-m-b-8">
+
+                                                                <span class="review-o__name">Văn Chánh</span>
+
+                                                                <span class="review-o__date">27-9-2021 10:57:43</span></div>
+                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                <span>(4)</span></div>
+                                                            <p class="review-o__text">Mua đập hộp về 1 hôm thì thấy bụi ở Camera trước đưa ra hỏi shop nói phải đưa đi hãng kiểm tra mất 15 ngày. Thật sự rất nản.</p>
+                                                        </div>
+                                                        <div class="review-o u-s-m-b-15">
+                                                            <div class="review-o__info u-s-m-b-8">
+
+                                                                <span class="review-o__name">Văn Chánh</span>
+
+                                                                <span class="review-o__date">27-9-2021 10:57:43</span></div>
+                                                            <div class="review-o__rating gl-rating-style u-s-m-b-8"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                                <span>(4)</span></div>
+                                                            <p class="review-o__text">Mua đập hộp về 1 hôm thì thấy bụi ở Camera trước đưa ra hỏi shop nói phải đưa đi hãng kiểm tra mất 15 ngày. Thật sự rất nản.</p>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="u-s-m-b-30">
+                                                <form class="pd-tab__rev-f2">
+                                                    <h2 class="u-s-m-b-15">Thêm nhân xét mới</h2>
+
+                                                    <span class="gl-text u-s-m-b-15">Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu (*)</span>
+                                                    <div class="u-s-m-b-30">
+                                                        <div class="rev-f2__table-wrap gl-scroll">
+                                                            <table class="rev-f2__table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i>
+
+                                                                                <span>(1)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(1.5)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(2)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(2.5)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(3)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(3.5)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(4)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                                                                <span>(4.5)</span></div>
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                                                                <span>(5)</span></div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-1" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-1"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-1.5" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-1.5"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-2" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-2"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-2.5" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-2.5"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-3" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-3"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-3.5" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-3.5"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-4" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-4"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-4.5" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-4.5"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                        <td>
+
+                                                                            <!--====== Radio Box ======-->
+                                                                            <div class="radio-box">
+
+                                                                                <input type="radio" id="star-5" name="rating">
+                                                                                <div class="radio-box__state radio-box__state--primary">
+
+                                                                                    <label class="radio-box__label" for="star-5"></label></div>
+                                                                            </div>
+                                                                            <!--====== End - Radio Box ======-->
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rev-f2__group">
+                                                        <div class="u-s-m-b-15">
+
+                                                            <label class="gl-label" for="reviewer-text">ĐÁNH GIÁ CỦA BẠN *</label><textarea class="text-area text-area--primary-style" id="reviewer-text"></textarea></div>
+                                                        <div>
+                                                            <p class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="reviewer-name">TÊN *</label>
+
+                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-name"></p>
+                                                            <p class="u-s-m-b-30">
+
+                                                                <label class="gl-label" for="reviewer-email">EMAIL *</label>
+
+                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-email"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+
+                                                        <button class="btn btn--e-brand-shadow" type="submit">SUBMIT</button></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--====== End - Tab 3 ======-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Product Detail Tab ======-->
+            <div class="u-s-p-b-90">
+
+                <!--====== Section Intro ======-->
+                <div class="section__intro u-s-m-b-46">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__text-wrap">
+                                    <h1 class="section__heading u-c-secondary u-s-m-b-12">CÁC SẢN PHẨM THƯƠNG TỰ</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== End - Section Intro ======-->
+
+
+                <!--====== Section Content ======-->
+                <div class="container-phone-wrapper">
+                   <div class="list-card">
+                    <div class="card a">
+                        <div class="image">
+                            <img src="css/product_details/images/watch1.png" alt="">
+                        </div>
+                        <div class="prod-details">
+                            <span>Apple Watch Ram  8gb - 256gb core</span>
+                        </div>  
+                        
+                        <div class="prod-price">
+                            <span class='root-price'>23.000.000đ</span>
+                            <span class='cut-price'>28.000.000đ</span>
+                        </div>
+            
+                        <div class = "product-info-top">
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>    
+                            <h2 class = "sm-title">100</h2>
+                        </div>  
+            
+                        <div class="buy-prod">
+                            <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                            <span class='buy-btn'>Buy Now</span>
+                        </div>
+                    </div>
+            
+                    <div class="card b">
+                        <div class="image">
+                            <img src="css/product_details/images/watch1.png" alt="">
+                        </div>
+                        <div class="prod-details">
+                            <span>Apple Watch Ram  8gb - 256gb core</span>
+                        </div>  
+                        
+                        <div class="prod-price">
+                            <span class='root-price'>23.000.000đ</span>
+                            <span class='cut-price'>28.000.000đ</span>
+                        </div>
+            
+                        <div class = "product-info-top">
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>    
+                            <h2 class = "sm-title">100</h2>
+                        </div>  
+            
+                        <div class="buy-prod">
+                            <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                            <span class='buy-btn'>Buy Now</span>
+                        </div>
+            
+                        <div class = "off-info">
+                            <h2 class = "offer">25% off</h2>
+                        </div>
+                    </div>
+          
+                    <div class="card c">
+                        <div class="image">
+                            <img src="css/product_details/images/watch1.png" alt="">
+                        </div>
+                        <div class="prod-details">
+                            <span>Apple Watch Ram  8gb - 256gb core</span>
+                        </div>  
+                        
+                        <div class="prod-price">
+                            <span class='root-price'>23.000.000đ</span>
+                            <span class='cut-price'>28.000.000đ</span>
+                        </div>
+            
+                        <div class = "product-info-top">
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>    
+                            <h2 class = "sm-title">100</h2>
+                        </div>  
+            
+                        <div class="buy-prod">
+                            <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                            <span class='buy-btn'>Buy Now</span>
+                        </div>
+        
+                    </div>
+            
+                    <div class="card d">
+                        <div class="image">
+                            <img src="css/product_details/images/watch1.png" alt="">
+                        </div>
+                        <div class="prod-details">
+                            <span>Apple Watch Ram  8gb - 256gb core</span>
+                        </div>  
+                        
+                        <div class="prod-price">
+                            <span class='root-price'>23.000.000đ</span>
+                            <span class='cut-price'>28.000.000đ</span>
+                        </div>
+            
+                        <div class = "product-info-top">
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>    
+                            <h2 class = "sm-title">100</h2>
+                        </div>  
+            
+                        <div class="buy-prod">
+                            <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                            <span class='buy-btn'>Buy Now</span>
+                        </div>
+                    </div>
+        
+                    <div class="card e">
+                        <div class="image">
+                            <img src="css/product_details/images/watch1.png" alt="">
+                        </div>
+                        <div class="prod-details">
+                            <span>Apple Watch Ram  8gb - 256gb core</span>
+                        </div>  
+                    
+                        <div class="prod-price">
+                            <span class='root-price'>23.000.000đ</span>
+                            <span class='cut-price'>28.000.000đ</span>
+                        </div>
+        
+                        <div class = "product-info-top">
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                            </div>    
+                            <h2 class = "sm-title">100</h2>
+                        </div>  
+        
+                        <div class="buy-prod">
+                            <span>Buy Now</span>
+                        </div>
+        
+                        <div class = "off-info">
+                            <h2 class = "offer">25% off</h2>
+                        </div>
+                    </div>
+        
+                   </div>
+                </div>  
+                <!--====== End - Section Content ======-->
+            </div>
+            <!--====== End - Section 1 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+
+
+        <!--====== Main Footer ======-->
+        <footer>
+            <div class="art">
+              <div class="content">
+                <section>
+                  <header>HỖ TRỢ KHÁCH HÀNG</header>
+                  <a href="">Hướng dẫn đặt hàng</a>
+                  <a href="">Phương thức vận chuyển</a>
+                  <a href="">Chính sách đổi trả</a>
+                  <a href="">Hướng dẫn trả góp</a>
+                  <a href="">Câu hỏi thường gặp</a>
+                  <a href="">Hỗ trợ khách hàng</a>
+                  <a href="">Báo lỗi bảo mật</a>
+                </section>
+                <section>
+                  <header>THÔNG TIN CỬA HÀNG</header>
+                  <a href="">Giới thiệu cửa hàng</a>
+                  <a href="">Chính sách bảo mật</a>
+                  <a href="">Thông tin tuyển dụng</a>
+                  <a href="">Điều khoản sử dụng</a>
+                  <a href="">Chính sách giải quyết khiếu nại</a>
+                  <a href="">Bán hàng doanh nghiệp</a>
+                </section>
+                <section>
+                    <header>PHƯƠNG THỨC THANH TOÁN</header>
+                    <p>
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="70" alt="">
+                    </p>
+                </section>
+               <section class='footer-info'>
+                <section>
+                    <header class='connect-us'>KẾT NỐI VỚI CHÚNG TÔI</header>
+                    <div class="social">
+                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-telegram-plane"></i>
+                    </div>
+                  </section>
+                  <section>
+                      <header class ='download-ios-and'>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</header>
+                      <p>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" width="134" alt="">
+                            </a>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" width="134" alt="">
+                            </a>
+                        </p>
+                  </section>
+               </section>
+                
+              </div>
+              <div class="address-info">
+                Địa chỉ: Trường Đại học công nghệ thông tin, Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+              </div>
+              <div class="notice">
+                Copyright Protected &copy;
+                <strong>Phạm Văn Chánh - Hồ Quang - Nguyễn Minh Thái</strong>
+              </div>
+            </div>
+        </footer>
+    
+
+        <!--====== Modal Section ======-->
+
+
+        <!--====== Quick Look Modal ======-->
+        <div class="modal fade" id="quick-look">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal--shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+
+                                <!--====== Product Breadcrumb ======-->
+                                <div class="pd-breadcrumb u-s-m-b-30">
+                                    <ul class="pd-breadcrumb__list">
+                                        <li class="has-separator">
+
+                                            <a href="index.hml">Home</a></li>
+                                        <li class="has-separator">
+
+                                            <a href="shop-side-version-2.html">Electronics</a></li>
+                                        <li class="has-separator">
+
+                                            <a href="shop-side-version-2.html">DSLR Cameras</a></li>
+                                        <li class="is-marked">
+
+                                            <a href="shop-side-version-2.html">Nikon Cameras</a></li>
+                                    </ul>
+                                </div>
+                                <!--====== End - Product Breadcrumb ======-->
+
+
+                                <!--====== Product Detail ======-->
+                                <div class="pd u-s-m-b-30">
+                                    <div class="pd-wrap">
+                                        <div id="js-product-detail-modal">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-1.jpeg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-2.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-3.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-4.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-5.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-t-15">
+                                        <div id="js-product-detail-modal-thumbnail">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-1.jpeg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-2.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-3.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-4.png" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_details/images/product-d-5.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Detail ======-->
+                            </div>
+                            <div class="col-lg-7">
+
+                                <!--====== Product Right Side Details ======-->
+                                <div class="pd-detail">
+                                    <div>
+
+                                        <span class="pd-detail__name">Nikon Camera 4k Lens Zoom Pro</span></div>
+                                    <div>
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__price">$6.99</span>
+
+                                            <span class="pd-detail__discount">(76% OFF)</span><del class="pd-detail__del">$28.97</del></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="pd-detail__review u-s-m-l-4">
+
+                                                <a href="product-detail.html">23 Reviews</a></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__stock">200 in stock</span>
+
+                                            <span class="pd-detail__left">Only 2 left</span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__preview-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap"><i class="far fa-heart u-s-m-r-6"></i>
+
+                                                <a href="signin.html">Add to Wishlist</a>
+
+                                                <span class="pd-detail__click-count">(222)</span></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap"><i class="far fa-envelope u-s-m-r-6"></i>
+
+                                                <a href="signin.html">Email me When the price drops</a>
+
+                                                <span class="pd-detail__click-count">(20)</span></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <ul class="pd-social-list">
+                                            <li>
+
+                                                <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li>
+
+                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li>
+
+                                                <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li>
+
+                                                <a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li>
+
+                                                <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <form class="pd-detail__form">
+                                            <div class="pd-detail-inline-2">
+                                                <div class="u-s-m-b-15">
+
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+
+                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                        <span class="input-counter__plus fas fa-plus"></span></div>
+                                                    <!--====== End - Input Counter ======-->
+                                                </div>
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="btn btn--e-brand-b-2" type="submit">Add to Cart</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__label u-s-m-b-8">Product Policy:</span>
+                                        <ul class="pd-detail__policy-list">
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Buyer Protection.</span></li>
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Full Refund if you don't receive your order.</span></li>
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Returns accepted if product not as described.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Right Side Details ======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Quick Look Modal ======-->
+
+
+        <!--====== Add to Cart Modal ======-->
+        <div class="modal fade" id="add-to-cart">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-radius modal-shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="success u-s-m-b-30">
+                                    <div class="success__text-wrap"><i class="fas fa-check"></i>
+
+                                        <span>Item is added successfully!</span></div>
+                                    <div class="success__img-wrap">
+
+                                        <img class="u-img-fluid" src="css/product_details/images/product1.jpg" alt=""></div>
+                                    <div class="success__info-wrap">
+
+                                        <span class="success__name">Beats Bomb Wireless Headphone</span>
+
+                                        <span class="success__quantity">Quantity: 1</span>
+
+                                        <span class="success__price">$170.00</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="s-option">
+
+                                    <span class="s-option__text">1 item (s) in your cart</span>
+                                    <div class="s-option__link-box">
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">CONTINUE SHOPPING</a>
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">VIEW CART</a>
+
+                                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">PROCEED TO CHECKOUT</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Add to Cart Modal ======-->
+        <!--====== End - Modal Section ======-->
+    </div>
+    <!--====== End - Main App ======-->
+
+
+    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="js/product_details/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="js/product_details/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="js/product_details/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>

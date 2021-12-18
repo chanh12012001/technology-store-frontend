@@ -4,4 +4,3 @@ $('.main-carousel').flickity({
     autoPlay:true,
 });
 
- 
