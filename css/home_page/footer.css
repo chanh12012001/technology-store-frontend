@@ -88,11 +88,7 @@
   }
   
   footer .social i {
-<<<<<<< HEAD
-    font-size: 32px;
-=======
     font-size: 23px;
->>>>>>> 34a20a430ea41d27c07bda54f23bc2735b8a314a
     padding: 12px;
     text-align: center;
     border: 1px solid var(--light);
@@ -219,12 +215,4 @@
     footer header {
         font-size: 14px;
       }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f4b23f8007a591520b581214e01f5ac256f0fb2f
-=======
-}
->>>>>>> 34a20a430ea41d27c07bda54f23bc2735b8a314a

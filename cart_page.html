@@ -345,8 +345,20 @@
                                 <strong id="result">590.000₫</strong>
                             </div>
                         </div>
-                        <button type="button" class="submitorder">
-                            <b style="text-transform:uppercase">Đặt hàng</b>
+                        <button class="truck-button">
+                            <span class="default">ĐẶT HÀNG</span>
+                            <span class="success">
+                                HOÀN TẤT
+                                <svg viewbox="0 0 12 10">
+                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg>
+                            </span>
+                            <div class="truck">
+                                <div class="wheel"></div>
+                                <div class="back"></div>
+                                <div class="front"></div>
+                                <div class="box"></div>
+                            </div>
                         </button>
                         <small> Bạn có thể chọn hình thức thanh toán sau khi đặt hàng </small>
                     </div>
@@ -514,6 +526,7 @@
             </div>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/cart_page/event.js"></script>
         <script type="text/javascript" src="js/cart_page/cart.js"></script>
