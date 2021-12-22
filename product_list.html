@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/product_list/images/favicon.png" rel="shortcut icon">
+    <title>Công nghệ Store</title>
+
+    <!--====== Google Font ======-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--====== Utility-Spacing ======-->
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!--====== App ======-->
+    <link rel="stylesheet" href="css/product_list/app.css">
+
+    <link rel="stylesheet" href="css/product_list/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+
+            <img class="preloader__img" src="css/product_list/images/preloader.png" alt=""></div>
+    </div>
+
+    <!--====== Main App ======-->
+    <div id="app">
+
+        <!--====== Main Header ======-->
+        <!-- header image-->
+        <header  class='header_banner'>
+            <img src='css/product_list/images/banner1.png' alt="" class='banner'>
+        </header>
+
+        <!-- header -->
+        <div class="header">
+            <div class="header_top" id="header_t">
+                <div id='header_menu'>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="index.html">
+                    <img class="icon_logo" src="css/product_list/images/logoQStore.png" alt="">
+                </a>
+                <a href="" class="header_address">
+                    <i class="fas fa-map-marker-alt"></i>Hồ Chí Minh<i class="fas fa-sort-down icon-down"></i> 
+                </a>   
+                <div class='header_search'>
+                    <input type="text" class='input' placeholder="Tìm kiếm...">
+                    <i class="fas fa-search icon-search"></i>
+                </div>
+                <a href="cart_page.html" class='header_shoppingcart'>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id='content_shopping_cart_header'>Giỏ hàng</span> 
+                </a>
+                <a href="" class='header_history'>Lịch sử <br> đơn hàng</a>
+                <a href="" class='header_ad'>
+                    <span class='dot_content'><span class='dot_animation'></span></span>
+                    Mua thẻ nạp ngay
+                </a>
+                <a href="news_page.html" class='header_new'>
+                    Tin tức
+                </a>
+                <a href="" class='header_QA'>
+                    Hỏi đáp
+                </a>
+            </div>
+
+            <div class="header_main" id='header_m'>
+                <div>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="product_list.html">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Điện thoại</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-laptop"></i>
+                                <span>Laptop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-tablet-alt"></i>
+                                <span>Tablet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-blender"></i>
+                                <span>Hàng gia dụng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accessory_page.html">
+                                <i class="fas fa-headphones"></i>
+                                <span>Phụ kiện</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-clock"></i>
+                                <span>Đồng hồ thông minh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-sim-card"></i>
+                                <span>Sim & Thẻ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-tools"></i>    
+                                <span>Sửa chữa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Trả góp 0%</span>
+                            </a>
+                        </li>
+
+                        <hr id='divider'></hr>
+
+                        <div class='div_header'>
+                            <ul class='ul_header'>
+                                <li>
+                                    <a href="" class='header_new' id='header_new'>
+                                        <i class="fas fa-newspaper"></i>
+                                        <span>Tin tức</span> 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="" class='header_QA' id='header_QA'>
+                                        <i class="fas fa-question-circle"></i>
+                                        <span>Hỏi đáp</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <a href="" class='header_ad' id='header_ad'>
+                                <span class='dot_content'><span class='dot_animation'></span></span>
+                                Mua thẻ nạp ngay
+                            </a>                            
+                        </div>        
+
+                        <li class='profile'>
+                            <a href="">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>Gọi ngay</span>
+                                <span id='phone'>012.345.6789</span>
+                                <span>(7:30 - 22:00)</span>
+                            </a>
+                            <br>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>
+                                <span>Fanpage:</span>
+                                <span>Công Nghệ Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--====== End - Main Header ======-->
+
+
+        <!--====== App Content ======-->
+        <div class="app-content app-content11">
+
+             <!--row event container-->
+        <div class="row f-event-container">
+            <ol class="breadcrumb breadcrumb-margin">
+                <li class="breadcrumb-item">
+                    <A href="1_index.html" title="Trang chủ">Trang chủ</A>
+                </li>
+                <li class="breadcrumb-item active">Điện thoại</li>
+            </ol>
+            <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://fptshop.com.vn/"},{"@type":"ListItem","position":2,"name":"Điện thoại","item":"https://fptshop.com.vn/dien-thoai"}]}</script>
+        </div>
+        <!--banner-slider-->
+        
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-y-90 u-s-p-y-90-11">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12">
+                            <div class="shop-p">
+                                <div class = "carousel-wrap">
+                                    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                                        <div class="carousel-cell">
+                                            <img class="w3-image" src="https://smash-images.photobox.com/original/5f04c1b41fd48d1b10ff27dfc90548bf13608845_Large-Print-lifestyle-3_1-2600.jpg">
+                                        </div>
+                                        <div class="carousel-cell">
+                                            <img class="w3-image" src="https://smash-images.photobox.com/original/bca8e5fa7862a2cfaefc300c5b572e7a6dc6f3f3_Standard-Prints-lifestyle-3_1-2600.jpg">
+                                        </div>
+                                        <div class="carousel-cell">
+                                            <img class="w3-image" src="https://smash-images.photobox.com/original/a422aed1a721e933961b19ea9e47e07fc71e0699_Acrylic-Prints-lifestyle-3_1-2600.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-r">
+                                    </div>
+                                </div>
+                                <div class="shop-p__toolbar u-s-m-b-30">
+                                    <div class="shop-p__meta-wrap u-s-m-b-60">
+
+                                        <span class="shop-p__meta-text-1">18 KẾT QUẢ TÌM KIẾM</span>
+                                        <div class="shop-p__meta-text-2">
+
+                                            <span>Tìm kiếm liên quan:</span>
+
+                                            <a class="gl-tag btn--e-brand-shadow" href="#">iPhone 13 Pro Max</a>
+
+                                            <a class="gl-tag btn--e-brand-shadow" href="#">Oppo A37</a>
+
+                                            <a class="gl-tag btn--e-brand-shadow" href="#">Samsung Galaxy A</a></div>
+                                    </div>
+                                    <div class="shop-p__tool-style">
+                                        <div class="tool-style__group u-s-m-b-8">
+
+                                            <span class="js-shop-filter-target" data-side="#side-filter">Tìm nhanh</span>
+
+                                            <span class="js-shop-grid-target is-active">Danh sách sản phẩm</span>
+
+                                            <span class="js-shop-list-target">List</span></div>
+                                        <form>
+                                            <div class="tool-style__form-wrap">
+                                                <div class="u-s-m-b-8"><select class="select-box select-box--transparent-b-2">
+                                                        <option>Show: 8</option>
+                                                        <option selected>Show: 12</option>
+                                                        <option>Show: 16</option>
+                                                        <option>Show: 28</option>
+                                                    </select></div>
+                                                <div class="u-s-m-b-8"><select class="select-box select-box--transparent-b-2">
+                                                        <option selected>Sort By: Newest Items</option>
+                                                        <option>Sort By: Latest Items</option>
+                                                        <option>Sort By: Best Selling</option>
+                                                        <option>Sort By: Best Rating</option>
+                                                        <option>Sort By: Lowest Price</option>
+                                                        <option>Sort By: Highest Price</option>
+                                                    </select></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card m-b-30 fpheadbox">
+                    
+                                
+                                    <div class = "card-body cdt-brand-pd1">
+                                        <div class="cdt-brand-img swiper-container swiper-container-horizontal">
+                                            <div class="main-carousel1">
+                                                <div onclick="Iphone()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490193124614_iPhone-Apple@2x.jpg" alt="Apple (iPhone)"></a></div>
+                                                <div onclick="Samsung()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340490904217021_Samsung@2x.jpg" alt="Samsung"></a></div>
+                                                <div onclick="Oppo()" class="cell1"><a ><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491304997311_Oppo@2x.jpg" alt="OPPO"></a></div>
+                                                <div onclick="Xiaomi()" class="cell1"><a ><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" alt="Xiaomi"></a></div>
+                                                <div onclick="Vivo()" class="cell1"><a ><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Vivo@2x.jpg" alt="Vivo"></a></div>
+                                                <div onclick="Tecno()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/22/637705137962743415_Tecno@2x.jpg" alt="Tecno"></a></div>
+                                                <div onclick="Realme()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898745716_Realme@2x.jpg" alt="Realme"></a></div>
+                                                <div onclick="Vsmart()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340491898901930_Vsmart@2x.jpg" alt="Vsmart"></a></div>
+                                                <div onclick="Nokia()" class="cell1"><a><img src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/8/26/637340493755614653_Nokia@2x.jpg" alt="Nokia"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>              
+                                </div>
+                                <div class="shop-p__collection">
+                                    <div class="container-phone-wrapper">
+                                        <div class='phone-list-title' >
+                                            <h2>Tất cả điện thoại</h2>
+                
+                                        </div>
+                                       <div class="list-card">
+                                        <a href="product-detail.html">
+                                            <div class="card a">
+                                                <div class="image">
+                                                    <img src="css/product_list/images/watch1.png" alt="">
+                                                </div>
+                                                <div class="prod-details">
+                                                    <span>Apple Watch Ram  8gb - 256gb core</span>
+                                                </div>  
+                                                
+                                                <div class="prod-price">
+                                                    <span class='root-price'>23.000.000đ</span>
+                                                    <span class='cut-price'>28.000.000đ</span>
+                                                </div>
+                                    
+                                                <div class = "product-info-top">
+                                                    <div class = "rating">
+                                                        <span><i class = "fas fa-star"></i></span>
+                                                        <span><i class = "fas fa-star"></i></span>
+                                                        <span><i class = "fas fa-star"></i></span>
+                                                        <span><i class = "fas fa-star"></i></span>
+                                                        <span><i class = "far fa-star"></i></span>
+                                                    </div>    
+                                                    <h2 class = "sm-title">100</h2>
+                                                </div>  
+                                    
+                                                <div class="buy-prod">
+                                                    <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                                                    <span class='buy-btn'>Buy Now</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                
+                                        <div class="card b">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                            
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                                
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                                
+                                            <div class="buy-prod">
+                                                <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                                                <span class='buy-btn'>Buy Now</span>
+                                            </div>
+                                
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                              
+                                        <div class="card c">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                            
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                                
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                                
+                                            <div class="buy-prod">
+                                                <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                                                <span class='buy-btn'>Buy Now</span>
+                                            </div>
+                            
+                                        </div>
+                                
+                                        <div class="card d">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                            
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                                
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                                
+                                            <div class="buy-prod">
+                                                <span class='icon'><i class="fas fa-cart-plus"></i></span>
+                                                <span class='buy-btn'>Buy Now</span>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card e">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span>Buy Now</span>
+                                            </div>
+                            
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card f">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span>Buy Now</span>
+                                            </div>
+                            
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card g">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span>Buy Now</span>
+                                            </div>
+                            
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card h">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span>Buy Now</span>
+                                            </div>
+                            
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card y">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span>Buy Now</span>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="card k">
+                                            <div class="image">
+                                                <img src="css/product_list/images/watch1.png" alt="">
+                                            </div>
+                                            <div class="prod-details">
+                                                <span>Apple Watch Ram  8gb - 256gb core</span>
+                                            </div>  
+                                        
+                                            <div class="prod-price">
+                                                <span class='root-price'>23.000.000đ</span>
+                                                <span class='cut-price'>28.000.000đ</span>
+                                            </div>
+                            
+                                            <div class = "product-info-top">
+                                                <div class = "rating">
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "fas fa-star"></i></span>
+                                                    <span><i class = "far fa-star"></i></span>
+                                                </div>    
+                                                <h2 class = "sm-title">100</h2>
+                                            </div>  
+                            
+                                            <div class="buy-prod">
+                                                <span><i class="fas fa-cart-plus"></i></span>
+                                                <span>Buy Now</span>
+                                            </div>
+                            
+                                            <div class = "off-info">
+                                                <h2 class = "offer">25% off</h2>
+                                            </div>
+                                        </div>
+                                       </div>
+                                    </div>   
+                                </div>
+                                <div class="u-s-p-y-60">
+
+                                    <!--====== Pagination ======-->
+                                    <ul class="shop-p__pagination">
+                                        <li class="is-active">
+
+                                            <a href="shop-grid-full.html">1</a></li>
+                                        <li>
+
+                                            <a href="shop-grid-full.html">2</a></li>
+                                        <li>
+
+                                            <a href="shop-grid-full.html">3</a></li>
+                                        <li>
+
+                                            <a href="shop-grid-full.html">4</a></li>
+                                        <li>
+
+                                            <a class="fas fa-angle-right" href="shop-grid-full.html"></a></li>
+                                    </ul>
+                                    <!--====== End - Pagination ======-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section 1 ======-->
+        </div>
+        <!--====== End - App Content ======-->
+
+
+        <!--====== Main Footer ======-->
+
+        <footer>
+            <div class="art">
+              <div class="content">
+                <section>
+                  <header>HỖ TRỢ KHÁCH HÀNG</header>
+                  <a href="">Hướng dẫn đặt hàng</a>
+                  <a href="">Phương thức vận chuyển</a>
+                  <a href="">Chính sách đổi trả</a>
+                  <a href="">Hướng dẫn trả góp</a>
+                  <a href="">Câu hỏi thường gặp</a>
+                  <a href="">Hỗ trợ khách hàng</a>
+                  <a href="">Báo lỗi bảo mật</a>
+                </section>
+                <section>
+                  <header>THÔNG TIN CỬA HÀNG</header>
+                  <a href="">Giới thiệu cửa hàng</a>
+                  <a href="">Chính sách bảo mật</a>
+                  <a href="">Thông tin tuyển dụng</a>
+                  <a href="">Điều khoản sử dụng</a>
+                  <a href="">Chính sách giải quyết khiếu nại</a>
+                  <a href="">Bán hàng doanh nghiệp</a>
+                </section>
+                <section>
+                    <header>PHƯƠNG THỨC THANH TOÁN</header>
+                    <p>
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/mastercard.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/cash.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/internet-banking.svg" width="70" alt="">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/installment.svg" width="70" alt="">
+                    </p>
+                </section>
+               <section class='footer-info'>
+                <section>
+                    <header class='connect-us'>KẾT NỐI VỚI CHÚNG TÔI</header>
+                    <div class="social">
+                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-telegram-plane"></i>
+                    </div>
+                  </section>
+                  <section>
+                      <header class ='download-ios-and'>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</header>
+                      <p>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png" width="134" alt="">
+                            </a>
+                            <a rel="noreferrer" href="" class="icon" target="_blank" aria-label="">
+                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png" width="134" alt="">
+                            </a>
+                        </p>
+                  </section>
+               </section>
+                
+              </div>
+              <div class="address-info">
+                Địa chỉ: Trường Đại học công nghệ thông tin, Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.
+              </div>
+              <div class="notice">
+                Copyright Protected &copy;
+                <strong>Phạm Văn Chánh - Hồ Quang - Nguyễn Minh Thái</strong>
+              </div>
+            </div>
+        </footer>
+    
+        <!--====== Side Filters ======-->
+        <div class="shop-a" id="side-filter">
+            <div class="shop-a__wrap">
+                <div class="shop-a__inner gl-scroll">
+                    <div class="shop-w-master">
+                        <h1 class="shop-w-master__heading u-s-m-b-30"><i class="fas fa-filter u-s-m-r-8"></i>
+
+                            <span>TÌM KIẾM</span></h1>
+                        <div class="shop-w-master__sidebar">
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">LOẠI ĐIỆN THOẠI</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-category" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-category">
+                                        <ul class="shop-w__category-list gl-scroll">
+                                            <li class="has-list">
+
+                                                <a href="#">Iphone</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(23)</span>
+
+                                                <span class="js-shop-category-span is-expanded fas fa-plus u-s-m-l-6"></span>
+                                                <ul style="display:block">
+                                                    <li class="has-list">
+
+                                                        <a href="#">iPhone X</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">iPhone X</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone XR</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone XS</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone XS Max</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">iPhone 11</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">iPhone 11</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 11 Pro</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 11 Pro Max</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">iPhone 12</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">iPhone 12 Mini</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 12</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 12 Pro</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 12 Pro Max</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">iPhone 13</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">iPhone 13 Mini</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 13</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 13 Pro</a></li>
+                                                            <li>
+
+                                                                <a href="#">iPhone 13 Pro Max</a></li>
+                                                        </ul>
+                                                    </li>
+                                                
+                                                </ul>
+                                            </li>
+                                            <li class="has-list">
+
+                                                <a href="#">Samsung</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(5)</span>
+
+                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                <ul>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Galaxy A</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Galaxy A32 5G/4G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy A52 4G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy A52 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy A72</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Galaxy M</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Galaxy M62</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy M12</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy M42 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy M32</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Flagship</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Galaxy S21 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy S21 Plus 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy S21 Ultra 5G</a></li>
+                                                            
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Màn hình gập</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Galaxy Z Fold 3 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Galaxy Z Flip 5G</a></li>
+                                            
+                                                        </ul>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="has-list">
+
+                                                <a href="#">Oppo</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(5)</span>
+
+                                                <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                <ul>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Oppo A</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Oppo A95</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo A74 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo A94</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo A93</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Oppo Reno</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Oppo Reno6 Z 5G</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo Reno4</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo Reno5</a></li>
+                                       
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Oppo Find X</a>
+
+                                                        <span class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Oppo Find X3 pro</a></li>
+                                                            <li>
+
+                                                                <a href="#">Oppo Find X4</a></li>
+                               
+                                                        </ul>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li>
+
+                                                <a href="#">Xiaomi</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(0)</span></li>
+                                            <li>
+
+                                                <a href="#">Vivo</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(0)</span></li>
+                                            <li>
+
+                                                <a href="#">Realme</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(0)</span></li>
+                                            <li>
+
+                                                <a href="#">Tecno</a>
+
+                                                <span class="category-list__text u-s-m-l-6">(0)</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">ĐÁNH GIÁ</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-rating" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-rating">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(2)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>& Up</span></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(8)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>& Up</span></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(10)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>& Up</span></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(12)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>& Up</span></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(1)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">SHIPPING</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-shipping" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-shipping">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="free-shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="free-shipping">Free Shipping</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">GIÁ</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-price" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-price">
+                                        <form class="shop-w__form-p">
+                                            <div class="shop-w__form-p-wrap">
+                                                <div>
+
+                                                    <label for="price-min"></label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="price-min" placeholder="Min"></div>
+                                                <div>
+
+                                                    <label for="price-max"></label>
+
+                                                    <input class="input-text input-text--primary-style" type="text" id="price-max" placeholder="Max"></div>
+                                                <div>
+
+                                                    <button class="btn btn--icon fas fa-angle-right btn--e-transparent-platinum-b-2" type="submit"></button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">CAMERA</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-manufacturer" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-manufacturer">
+                                        <ul class="shop-w__list-2">
+                                            <li>
+                                                <div class="list__content">
+
+                                                    <input type="checkbox" checked>
+
+                                                    <span>Chụp cận cảnh (Macro)</span></div>
+
+                                                <span class="shop-w__total-text">(23)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+
+                                                    <input type="checkbox">
+
+                                                    <span>Chụp góc rộng</span></div>
+
+                                                <span class="shop-w__total-text">(2)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+
+                                                    <input type="checkbox">
+
+                                                    <span>Chụp xoá phông</span></div>
+
+                                                <span class="shop-w__total-text">(2)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+
+                                                    <input type="checkbox">
+
+                                                    <span>Chụp zoom xa</span></div>
+
+                                                <span class="shop-w__total-text">(9)</span>
+                                            </li>
+                                
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">MÀU SẮC</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-color" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-color">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="color__check">
+
+                                                    <input type="checkbox" id="jet">
+
+                                                    <label class="color__check-label" for="jet" style="background-color: #333333"></label></div>
+
+                                                <span class="shop-w__total-text">(2)</span>
+                                            </li>
+                                            <li>
+                                                <div class="color__check">
+
+                                                    <input type="checkbox" id="folly">
+
+                                                    <label class="color__check-label" for="folly" style="background-color: #FF0055"></label></div>
+
+                                                <span class="shop-w__total-text">(4)</span>
+                                            </li>
+                                            <li>
+                                                <div class="color__check">
+
+                                                    <input type="checkbox" id="yellow">
+
+                                                    <label class="color__check-label" for="yellow" style="background-color: #FFFF00"></label></div>
+
+                                                <span class="shop-w__total-text">(6)</span>
+                                            </li>
+                                            <li>
+                                                <div class="color__check">
+
+                                                    <input type="checkbox" id="granite-gray">
+
+                                                    <label class="color__check-label" for="granite-gray" style="background-color: #605F5E"></label></div>
+
+                                                <span class="shop-w__total-text">(8)</span>
+                                            </li>
+                                            <li>
+                                                <div class="color__check">
+
+                                                    <input type="checkbox" id="space-cadet">
+
+                                                    <label class="color__check-label" for="space-cadet" style="background-color: #1D3461"></label></div>
+
+                                                <span class="shop-w__total-text">(10)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">BỘ NHỚ TRONG</h1>
+
+                                        <span class="fas fa-minus collapsed shop-w__toggle" data-target="#s-size" data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse" id="s-size">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="xs">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="xs">8GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(2)</span>
+                                            </li>
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="small">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="small">16GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(4)</span>
+                                            </li>
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="medium">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="medium">32GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(6)</span>
+                                            </li>
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="large">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="large">64GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(8)</span>
+                                            </li>
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="xl">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="xl">128GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(10)</span>
+                                            </li>
+                                            <li>
+
+                                                <!--====== Check Box ======-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="xxl">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="xxl">256GB</label></div>
+                                                </div>
+                                                <!--====== End - Check Box ======-->
+
+                                                <span class="shop-w__total-text">(12)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Side Filters ======-->
+
+
+        <!--====== Modal Section ======-->
+
+
+        <!--====== Quick Look Modal ======-->
+        <div class="modal fade" id="quick-look">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal--shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+
+                                <!--====== Product Breadcrumb ======-->
+                                <div class="pd-breadcrumb u-s-m-b-30">
+                                    <ul class="pd-breadcrumb__list">
+                                        <li class="has-separator">
+
+                                            <a href="index.hml">Home</a></li>
+                                        <li class="has-separator">
+
+                                            <a href="shop-side-version-2.html">Electronics</a></li>
+                                        <li class="has-separator">
+
+                                            <a href="shop-side-version-2.html">DSLR Cameras</a></li>
+                                        <li class="is-marked">
+
+                                            <a href="shop-side-version-2.html">Nikon Cameras</a></li>
+                                    </ul>
+                                </div>
+                                <!--====== End - Product Breadcrumb ======-->
+
+
+                                <!--====== Product Detail ======-->
+                                <div class="pd u-s-m-b-30">
+                                    <div class="pd-wrap">
+                                        <div id="js-product-detail-modal">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-1.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-2.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-3.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-4.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-5.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="u-s-m-t-15">
+                                        <div id="js-product-detail-modal-thumbnail">
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-1.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-2.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-3.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-4.jpg" alt=""></div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="css/product_list/images/product-d-5.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Detail ======-->
+                            </div>
+                            <div class="col-lg-7">
+
+                                <!--====== Product Right Side Details ======-->
+                                <div class="pd-detail">
+                                    <div>
+
+                                        <span class="pd-detail__name">Nikon Camera 4k Lens Zoom Pro</span></div>
+                                    <div>
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__price">$6.99</span>
+
+                                            <span class="pd-detail__discount">(76% OFF)</span><del class="pd-detail__del">$28.97</del></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__rating gl-rating-style"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="pd-detail__review u-s-m-l-4">
+
+                                                <a href="product-detail.html">23 Reviews</a></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__stock">200 in stock</span>
+
+                                            <span class="pd-detail__left">Only 2 left</span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__preview-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap"><i class="far fa-heart u-s-m-r-6"></i>
+
+                                                <a href="signin.html">Add to Wishlist</a>
+
+                                                <span class="pd-detail__click-count">(222)</span></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <div class="pd-detail__inline">
+
+                                            <span class="pd-detail__click-wrap"><i class="far fa-envelope u-s-m-r-6"></i>
+
+                                                <a href="signin.html">Email me When the price drops</a>
+
+                                                <span class="pd-detail__click-count">(20)</span></span></div>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <ul class="pd-social-list">
+                                            <li>
+
+                                                <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li>
+
+                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li>
+
+                                                <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li>
+
+                                                <a class="s-wa--color-hover" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                            <li>
+
+                                                <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+                                        <form class="pd-detail__form">
+                                            <div class="pd-detail-inline-2">
+                                                <div class="u-s-m-b-15">
+
+                                                    <!--====== Input Counter ======-->
+                                                    <div class="input-counter">
+
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+
+                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="1000">
+
+                                                        <span class="input-counter__plus fas fa-plus"></span></div>
+                                                    <!--====== End - Input Counter ======-->
+                                                </div>
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="btn btn--e-brand-b-2" type="submit">Add to Cart</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="u-s-m-b-15">
+
+                                        <span class="pd-detail__label u-s-m-b-8">Product Policy:</span>
+                                        <ul class="pd-detail__policy-list">
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Buyer Protection.</span></li>
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Full Refund if you don't receive your order.</span></li>
+                                            <li><i class="fas fa-check-circle u-s-m-r-8"></i>
+
+                                                <span>Returns accepted if product not as described.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--====== End - Product Right Side Details ======-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Quick Look Modal ======-->
+
+
+        <!--====== Add to Cart Modal ======-->
+        <div class="modal fade" id="add-to-cart">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-radius modal-shadow">
+
+                    <button class="btn dismiss-button fas fa-times" type="button" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="success u-s-m-b-30">
+                                    <div class="success__text-wrap"><i class="fas fa-check"></i>
+
+                                        <span>Item is added successfully!</span></div>
+                                    <div class="success__img-wrap">
+
+                                        <img class="u-img-fluid" src="css/product_list/images/product2.jpg" alt=""></div>
+                                    <div class="success__info-wrap">
+
+                                        <span class="success__name">Beats Bomb Wireless Headphone</span>
+
+                                        <span class="success__quantity">Quantity: 1</span>
+
+                                        <span class="success__price">$170.00</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="s-option">
+
+                                    <span class="s-option__text">1 item (s) in your cart</span>
+                                    <div class="s-option__link-box">
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">CONTINUE SHOPPING</a>
+
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="cart.html">VIEW CART</a>
+
+                                        <a class="s-option__link btn--e-brand-shadow" href="checkout.html">PROCEED TO CHECKOUT</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== End - Add to Cart Modal ======-->
+        <!--====== End - Modal Section ======-->
+    </div>
+    <!--====== End - Main App ======-->
+
+
+    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <script src="js/product_list/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="js/product_list/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="js/product_list/app.js"></script>
+    <script src="js/product_list/image_banner.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript is disabled in your browser.</h1>
+
+                            <span class="app-setting__text">Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>
