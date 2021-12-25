@@ -101,6 +101,8 @@ $('.singlebox').click(function (){
 })
 function Set_time () {
     setTimeout(Key_press, 100);
+    setTimeout(Fill_name, 100);
+    setTimeout(District, 100);
 }
 function Key_press() {
     var Ap_dung = $('.applycode__button').children();
@@ -116,3 +118,136 @@ function Key_press() {
 function Ap_dung() {
     $('.applycode small').show();
 }
+function Fill_name() {
+    if(document.getElementById("name").value.length >= 1){
+        document.getElementById("name_error").style.display= "none";
+    }
+    if(document.getElementById("phone_number").value.length >= 1){
+        document.getElementById("phone_number_error").style.display= "none";
+    }
+}
+function District(){
+    var e = document.getElementById("quan_huyen");
+    var giaTri = e.options[e.selectedIndex].text;
+    if(giaTri != "Quận / Huyện"){
+        document.getElementById("quan_huyen_error").style.display= "none";
+    }
+    if(document.getElementById("so_nha").value.length >= 1 ){
+        document.getElementById("so_nha_error").style.display= "none";
+    }
+}
+document.querySelectorAll(".truck-button").forEach((button) => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        var e = document.getElementById("quan_huyen");
+        var giaTri = e.options[e.selectedIndex].text;
+        let box = button.querySelector(".box"),
+            truck = button.querySelector(".truck");
+        if(document.getElementById("name").value.length == 0){
+            document.getElementById("name_error").style.display= "block";
+        }
+        if(document.getElementById("phone_number").value.length == 0){
+            document.getElementById("phone_number_error").style.display= "block";
+        }
+        if(giaTri == "Quận / Huyện"){
+            document.getElementById("quan_huyen_error").style.display= "block";
+        }
+        if(document.getElementById("so_nha").value.length == 0){
+            document.getElementById("so_nha_error").style.display= "block";
+        }
+        else if(document.getElementById("name").value.length > 0 && document.getElementById("phone_number").value.length > 0 && giaTri != "Quận / Huyện"){
+            if (!button.classList.contains("done")) {
+                if (!button.classList.contains("animation")) {
+                    button.classList.add("animation");
+    
+                    gsap.to(button, {
+                        "--box-s": 1,
+                        "--box-o": 1,
+                        duration: 0.3,
+                        delay: 0.5
+                    });
+    
+                    gsap.to(box, {
+                        x: 0,
+                        duration: 0.4,
+                        delay: 0.7
+                    });
+    
+                    gsap.to(button, {
+                        "--hx": -5,
+                        "--bx": 50,
+                        duration: 0.18,
+                        delay: 0.92
+                    });
+    
+                    gsap.to(box, {
+                        y: 0,
+                        duration: 0.1,
+                        delay: 1.15
+                    });
+    
+                    gsap.set(button, {
+                        "--truck-y": 0,
+                        "--truck-y-n": -26
+                    });
+                    gsap.to(button, {
+                        "--truck-y": 1,
+                        "--truck-y-n": -25,
+                        duration: 0.2,
+                        delay: 1.25,
+                        
+                        onComplete() {
+                            gsap.timeline({
+                                onComplete() {
+                                    button.classList.add("done");
+                                }
+                            })
+                                .to(truck, {
+                                    x: 0,
+                                    duration: 0.4
+                                })
+                                .to(truck, {
+                                    x: 60,
+                                    duration: 1
+                                })
+                                .to(truck, {
+                                    x: 30,
+                                    duration: 0.6
+                                })
+                                .to(truck, {
+                                    x: 390,
+                                    duration: 1.4
+                                });
+                            gsap.to(button, {
+                                "--progress": 1,
+                                duration: 3,
+                                ease: "power2.in"
+                            });
+                            
+                        }
+                    });
+                }
+                
+            } else {
+                button.classList.remove("animation", "done");
+                gsap.set(truck, {
+                    x: 8
+                });
+                gsap.set(button, {
+                    "--progress": 0,
+                    "--hx": 0,
+                    "--bx": 0,
+                    "--box-s": 1,
+                    "--box-o": 0,
+                    "--truck-y": 0,
+                    "--truck-y-n": -26
+                });
+                gsap.set(box, {
+                    x: -24,
+                    y: -6
+                });
+            }
+        }
+        
+    });
+});
