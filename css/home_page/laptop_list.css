@@ -325,23 +325,23 @@
 
 @media only screen and (min-width: 360px) and (max-width: 410px){
     .container-laptop-wrapper {
-        height: 87vw;
+        height: 90vw;
     }
 
     .container-laptop-wrapper .list-card { 
         height: 150vw;
     }
 
-    .container-laptop-wrapper .list-laptop .card{
+    /* .container-laptop-wrapper .list-laptop .card{
         height: 69vw;
-    } 
+    }  */
 
     .container-laptop-wrapper .list-laptop .card .off-info {
         top: -72vw;
     }
 
     .container-laptop-wrapper .list-laptop .card .buy-prod{
-        top: -65vw;
+        top: -70vw;
     }
 
     .container-laptop-wrapper .list-laptop .card .buy-prod .icon .fa-cart-plus{
