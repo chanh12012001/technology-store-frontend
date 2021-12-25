@@ -186,13 +186,13 @@
                                 <span fragment="2d91127b42" onclick="Chi()" class="active"><i class="cartnew-choose"></i> Chị </span>
                             </div>
                             <div class="fillinform">
-                                <div class="fillname">
-                                    <input placeholder="Họ và Tên" maxlength="50" class="capitalize untouched pristine required">
-                                    <span style="display: none;">Vui lòng nhập họ và tên</span>
+                                <div onkeydown="Set_time()" class="fillname">
+                                    <input id="name" placeholder="Họ và Tên" maxlength="50" class="capitalize untouched pristine required">
+                                    <span id="name_error" style="display: none;">Vui lòng nhập họ và tên</span>
                                 </div>
-                                <div class="fillname phoneNumber">
-                                    <input placeholder="Số điện thoại" type="tel" maxlength="10" class="untouched pristine required phoneNumber__input">
-                                    <span style="display: none;">Vui lòng nhập số điện thoại</span>
+                                <div onkeydown="Set_time()" class="fillname phoneNumber">
+                                    <input id="phone_number" placeholder="Số điện thoại" type="tel" maxlength="10" class="untouched pristine required phoneNumber__input">
+                                    <span id="phone_number_error" style="display: none;">Vui lòng nhập số điện thoại</span>
                                 </div>
                             </div>
                         </form>
@@ -212,15 +212,14 @@
                                         <select class="btn-click country_tab2" name="calc_shipping_provinces" required="">
                                             <option class="country" value="">Tỉnh / Thành phố</option>
                                         </select>
-                                        <select class="btn-click district" name="calc_shipping_district" required="">
+                                        <select onclick="District()" class="btn-click district" name="calc_shipping_district" required="" id="quan_huyen">
                                             <option value="">Quận / Huyện</option>
-                                            <small fragment="7f29b92d08" class="untouched pristine is-invalid validated required failed">Vui lòng chọn quận huyện</small>
                                         </select>
-                                        <input class="billing_address_1" name="" type="hidden" value="">
-                                        <input class="billing_address_2" name="" type="hidden" value="">
+                                        <small id="quan_huyen_error" class="untouched pristine is-invalid validated required failed" style="display: none;">Vui lòng chọn quận huyện</small>
                                     </div>
                                     <div class="filladdress">
-                                        <input placeholder="Số nhà, tên đường,Phường / Xã" maxlength="255" class="untouched pristine required">
+                                        <input onkeydown="Set_time()" id="so_nha" placeholder="Số nhà, tên đường,Phường / Xã" maxlength="255" class="untouched pristine required">
+                                        <small id="so_nha_error" class="filladdress__error error" style="display: none;">Vui lòng nhập địa chỉ, phường/xã</small>
                                     </div>
                                 </form>
                             </div>
@@ -345,8 +344,20 @@
                                 <strong id="result">590.000₫</strong>
                             </div>
                         </div>
-                        <button type="button" class="submitorder">
-                            <b style="text-transform:uppercase">Đặt hàng</b>
+                        <button class="truck-button">
+                            <span class="default">ĐẶT HÀNG</span>
+                            <span class="success">
+                                HOÀN TẤT
+                                <svg viewbox="0 0 12 10">
+                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg>
+                            </span>
+                            <div class="truck">
+                                <div class="wheel"></div>
+                                <div class="back"></div>
+                                <div class="front"></div>
+                                <div class="box"></div>
+                            </div>
                         </button>
                         <small> Bạn có thể chọn hình thức thanh toán sau khi đặt hàng </small>
                     </div>
@@ -514,6 +525,7 @@
             </div>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/cart_page/event.js"></script>
         <script type="text/javascript" src="js/cart_page/cart.js"></script>
